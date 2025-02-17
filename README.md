@@ -1,1 +1,5 @@
-# Jogo-Unesp
+Em xxx, crianças e adolescentes são convidados a embarcar em uma jornada incrível para salvar o planeta! Em um mundo 2D vibrante e interativo, os jogadores assumem o papel de jovens exploradores que precisam enfrentar desafios ecológicos enquanto aprendem sobre os diferentes ecossistemas, a importância da preservação e o impacto das ações humanas no meio ambiente.
+
+O jogo oferece uma experiência educativa e divertida, onde os jogadores podem cuidar de florestas, restaurar habitats naturais, resolver problemas de poluição e participar de atividades que ensinam sobre reciclagem, agricultura sustentável, conservação da água e muito mais. Com missões emocionantes, gráficos encantadores e personagens carismáticos, xxxxx incentiva a curiosidade e a responsabilidade ambiental de uma forma divertida e envolvente.
+
+Ao longo do jogo, as crianças e os adolescentes aprenderão sobre as questões ambientais mais urgentes do mundo real, como o desmatamento, as mudanças climáticas e a perda de biodiversidade, enquanto desenvolvem habilidades de resolução de problemas e trabalho em equipe. EcoAventuras não é apenas um jogo, é uma experiência de aprendizado que prepara as novas gerações para se tornarem verdadeiros guardiões da Terra!
