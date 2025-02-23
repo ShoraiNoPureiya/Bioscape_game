@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a0646745766422747ac7908592cfaab9
+guid: 92326bba263be9841993c5eb448122f0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walking_esquerda_0
+      name: Tutorial_Animation_Andandoesquerda_V1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5669affcfe536c4b85e6fb198c0fdae
-      internalID: -1492939220
+      spriteID: cdec7effe2502854e854a531fe5fcf1a
+      internalID: -2139159445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_esquerda_1
+      name: Tutorial_Animation_Andandoesquerda_V1_1
       rect:
         serializedVersion: 2
         x: 64
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6daf00f79eb0d114cb20e805a09b9a5a
-      internalID: -544725759
+      spriteID: 70dcd7269178b7246a9516cd5db39d84
+      internalID: 1386073753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_esquerda_2
+      name: Tutorial_Animation_Andandoesquerda_V1_2
       rect:
         serializedVersion: 2
         x: 128
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b0b1b6250dcfeb46913e48d0b72d2d0
-      internalID: -217295093
+      spriteID: fafd5cffe64697a49b4619d4fd9aa53b
+      internalID: 634520719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_esquerda_3
+      name: Tutorial_Animation_Andandoesquerda_V1_3
       rect:
         serializedVersion: 2
         x: 192
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6407fe2cf782374498309e7411d88275
-      internalID: 996224949
+      spriteID: 67ccd4523b748c14798e6ba0e46cd90e
+      internalID: 2650024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_esquerda_4
+      name: Tutorial_Animation_Andandoesquerda_V1_4
       rect:
         serializedVersion: 2
         x: 256
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bbcf28cc7658904088541f2c5491cac
-      internalID: 1021946648
+      spriteID: 014cb581d614d7a4cba9e4e0e42cb972
+      internalID: -1368931921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_esquerda_5
+      name: Tutorial_Animation_Andandoesquerda_V1_5
       rect:
         serializedVersion: 2
         x: 320
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4153afb1ab8cdaa4f8f431c5d8081233
-      internalID: -269837288
+      spriteID: 6a79366c69e37ca438d35986ea26c584
+      internalID: 2012903025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_esquerda_6
+      name: Tutorial_Animation_Andandoesquerda_V1_6
       rect:
         serializedVersion: 2
         x: 384
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ecf69164e66cdb47b0b765d350c93cd
-      internalID: 1011459143
+      spriteID: 59c818078a4fe1a4d96e4ee0f8b83888
+      internalID: -2054343017
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_esquerda_7
+      name: Tutorial_Animation_Andandoesquerda_V1_7
       rect:
         serializedVersion: 2
         x: 448
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7637e473c64afa4cacee2016aa61b4c
-      internalID: -2104894587
+      spriteID: e28748b55e78ec243ba713cd7cad58ec
+      internalID: 301996051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_esquerda_8
+      name: Tutorial_Animation_Andandoesquerda_V1_8
       rect:
         serializedVersion: 2
         x: 512
@@ -279,113 +279,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b24a3976e5dec3489ed3334e372bb2a
-      internalID: 1777077092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_esquerda_9
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db5b8a31ef299f34b8546086196b0e5a
-      internalID: -1133832863
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_esquerda_10
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2456850751052ef4fa02b45b522a516d
-      internalID: -1360664807
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_esquerda_11
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11e6501b2e400c34eb3d78289a3ec207
-      internalID: -1935962624
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_esquerda_12
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 077681627c6986447995f3f1d2906a91
-      internalID: -7090367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_esquerda_13
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c854bd1f09604a949892615c76694a94
-      internalID: -40651402
+      spriteID: 4b5721fe1d668b341b32c8bd70fa82b7
+      internalID: -1440038329
       vertices: []
       indices: 
       edges: []
@@ -401,20 +296,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      walking_esquerda_0: -1492939220
-      walking_esquerda_1: -544725759
-      walking_esquerda_10: -1360664807
-      walking_esquerda_11: -1935962624
-      walking_esquerda_12: -7090367
-      walking_esquerda_13: -40651402
-      walking_esquerda_2: -217295093
-      walking_esquerda_3: 996224949
-      walking_esquerda_4: 1021946648
-      walking_esquerda_5: -269837288
-      walking_esquerda_6: 1011459143
-      walking_esquerda_7: -2104894587
-      walking_esquerda_8: 1777077092
-      walking_esquerda_9: -1133832863
+      Tutorial_Animation_Andandoesquerda_V1_0: -2139159445
+      Tutorial_Animation_Andandoesquerda_V1_1: 1386073753
+      Tutorial_Animation_Andandoesquerda_V1_2: 634520719
+      Tutorial_Animation_Andandoesquerda_V1_3: 2650024
+      Tutorial_Animation_Andandoesquerda_V1_4: -1368931921
+      Tutorial_Animation_Andandoesquerda_V1_5: 2012903025
+      Tutorial_Animation_Andandoesquerda_V1_6: -2054343017
+      Tutorial_Animation_Andandoesquerda_V1_7: 301996051
+      Tutorial_Animation_Andandoesquerda_V1_8: -1440038329
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

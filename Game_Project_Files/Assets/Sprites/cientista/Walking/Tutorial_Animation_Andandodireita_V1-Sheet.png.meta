@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5189df3c0522fdc40a64912c4df2ce24
+guid: 8b4530db7a3f66440a065ae8c57e8c46
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walking_direita_0
+      name: Tutorial_Animation_Andandodireita_V1-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88abf6aa96b7c8d43b58ae25bd2dcf3c
-      internalID: 1939332733
+      spriteID: 09bc4e9859cb22847abe7f759866fc12
+      internalID: 1910377575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_direita_1
+      name: Tutorial_Animation_Andandodireita_V1-Sheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: faeec5fa4cde02f4d956d142a2a736c1
-      internalID: 81287940
+      spriteID: 081725f6042baec42af13f014e8d688e
+      internalID: 55157790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_direita_2
+      name: Tutorial_Animation_Andandodireita_V1-Sheet_2
       rect:
         serializedVersion: 2
         x: 128
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f355828384c53d4ab5156d55c42d84b
-      internalID: -939128476
+      spriteID: a76ad7c6dfb89e04db5c0f342c862476
+      internalID: -652995996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_direita_3
+      name: Tutorial_Animation_Andandodireita_V1-Sheet_3
       rect:
         serializedVersion: 2
         x: 192
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c8a373ddd6bc2d49bb64825847611fc
-      internalID: -903522188
+      spriteID: ba795385ef0904e4e891bd0ed1c63f20
+      internalID: 478911722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_direita_4
+      name: Tutorial_Animation_Andandodireita_V1-Sheet_4
       rect:
         serializedVersion: 2
         x: 256
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e21fc388bbadf224dba9abed5efbb8a1
-      internalID: -1576367039
+      spriteID: 64dc4e63ad9f36f4eb5e898e59defb2f
+      internalID: -1835348185
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_direita_5
+      name: Tutorial_Animation_Andandodireita_V1-Sheet_5
       rect:
         serializedVersion: 2
         x: 320
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6efb3d6feb2ce4a45949822a1edb3da6
-      internalID: -1448281632
+      spriteID: 0d397bc29f3358e42818662c2225538a
+      internalID: -280087095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_direita_6
+      name: Tutorial_Animation_Andandodireita_V1-Sheet_6
       rect:
         serializedVersion: 2
         x: 384
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 676ab262332c4dd408ecbd077baee76c
-      internalID: -292689566
+      spriteID: 942b8b05925ee3f4d9c25aae86220424
+      internalID: -1176482603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_direita_7
+      name: Tutorial_Animation_Andandodireita_V1-Sheet_7
       rect:
         serializedVersion: 2
         x: 448
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cfc037c112905b43ad9f37f166de887
-      internalID: -1177812079
+      spriteID: 620adeb5bd43c7049a54097b0d2a30b2
+      internalID: 1325897320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_direita_8
+      name: Tutorial_Animation_Andandodireita_V1-Sheet_8
       rect:
         serializedVersion: 2
         x: 512
@@ -279,113 +279,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7d362446e5cac54495e748acb330bcb
-      internalID: -954973694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_direita_9
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 24f712ea10959fc4092f3147c4279a2b
-      internalID: -392650097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_direita_10
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c736799ed088db4dbb002081ed7d0df
-      internalID: -876093749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_direita_11
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 774b020d86a6ece4db87ad6fadbef8e2
-      internalID: 1362634152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_direita_12
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0cde1e3aef1ceb54183bfb989b7bb555
-      internalID: -351370942
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_direita_13
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9bc9f7612920ae4fb77a1bee946b1ca
-      internalID: 1755238405
+      spriteID: 1415f07c64feb5c4e9dbf7d431696edd
+      internalID: 1634647118
       vertices: []
       indices: 
       edges: []
@@ -401,20 +296,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      walking_direita_0: 1939332733
-      walking_direita_1: 81287940
-      walking_direita_10: -876093749
-      walking_direita_11: 1362634152
-      walking_direita_12: -351370942
-      walking_direita_13: 1755238405
-      walking_direita_2: -939128476
-      walking_direita_3: -903522188
-      walking_direita_4: -1576367039
-      walking_direita_5: -1448281632
-      walking_direita_6: -292689566
-      walking_direita_7: -1177812079
-      walking_direita_8: -954973694
-      walking_direita_9: -392650097
+      Tutorial_Animation_Andandodireita_V1-Sheet_0: 1910377575
+      Tutorial_Animation_Andandodireita_V1-Sheet_1: 55157790
+      Tutorial_Animation_Andandodireita_V1-Sheet_2: -652995996
+      Tutorial_Animation_Andandodireita_V1-Sheet_3: 478911722
+      Tutorial_Animation_Andandodireita_V1-Sheet_4: -1835348185
+      Tutorial_Animation_Andandodireita_V1-Sheet_5: -280087095
+      Tutorial_Animation_Andandodireita_V1-Sheet_6: -1176482603
+      Tutorial_Animation_Andandodireita_V1-Sheet_7: 1325897320
+      Tutorial_Animation_Andandodireita_V1-Sheet_8: 1634647118
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

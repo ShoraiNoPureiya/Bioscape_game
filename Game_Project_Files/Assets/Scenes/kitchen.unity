@@ -3384,6 +3384,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorTrigger (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5525804974877612495, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8197615215865298833, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.01
@@ -4238,7 +4242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5525804974877612495, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
       propertyPath: m_TagString
-      value: Door
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8197615215865298833, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
       propertyPath: m_LocalPosition.x

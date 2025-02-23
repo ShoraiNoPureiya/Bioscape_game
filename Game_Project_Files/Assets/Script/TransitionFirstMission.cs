@@ -12,21 +12,25 @@ public class TransitionFirstMission : MonoBehaviour
 
     public Animator _Transition;
     public GameObject _TransitionScreen;
+    public String _SceneName = "Outside"; //Verify if the character is in a specific scene
     
 
     public void Start()
     {
         _TransitionScreen.SetActive(false);
     }
+
+
     public void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        string CurrentSceneName = SceneManager.GetActiveScene().name; //Get the name of the current scene
+
+        if (CurrentSceneName == _SceneName )
         {
-           LoadTransitionScreen();
+            LoadTransitionScreen();
         }
     }
-       
-    
+
 
     public void LoadTransitionScreen()
     {

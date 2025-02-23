@@ -3,7 +3,9 @@ guid: 4174231a4bb466b43b7bec29fc5a8f17
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _Transition: {instanceID: 0}
+  - _TransitionScreen: {fileID: 1225120426394697047, guid: 12d551594406e5740aa82b71551a42f6, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
