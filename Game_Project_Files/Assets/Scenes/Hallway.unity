@@ -1012,9 +1012,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _level: Bathroom
-  _HeIsIn: 
-  _DidHeGo: 0
-  _HasHeTheKey: 0
 --- !u!61 &1193306127
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1369,9 +1366,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _level: SampleScene
-  _HeIsIn: 
-  _DidHeGo: 0
-  _HasHeTheKey: 0
 --- !u!61 &1567903813
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1681,9 +1675,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _level: kitchen
-  _HeIsIn: 
-  _DidHeGo: 0
-  _HasHeTheKey: 0
 --- !u!61 &1907975734
 BoxCollider2D:
   m_ObjectHideFlags: 0
