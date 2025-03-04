@@ -15,12 +15,20 @@ public class mainMenuManager : MonoBehaviour
     
     public void play()
     {
+        
+        _level = Doors.GetLevel();
+        Debug.Log("Nome da cena salva "+ _level);
         SceneManager.LoadScene(_level);
         Time.timeScale = 1;
+        
+        
+        //ler cena
     }
 
     public void quitGame()
     {
+        _level = Doors.GetLevel();
+        Debug.Log("Nome da cena salva "+ _level);
         Application.Quit();
     }
     
@@ -72,6 +80,9 @@ public class mainMenuManager : MonoBehaviour
         _soundMenu.SetActive(false);
 
     }
+    
+
+
 
 
 }
