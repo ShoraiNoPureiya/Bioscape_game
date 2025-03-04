@@ -12,6 +12,7 @@ public class Carta : MonoBehaviour
     public Image CartaAberta;
     public GameObject Panel;
     public Image Papel;
+    public AudioSource _openLetter;
 
     public static Carta letter;
     private static HashSet<string> existingLetter = new HashSet<string>();
@@ -24,7 +25,7 @@ public class Carta : MonoBehaviour
         {
 
             StartCoroutine(AbrirCarta());
-            
+            _openLetter.Play();
 
         }
     }
