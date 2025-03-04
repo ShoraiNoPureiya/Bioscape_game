@@ -19,18 +19,26 @@ public class Carta : MonoBehaviour
 
     // Unique identifier for each object (can be the name or something customized)
     public string LetterID;
+  
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player")) // If the player collider with the letter on the floor the coroutine starts
         {
 
-            StartCoroutine(AbrirCarta());
-            _openLetter.Play();
+            PlayerController player = collision.GetComponent<PlayerController>(); //Acess the player script
+
+            if (player != null) 
+            {
+                
+                player.StopMovement(); // Puts the player speed to 0
+                StartCoroutine(AbrirCarta(player)); // Pass the player to the coroutine
+                _openLetter.Play();
+            }
 
         }
     }
 
-    IEnumerator AbrirCarta() // Coroutine that controls the letter elements
+    IEnumerator AbrirCarta(PlayerController player) // Coroutine that controls the letter elements
     {
 
         Panel.SetActive(true);
@@ -59,13 +67,17 @@ public class Carta : MonoBehaviour
         Papel.gameObject.SetActive(false);
         Panel.gameObject.SetActive(false);
 
+        player.ResumeMovement(); // Player speed goes back to 5
+
+        gameObject.SetActive(false);
 
 
-        
+
+
 
         //mission 1 starts
-     
-            PlayerPrefs.SetInt("int", 0);          
+
+        PlayerPrefs.SetInt("int", 0);          
             PlayerPrefs.SetInt("MissionCompleted", 0);
             PlayerPrefs.SetInt("_CanRun", 1);
             PlayerPrefs.SetInt("Order", 1);
