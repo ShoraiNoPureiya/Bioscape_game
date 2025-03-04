@@ -57,4 +57,5 @@
         "Temp/": true
     },
     "dotnet.defaultSolution": "Testando cenário_3.sln"
+    "dotnet.defaultSolution": "Game_Project_Files.sln"
 }
