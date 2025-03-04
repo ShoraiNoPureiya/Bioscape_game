@@ -35,9 +35,10 @@ public class PlayerController : MonoBehaviour
         _playerAnimator = GetComponent<Animator>();
        
 
-        /*_playerAnimator.SetBool("Attack", false);*/
+       
         playercontroller = this;
         StartCoroutine(PlayFootstepSound());
+        
 
 
     }
@@ -135,6 +136,7 @@ public class PlayerController : MonoBehaviour
         _playerDirection.Normalize();
 
         _playerRigidBody2d.MovePosition(_playerRigidBody2d.position + _playerDirection * _playerSpeed * Time.fixedDeltaTime);
+        
     }
 
 
@@ -156,7 +158,7 @@ public class PlayerController : MonoBehaviour
     {
         while (true)
         {
-            if (_playerDirection != Vector2.zero)
+            if ( _playerSpeed != 0 && _playerDirection != Vector2.zero)
             {
                 SongPlayer.songplayer._AudioSource.PlayOneShot(SongPlayer.songplayer._Walk);
             }
@@ -279,6 +281,18 @@ public class PlayerController : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     
+    }
+    
+    public void StopMovement() //puts the player's speed to zero
+    {
+        _playerSpeed = 0;
+        _InDialog = false;
+    }
+
+    public void ResumeMovement() //sets the playe's speed to five again
+    {
+        _playerSpeed = 5;
+        _InDialog = true;
     }
 
 
