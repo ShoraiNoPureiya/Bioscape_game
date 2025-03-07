@@ -15,6 +15,8 @@ public class mainMenuManager : MonoBehaviour
     
     public void play()
     {
+        PlayerPrefs.SetInt("MissionCompleted", 1);
+        PlayerPrefs.SetString("heisin", "SampleScene");
         SceneManager.LoadScene(_level);
         Time.timeScale = 1;
     }
