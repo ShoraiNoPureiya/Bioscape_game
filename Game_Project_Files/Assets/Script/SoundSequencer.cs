@@ -23,7 +23,7 @@ public class SoundSequencer : MonoBehaviour
         while (_firstSound.isPlaying)
         {
             yield return null;
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(2f);
         }
     
         _secondSound.Play();
