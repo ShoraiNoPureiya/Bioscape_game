@@ -77,9 +77,10 @@ public class Carta : MonoBehaviour
 
         //mission 1 starts
 
-        PlayerPrefs.SetInt("int", 0);          
-            PlayerPrefs.SetInt("MissionCompleted", 0);
-            PlayerPrefs.SetInt("_CanRun", 1);
+        PlayerPrefs.SetInt("int", 0);
+        PlayerPrefs.SetInt("MissionCompleted", 0);
+        PlayerPrefs.SetString("text", "Verifique se a chave está na estante do laboratório");
+        PlayerPrefs.SetInt("_CanRun", 1);
             PlayerPrefs.SetInt("Order", 1);
 
 
