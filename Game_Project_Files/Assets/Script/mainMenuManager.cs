@@ -17,8 +17,16 @@ public class mainMenuManager : MonoBehaviour
     {
         
         _level = Doors.GetLevel();
-        Debug.Log("Nome da cena salva "+ _level);
-        SceneManager.LoadScene(_level);
+        if(string.IsNullOrEmpty(_level))
+        {
+            _level = "SampleScene";
+            SceneManager.LoadScene(_level);
+        }else{
+            Debug.Log("Nome da cena salva "+ _level);
+            SceneManager.LoadScene(_level);
+
+        }
+        
         Time.timeScale = 1;
         
         
@@ -28,7 +36,7 @@ public class mainMenuManager : MonoBehaviour
     public void quitGame()
     {
         _level = Doors.GetLevel();
-        Debug.Log("Nome da cena salva "+ _level);
+        
         Application.Quit();
     }
     
