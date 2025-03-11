@@ -15,14 +15,34 @@ public class mainMenuManager : MonoBehaviour
     
     public void play()
     {
+
+        
+        _level = Doors.GetLevel();
+        if(string.IsNullOrEmpty(_level))
+        {
+            _level = "SampleScene";
+            SceneManager.LoadScene(_level);
+        }else{
+            Debug.Log("Nome da cena salva "+ _level);
+            SceneManager.LoadScene(_level);
+
+        }
+        
+
         PlayerPrefs.SetInt("MissionCompleted", 1);
         PlayerPrefs.SetString("heisin", "SampleScene");
         SceneManager.LoadScene(_level);
+
         Time.timeScale = 1;
+        
+        
+        //ler cena
     }
 
     public void quitGame()
     {
+        _level = Doors.GetLevel();
+        
         Application.Quit();
     }
     
@@ -74,6 +94,9 @@ public class mainMenuManager : MonoBehaviour
         _soundMenu.SetActive(false);
 
     }
+    
+
+
 
 
 }
