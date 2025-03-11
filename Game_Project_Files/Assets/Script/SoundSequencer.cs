@@ -6,10 +6,11 @@ public class SoundSequencer : MonoBehaviour
 {
 
     public AudioSource _firstSound;
-    public AudioSource _secondSound;
+    private AudioSource _secondSound;
     // Start is called before the first frame update
     void Start()
     {
+        _secondSound = GameObject.Find("Musics").GetComponent<AudioSource>();
         StartCoroutine(PlaySoundsSequentially());
     }
 
