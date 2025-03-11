@@ -453,6 +453,14 @@ PrefabInstance:
       value: TextBox
       objectReference: {fileID: 0}
     - target: {fileID: 5023358769468370839, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: _characterVoice
+      value: 
+      objectReference: {fileID: 1531663592}
+    - target: {fileID: 5023358769468370839, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: _cientistaVoice
+      value: 
+      objectReference: {fileID: 1531663592}
+    - target: {fileID: 5023358769468370839, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: _Phrases.Array.data[0]
       value: "sempre que precisar de algumas informa\xE7\xF5es cient\xEDficas fale
         comigo!"
@@ -473,6 +481,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -524.86
       objectReference: {fileID: 0}
+    - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: _characterVoice
+      value: 
+      objectReference: {fileID: 1531663592}
     - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: _Phrases.Array.data[0]
       value: Desculpe, eu derrubei umas coisas aqui, enfim eu peguei a sua chave
@@ -1758,6 +1770,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 30.349848, y: 1.3127041}
   m_EdgeRadius: 0
+--- !u!82 &1531663592 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2761396935760222499, guid: edbe7faf3fe993c408e296fc87793d56, type: 3}
+  m_PrefabInstance: {fileID: 8424605121693889822}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1545166306
 GameObject:
   m_ObjectHideFlags: 0
@@ -1824,8 +1841,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _level: kitchen
-  _HeIsIn: 
-  _DidHeGo: 0
 --- !u!61 &1573789670
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1987,6 +2002,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1661509128655220965, guid: 769f46155c54de9488e72a3e3be08987, type: 3}
   m_PrefabInstance: {fileID: 1979423924}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8424605121693889822
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 558389406916223257, guid: edbe7faf3fe993c408e296fc87793d56, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -23.03723
+      objectReference: {fileID: 0}
+    - target: {fileID: 558389406916223257, guid: edbe7faf3fe993c408e296fc87793d56, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -25.815111
+      objectReference: {fileID: 0}
+    - target: {fileID: 558389406916223257, guid: edbe7faf3fe993c408e296fc87793d56, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.4027107
+      objectReference: {fileID: 0}
+    - target: {fileID: 558389406916223257, guid: edbe7faf3fe993c408e296fc87793d56, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 558389406916223257, guid: edbe7faf3fe993c408e296fc87793d56, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 558389406916223257, guid: edbe7faf3fe993c408e296fc87793d56, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 558389406916223257, guid: edbe7faf3fe993c408e296fc87793d56, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 558389406916223257, guid: edbe7faf3fe993c408e296fc87793d56, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 558389406916223257, guid: edbe7faf3fe993c408e296fc87793d56, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 558389406916223257, guid: edbe7faf3fe993c408e296fc87793d56, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2761396935760222499, guid: edbe7faf3fe993c408e296fc87793d56, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4130740924145562154, guid: edbe7faf3fe993c408e296fc87793d56, type: 3}
+      propertyPath: m_Name
+      value: MiltinhoVoice
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: edbe7faf3fe993c408e296fc87793d56, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1996,3 +2072,4 @@ SceneRoots:
   - {fileID: 1545166307}
   - {fileID: 205653275}
   - {fileID: 110809651}
+  - {fileID: 8424605121693889822}

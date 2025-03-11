@@ -184,6 +184,7 @@ MonoBehaviour:
   _StopPlaying: 0
   _IsPlaying: 1
   _Name: 
+  _characterVoice: {fileID: 1710743731}
 --- !u!114 &24888415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -971,6 +972,10 @@ PrefabInstance:
       value: -52.366615
       objectReference: {fileID: 0}
     - target: {fileID: 1577470394321257821, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
+      propertyPath: _characterVoice
+      value: 
+      objectReference: {fileID: 1710743731}
+    - target: {fileID: 1577470394321257821, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: _Phrases.Array.data[0]
       value: "Por que voc\xEA n\xE3o me apresenta a fazenda e eu te ajudo com algumas
         sugest\xF5es?"
@@ -1344,6 +1349,7 @@ MonoBehaviour:
   _StopPlaying: 0
   _IsPlaying: 1
   _Name: 
+  _characterVoice: {fileID: 1710743731}
 --- !u!114 &635943293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1523,6 +1529,7 @@ MonoBehaviour:
   _StopPlaying: 0
   _IsPlaying: 1
   _Name: 
+  _characterVoice: {fileID: 1710743731}
 --- !u!114 &662397170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1770,6 +1777,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -539.08
       objectReference: {fileID: 0}
+    - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: _characterVoice
+      value: 
+      objectReference: {fileID: 1710743731}
     - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: _Phrases.Array.size
       value: 2
@@ -2162,6 +2173,7 @@ MonoBehaviour:
   _StopPlaying: 0
   _IsPlaying: 1
   _Name: 
+  _characterVoice: {fileID: 1710743731}
 --- !u!114 &796491616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2756,6 +2768,7 @@ MonoBehaviour:
   _StopPlaying: 0
   _IsPlaying: 1
   _Name: 
+  _characterVoice: {fileID: 1710743731}
 --- !u!114 &1313872544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3365,6 +3378,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655806429}
   m_CullTransparentMesh: 1
+--- !u!82 &1710743731 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 782760360475243035, guid: e18e98ba0647a8d4d8dce3374525439f, type: 3}
+  m_PrefabInstance: {fileID: 2116389820}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1794918749
 GameObject:
   m_ObjectHideFlags: 0
@@ -3930,6 +3948,10 @@ PrefabInstance:
       value: -52.366615
       objectReference: {fileID: 0}
     - target: {fileID: 1577470394321257821, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
+      propertyPath: _characterVoice
+      value: 
+      objectReference: {fileID: 1710743731}
+    - target: {fileID: 1577470394321257821, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: _Phrases.Array.data[0]
       value: "\u2019Fio\u2019, \u2018mi\u2019 foi ensinado assim, como meu \u2018v\xF4\u2019
         fazia, sempre fizemos assim."
@@ -4310,6 +4332,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &2116389820
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8128323719598235526, guid: e18e98ba0647a8d4d8dce3374525439f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 34.339153
+      objectReference: {fileID: 0}
+    - target: {fileID: 8128323719598235526, guid: e18e98ba0647a8d4d8dce3374525439f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -29.042479
+      objectReference: {fileID: 0}
+    - target: {fileID: 8128323719598235526, guid: e18e98ba0647a8d4d8dce3374525439f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.37820622
+      objectReference: {fileID: 0}
+    - target: {fileID: 8128323719598235526, guid: e18e98ba0647a8d4d8dce3374525439f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8128323719598235526, guid: e18e98ba0647a8d4d8dce3374525439f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8128323719598235526, guid: e18e98ba0647a8d4d8dce3374525439f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8128323719598235526, guid: e18e98ba0647a8d4d8dce3374525439f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8128323719598235526, guid: e18e98ba0647a8d4d8dce3374525439f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8128323719598235526, guid: e18e98ba0647a8d4d8dce3374525439f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8128323719598235526, guid: e18e98ba0647a8d4d8dce3374525439f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179017635435965779, guid: e18e98ba0647a8d4d8dce3374525439f, type: 3}
+      propertyPath: m_Name
+      value: CientistaVoice
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e18e98ba0647a8d4d8dce3374525439f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -4322,3 +4401,4 @@ SceneRoots:
   - {fileID: 292864756}
   - {fileID: 1001690720}
   - {fileID: 708020449}
+  - {fileID: 2116389820}

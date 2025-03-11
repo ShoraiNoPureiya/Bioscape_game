@@ -20,6 +20,7 @@ public class DialogBox : MonoBehaviour
     public bool _StopPlaying; // skips the dialog
     public bool _IsPlaying = true;
     public string _Name;
+    public AudioSource _characterVoice;
     // Start is called before the first frame update
     void Start()
     {
@@ -61,7 +62,7 @@ public class DialogBox : MonoBehaviour
                 yield return new WaitForSeconds(0.08f); // wait 0.8 seconds to run again
                 _NewPhrase = _NewPhrase + _Phrase[_Count]; //helps show the phrase slowly , putting letter by letter
                 _Text.text = _NewPhrase; // shows the new phrase
-                SongPlayer.songplayer.playsongs(SongPlayer.songplayer._Clip); // plays the audio
+                _characterVoice.Play();
                 _Count++; // increase 1 to the counter
                 if (_StopPlaying) { _Text.text = _Phrases[_Count2]; _StopPlaying = false; break; } // if he press space skip the dialog and reset the variable 
 

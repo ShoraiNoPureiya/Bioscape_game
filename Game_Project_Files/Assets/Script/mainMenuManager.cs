@@ -15,6 +15,7 @@ public class mainMenuManager : MonoBehaviour
     
     public void play()
     {
+
         
         _level = Doors.GetLevel();
         if(string.IsNullOrEmpty(_level))
@@ -27,6 +28,11 @@ public class mainMenuManager : MonoBehaviour
 
         }
         
+
+        PlayerPrefs.SetInt("MissionCompleted", 1);
+        PlayerPrefs.SetString("heisin", "SampleScene");
+        SceneManager.LoadScene(_level);
+
         Time.timeScale = 1;
         
         
