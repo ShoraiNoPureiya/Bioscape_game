@@ -9,7 +9,7 @@ public class UniqueObject : MonoBehaviour
     // Unique identifier for each object (can be the name or something customized)
     public string uniqueID;
 
-    void Awake()
+    void Start()
     {
         // If uniqueID is not set, use the GameObject name as the identifier
         if (string.IsNullOrEmpty(uniqueID))

@@ -619,6 +619,7 @@ GameObject:
   - component: {fileID: 183445708}
   - component: {fileID: 183445707}
   - component: {fileID: 183445706}
+  - component: {fileID: 183445710}
   m_Layer: 5
   m_Name: Canvas (1)
   m_TagString: Untagged
@@ -703,13 +704,26 @@ RectTransform:
   m_Children:
   - {fileID: 1176750536}
   - {fileID: 1395405698}
-  m_Father: {fileID: 2059223621}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &183445710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183445705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226658f93c399634a9336788557eff00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueID: 
 --- !u!1 &200424293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,7 +1080,7 @@ PrefabInstance:
       objectReference: {fileID: 1526364664}
     - target: {fileID: 4880571065667057994, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: m_Name
-      value: TextBox
+      value: TextBox01
       objectReference: {fileID: 0}
     - target: {fileID: 4880571065667057994, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: m_IsActive
@@ -1163,10 +1177,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4880571065667057994, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1395405699}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
 --- !u!1 &426919542
 GameObject:
@@ -2328,11 +2339,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1061364960 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4880571065667057994, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
-  m_PrefabInstance: {fileID: 424759311}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1089819010 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5379730280930620844, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
@@ -2802,19 +2808,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5337425759441772593, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
   m_PrefabInstance: {fileID: 424759311}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1395405699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1061364960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 226658f93c399634a9336788557eff00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uniqueID: 
 --- !u!1 &1419002693
 GameObject:
   m_ObjectHideFlags: 0
@@ -3561,7 +3554,8 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 80
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7969198882266148629, guid: 8fd3d464d5a9cdd40960f9a4a8435173, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -4365,7 +4359,6 @@ Transform:
   m_Children:
   - {fileID: 1089819010}
   - {fileID: 7077815044570153629}
-  - {fileID: 183445709}
   - {fileID: 1947100450}
   - {fileID: 1419002695}
   - {fileID: 1272317463}
@@ -4935,6 +4928,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 183445709}
   - {fileID: 6322045924889965057}
   - {fileID: 1537971924}
   - {fileID: 397389525}
