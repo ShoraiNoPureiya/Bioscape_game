@@ -73,7 +73,7 @@ public class Doors : MonoBehaviour
                 PlayerController.playercontroller.GetValues(6);
                 _HeIsIn = _level;
             }
-            if (_DidHeGo == 1) {
+            if (PlayerPrefs.GetInt("_DidHeGo") == 1) {
                 if (PlayerPrefs.GetInt("tutorialmission") == 1)
                 {
                      if (_level.Equals("Outside"))
@@ -155,7 +155,7 @@ public class Doors : MonoBehaviour
                         a = PlayerPrefs.GetInt("_Bathroom");
                         if (a == 1)
                         {
-                            _DidHeGo = 1;
+                            PlayerPrefs.SetInt("_DidHeGo",1);
                         }                   
                 }
             }
@@ -170,7 +170,7 @@ public class Doors : MonoBehaviour
         PlayerPrefs.SetInt("_Quarto2", 0);
         PlayerPrefs.SetInt("_Bathroom", 0);
         PlayerPrefs.SetInt("_Garden", 0);
-        _DidHeGo = 0;
+        PlayerPrefs.SetInt("_DidHeGo", 0);
         PlayerPrefs.SetInt("_Key", 0);
     }
 
