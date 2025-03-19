@@ -46,6 +46,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.F))
+        {
+            PlayerPrefs.SetInt("_Key", 1);
+            PlayerPrefs.SetInt("MissionCompleted", 1);
+            PlayerPrefs.SetInt("_DidHeGo", 1);
+        }
 
         if (_InDialog) {
         _playerSpeed = 5;

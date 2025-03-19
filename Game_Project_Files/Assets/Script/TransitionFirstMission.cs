@@ -26,11 +26,13 @@ public class TransitionFirstMission : MonoBehaviour
     {
         string CurrentSceneName = SceneManager.GetActiveScene().name; //Get the name of the current scene
 
-        if (CurrentSceneName == _SceneName && !_CutscenePlayed)
+        if (CurrentSceneName == _SceneName && _CutscenePlayed == false)
         {
             StartCoroutine(TransitionMission(8));
-            _CutscenePlayed = true;
 
+            StopCoroutine(TransitionMission(8));
+            _CutscenePlayed = true;
+            Debug.Log("Repete");
         }
     }
 
@@ -39,17 +41,20 @@ public class TransitionFirstMission : MonoBehaviour
 
     IEnumerator TransitionMission (int levelindex)
     {
+
+        
         _TransitionScreen.SetActive(true);
 
         _Transition.SetTrigger("Start");
 
         yield return new WaitForSeconds(3f);
 
-        SceneManager.LoadScene(levelindex);
 
         _TransitionScreen.SetActive(false);
 
-        StopCoroutine(TransitionMission(8));
+      
+
+
 
     }
 }
