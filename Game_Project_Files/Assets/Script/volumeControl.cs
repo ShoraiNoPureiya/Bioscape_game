@@ -58,7 +58,7 @@ public class volumeControl : MonoBehaviour
         {
             _NewImage2.sprite = _Image4;
         }
-        Debug.Log(_NewImage.sprite.name);
+
 
 
         // /////////////////////////////////////////////////////////////////
@@ -78,7 +78,7 @@ public class volumeControl : MonoBehaviour
         {
             _NewImage.sprite = _Image4;
         }
-        Debug.Log(_NewImage2.sprite.name);
+
     }
 
 }
