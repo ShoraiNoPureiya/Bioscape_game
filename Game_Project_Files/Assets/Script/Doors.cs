@@ -116,7 +116,7 @@ public class Doors : MonoBehaviour
         {
 
                 
-                if (_DidHeGo == 1)
+                if (PlayerPrefs.GetInt("_DidHeGo") == 1)
                 {
                     PlayerPrefs.SetInt("_Garden", 1);
                     if (_level.Equals("kitchen"))
