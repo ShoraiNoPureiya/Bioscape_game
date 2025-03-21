@@ -18,6 +18,8 @@ public class mainMenuManager : MonoBehaviour
 
         
         _level = Doors.GetLevel();
+        
+        
         if(string.IsNullOrEmpty(_level))
         {
             _level = "SampleScene";
