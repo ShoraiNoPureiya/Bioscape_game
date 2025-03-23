@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: TutorialInstruction_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 32d5da7f158a1d7439d01243c44094e2, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 16061231104
+    m_Localized: Check if the key is on the shelf of the bedroom.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12427308756992
+    m_Localized: Check if the key is in the bathroom.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17304600637440
+    m_Localized: 'Check if the key is in the living room/kitchen.
+
+      (Inside
+      the journal)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17906856554496
+    m_Localized: Check where that sound came from.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19534431055872
+    m_Localized: 'Dear Dr. Adalberto,
+
+
+      You are being called to your first
+
+      fieldwork
+      as part of your research
+
+      in the ecological field. We have received a
+      complaint and
+
+      we would like you to investigate and, if
+
+      possible,
+      resolve the situation.
+
+      The situation in question boils down to an
+
+      environmental
+      complaint, in which it was found that the
+
+      lack of the minimum forest
+      vegetation required by
+
+      law. The property is located in Sr.
+
+      Francisco,
+      who will receive it on
+
+      XX/XX/XXXX.
+
+
+      Yours sincerely
+
+
+      Carlos
+      G. (Environmental Coordinator for
+
+      Region YY)
+
+      CFJC - Federal Council
+      for Justice and
+
+      Council.
+
+      Press the Space key to continue'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
