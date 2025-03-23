@@ -4051,6 +4051,7 @@ MonoBehaviour:
   _Image3: {fileID: 21300000, guid: c4d97cf0cc8f3ee40ac623268b885c4f, type: 3}
   _Image4: {fileID: 21300000, guid: 2312d7ad8d4d07b4589146349ccbe6ce, type: 3}
   _music: {fileID: 1649915226}
+  _music2: {fileID: 1649915226}
   _Volume: 0
   _Volume2: 0
   _textMusic: {fileID: 10067673}
