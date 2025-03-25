@@ -6,6 +6,9 @@ using UnityEditor;
 //using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Localization.Settings;
+using UnityEngine.Localization;
+using UnityEditor.Localization.Editor;
 
 public class DialogBox : MonoBehaviour
 {
@@ -24,6 +27,7 @@ public class DialogBox : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine("LocalizationA");
         _CanPlay = false;
         dialogbox = this;
         StartCoroutine(Dialog());
@@ -32,18 +36,18 @@ public class DialogBox : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    
+
         if (_IsPlaying)
         {
             if (_CanPlay) { StartCoroutine(Dialog()); _CanPlay = false; } // when the player come back again , the dialog plays again
         }
         if (Input.GetKeyDown(KeyCode.Space)) { _StopPlaying = true; } // if he press space skip the dialog
-        if (Input.GetKeyDown(KeyCode.Space)) { ConcludeDialog();} // if he press space skip the dialog
-        }
+        if (Input.GetKeyDown(KeyCode.Space)) { ConcludeDialog(); } // if he press space skip the dialog
+    }
 
     public IEnumerator Dialog() // synchronize the phrase with the audio , foreach letter the audio plays once
     {
-       StringForName();
+        StringForName();
         _IsPlaying = false;
         yield return new WaitForSeconds(0.08f);
         PlayerController.playercontroller.SetCanMove(false);
@@ -77,7 +81,7 @@ public class DialogBox : MonoBehaviour
 
         _StopPlaying = false; // reset the variable 
         _IsPlaying = true;
-       
+
     }
 
 
@@ -102,21 +106,29 @@ public class DialogBox : MonoBehaviour
         if (_IsPlaying)
         {
             _Text.text = "";
-            _Count2 = 0; 
+            _Count2 = 0;
             _Count = 0;
             _NewPhrase = "";
             _IsPlaying = true;
             _StopPlaying = false;
-            
-            if (PlayerController.playercontroller != null) { 
-            PlayerController.playercontroller.SetCanMove(true);}
+
+            if (PlayerController.playercontroller != null)
+            {
+                PlayerController.playercontroller.SetCanMove(true);
+            }
             if (transform.parent != null)
-            {   
+            {
                 _CanPlay = true;
                 transform.parent.gameObject.SetActive(false);
             }
         }
 
+    }
+
+    IEnumerator LocalizationA()
+    {
+        yield return LocalizationSettings.InitializationOperation;
+        Debug.Log(LocalizationSettings.SelectedLocale);
     }
 
 }
