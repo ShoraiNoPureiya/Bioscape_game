@@ -9,25 +9,33 @@ using UnityEngine.UI;
 using UnityEngine.Localization.Settings;
 using UnityEngine.Localization;
 using UnityEditor.Localization.Editor;
+using System.Threading.Tasks;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class DialogBox : MonoBehaviour
 {
-    public List<string> _Phrases = new List<string>();
+    private List<string> _Phrases = new List<string>();
     public static DialogBox dialogbox;
-    public string _Phrase;
-    public string _NewPhrase; // helps show the phrase slowly
+    private string _Phrase;
+    private string _NewPhrase; // helps show the phrase slowly
     public Text _Text; // The gameboject "Text" will show the phrase
-    public int _Count; // its a counter
-    public int _Count2; // its a counter of the list
+    private int _Count; // its a counter
+    private int _Count2; // its a counter of the list
     public bool _CanPlay; // Helps to play the dialog only a once
     public bool _StopPlaying; // skips the dialog
     public bool _IsPlaying = true;
     public string _Name;
     public AudioSource _characterVoice;
+    public LocalizedString localizedString;
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        StartCoroutine("LocalizationA");
+        localizedString.GetLocalizedStringAsync().Completed += handle =>
+        {
+            string[] textos = handle.Result.Split(';'); // Divide pelo delimitador ";"
+            _Phrases.AddRange(textos);
+
+        };
         _CanPlay = false;
         dialogbox = this;
         StartCoroutine(Dialog());
@@ -125,10 +133,6 @@ public class DialogBox : MonoBehaviour
 
     }
 
-    IEnumerator LocalizationA()
-    {
-        yield return LocalizationSettings.InitializationOperation;
-        Debug.Log(LocalizationSettings.SelectedLocale);
-    }
+   
 
 }

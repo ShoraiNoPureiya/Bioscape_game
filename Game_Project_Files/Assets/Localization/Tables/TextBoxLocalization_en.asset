@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 43729334272
-    m_Localized: '"My doorbell is ringing, I have to answer it.'
+    m_Localized: My doorbell is ringing, I have to answer it.
     m_Metadata:
       m_Items: []
   references:

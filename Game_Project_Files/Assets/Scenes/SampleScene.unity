@@ -1767,6 +1767,18 @@ PrefabInstance:
       propertyPath: _cientistaVoice
       value: 
       objectReference: {fileID: 1526364664}
+    - target: {fileID: 1577470394321257821, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
+      propertyPath: _Phrases.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577470394321257821, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
+      propertyPath: localizedString.m_TableEntryReference.m_KeyId
+      value: 43729334272
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577470394321257821, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
+      propertyPath: localizedString.m_TableReference.m_TableCollectionName
+      value: GUID:35116a5e002bbed459939d98f7088e46
+      objectReference: {fileID: 0}
     - target: {fileID: 4880571065667057994, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: m_Name
       value: TextBox01
@@ -1870,10 +1882,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4556717345637745930, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1751828142}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
 --- !u!1 &426919542
 GameObject:
@@ -5501,62 +5510,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739027945}
   m_CullTransparentMesh: 1
---- !u!1 &1751828140 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4556717345637745930, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
-  m_PrefabInstance: {fileID: 424759311}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1751828142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1751828140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_StringReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:35116a5e002bbed459939d98f7088e46
-    m_TableEntryReference:
-      m_KeyId: 43729334272
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  m_FormatArguments: []
-  m_UpdateString:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1751828144}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-  references:
-    version: 2
-    RefIds: []
---- !u!114 &1751828144 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7824523688253475750, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
-  m_PrefabInstance: {fileID: 424759311}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1751828140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1762123360
 GameObject:
   m_ObjectHideFlags: 3
