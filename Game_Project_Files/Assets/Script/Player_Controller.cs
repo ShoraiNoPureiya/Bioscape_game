@@ -66,99 +66,50 @@ public class PlayerController : MonoBehaviour
             _playerAnimator.SetFloat("Horizontal_Idle", _playerDirection.x); // If the player is still horizontally the horizontal idle animation starts playing
             _playerAnimator.SetFloat("Vertical_Idle", _playerDirection.y); // If the player is still vertically the vertical idle animation starts playing
             _playerAnimator.SetFloat("Movement", _playerDirection.sqrMagnitude);
-
-
         }
-
-
         _isMoving = _playerDirection != Vector2.zero;
-
-        
-
-
-
-
-
-
-
-
 
         if (_isMoving)  //Player is moving reset the timer
         {
-
             _StillTimer = 0.0f; //Resets the variable still timer
-
-
         }
-
         else
         {
             //Player is not moving timer start to count
             _StillTimer += Time.deltaTime;
-
             if (_StillTimer > 20.0f)
             {
                 //  Player has been still for more than 20 seconds, active the waiting animatio
                 StartCoroutine(PlayWaitingAnimation());
                 _StillTimer = 0.0f; //Reset the timer
-
-
-
             }
-
-
         }
-
-
         if (Input.GetKeyDown(KeyCode.E) && _CanInteract)// If player press E the interaction animation starts playing
         {
             _playerAnimator.SetBool("Interaction", true);
             _CanInteract = false;
             StartCoroutine(InteractionCooldown());
         }
-
-
-
-
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pauseGame();
         }
-
-
-
-
-
     }
-
-
-
-
-
-
     void FixedUpdate()
-    {
-        
+    {  
         _playerDirection.Normalize();
-
-        _playerRigidBody2d.MovePosition(_playerRigidBody2d.position + _playerDirection * _playerSpeed * Time.fixedDeltaTime);
-        
+        _playerRigidBody2d.MovePosition(_playerRigidBody2d.position + _playerDirection * _playerSpeed * Time.fixedDeltaTime);     
     }
-
 
     public void IncreaseSpeed(float Speed) // increases character speed
     {
         _playerSpeed = _playerSpeed * Speed; // increases character speed
         StartCoroutine(Sleep());
-
-
     }
     IEnumerator Sleep()
     {
-
         yield return new WaitForSeconds(3); // 3 sec cooldown
         _playerSpeed = 5; // speed return to normal
-
     }
     IEnumerator PlayFootstepSound()
     {
@@ -170,17 +121,12 @@ public class PlayerController : MonoBehaviour
             }
             yield return new WaitForSeconds(0.5f); // Adjust delay between sounds
         }
-
-
     }
-
     IEnumerator PlayWaitingAnimation() //Coroutine that controls the player waiting animation
     {
         _playerAnimator.SetBool("Waiting", true);
         yield return new WaitForSeconds(3.4f);
         _playerAnimator.SetBool("Waiting", false);
-
-
 
         bool _StopAnimation = false;
 
@@ -194,13 +140,8 @@ public class PlayerController : MonoBehaviour
             }
 
             yield return new WaitForEndOfFrame(); 
-        }
-
-        
-
-       
+        }           
     }
-
     IEnumerator InteractionCooldown() //Coroutine that controls the interaction animation
     {
         _playerAnimator.SetBool("Interaction", true);
@@ -300,9 +241,4 @@ public class PlayerController : MonoBehaviour
         _playerSpeed = 5;
         _InDialog = true;
     }
-
-
 }
-
-
-
