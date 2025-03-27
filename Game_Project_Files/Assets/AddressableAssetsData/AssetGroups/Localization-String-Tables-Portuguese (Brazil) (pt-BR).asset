@@ -24,12 +24,6 @@ MonoBehaviour:
     - Locale-pt-BR
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 0fe518a0e752e7a42ad85a5a91d8a449
-    m_Address: TutorialDialogues_pt-BR
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-pt-BR
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: febbe7efb67ad90418beff01bd8c6319
     m_Address: TextBoxLocalization_pt-BR
     m_ReadOnly: 1
