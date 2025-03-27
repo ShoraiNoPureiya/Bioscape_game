@@ -1767,6 +1767,18 @@ PrefabInstance:
       propertyPath: _cientistaVoice
       value: 
       objectReference: {fileID: 1526364664}
+    - target: {fileID: 1577470394321257821, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
+      propertyPath: _Phrases.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577470394321257821, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
+      propertyPath: localizedString.m_TableEntryReference.m_KeyId
+      value: 43729334272
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577470394321257821, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
+      propertyPath: localizedString.m_TableReference.m_TableCollectionName
+      value: GUID:35116a5e002bbed459939d98f7088e46
+      objectReference: {fileID: 0}
     - target: {fileID: 4880571065667057994, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: m_Name
       value: TextBox01
@@ -1854,6 +1866,10 @@ PrefabInstance:
     - target: {fileID: 5337425759441772593, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824523688253475750, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
+      propertyPath: m_Text
+      value: HEllo
       objectReference: {fileID: 0}
     - target: {fileID: 8372270359474239720, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -4886,7 +4902,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1100455064466967801, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
       propertyPath: m_Text
-      value: "Verifique se a chave est\xE1 na estante do quarto."
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2076224740495133437, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
       propertyPath: m_IsActive
@@ -4956,8 +4972,67 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 7734218253125327545, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3054250116970558682, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1589652655}
   m_SourcePrefab: {fileID: 100100000, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+--- !u!1 &1589652653 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3054250116970558682, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+  m_PrefabInstance: {fileID: 1589652652}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1589652654 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1100455064466967801, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+  m_PrefabInstance: {fileID: 1589652652}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589652653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1589652655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589652653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:32d5da7f158a1d7439d01243c44094e2
+    m_TableEntryReference:
+      m_KeyId: 16061231104
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1589652654}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1590631441
 GameObject:
   m_ObjectHideFlags: 0
@@ -5900,7 +5975,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1886886989
 Transform:
   m_ObjectHideFlags: 0
