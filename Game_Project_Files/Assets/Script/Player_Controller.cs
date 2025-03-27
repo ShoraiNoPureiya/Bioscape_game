@@ -30,7 +30,8 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        spawnar(); 
+        spawnar();
+        
         _playerRigidBody2d = GetComponent<Rigidbody2D>();
         _playerAnimator = GetComponent<Animator>();
        
@@ -222,40 +223,59 @@ public class PlayerController : MonoBehaviour
     }
     public void spawnar()
     {
-        spawnID = PlayerPrefs.GetInt("id");
+        //spawnID = PlayerPrefs.GetInt("id");
+        spawnID = Doors.GetSpawnID();
+        Debug.Log("Spawn--------------- "+ spawnID);
+
+        if(spawnID ==0)
+        {
+            spawnID = PlayerPrefs.GetInt("id");
+        }
+        
         switch (spawnID)
         {
             case 1:
-                _Player.position = new Vector3(-0.14f, -4.68f, 0);
+            //hallway to SampleScene
+                _Player.position = new Vector3(-0.14f, -4.78f, 0);
                 break;
             case 2:
-                _Player.position = new Vector3(8.9f, -15.85f, 0);
+            //Hallway to Kitchen
+                _Player.position = new Vector3(9.301f, -14.85f, 0);
                 break;
             case 3:
-                _Player.position = new Vector3(-0.61f, -7.46f, 0);
+            //Hallway to Bathroom
+                _Player.position = new Vector3(-3.40f, -6.86f, 0);
                 break;
             case 4:
+            //SampleScene to Hallway
                 _Player.position = new Vector3(2.21f, -2.54f, 0);
                 break;
             case 5:
-                _Player.position = new Vector3(1f, -7.56f, 0);
+            //Kitchen to Hallway
+                _Player.position = new Vector3(-3.98f, -3.53f, 0);
                 break;
             case 6:
+            //kitche to Outside
                 _Player.position = new Vector3(-4.25f, -4.78f, 0);
                 break;
             case 7:
-                _Player.position = new Vector3(-3.36f, -2.34f, 0);
+            //Kitchen to garden
+                _Player.position = new Vector3(-1.75f, -8.24f, 0);
                 break;
             case 8:
-               
+            //Bathroom to Hallway
+                _Player.position = new Vector3(-3.38f, -2.57f, 0);
                 break;
             case 9:
+            //Garden to Kitchen
                 _Player.position = new Vector3(-5.51f, -7.95f, 0);
                 break;
             case 10:
+                //void
                 _Player.position = new Vector3(10.15f, -4.79f, 0);
                 break;
             case 11:
+                //void
                 _Player.position = new Vector3(10.56f, -3.4f, 0);
                 break;
             default:
@@ -300,6 +320,9 @@ public class PlayerController : MonoBehaviour
         _playerSpeed = 5;
         _InDialog = true;
     }
+
+
+    
 
 
 }
