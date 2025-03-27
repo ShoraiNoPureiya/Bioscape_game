@@ -15,7 +15,21 @@ public class mainMenuManager : MonoBehaviour
     
     public void play()
     {
-    
+         PlayerPrefs.DeleteAll();
+         _level = "SampleScene";
+
+        SceneManager.LoadScene(_level);
+        PlayerPrefs.SetInt("MissionCompleted", 1);
+        PlayerPrefs.SetString("heisin", "SampleScene");
+        
+
+        Time.timeScale = 1;
+        
+        
+        //ler cena
+    }
+    public void continueGame()
+    {
         _level = Doors.GetLevel();
         if(string.IsNullOrEmpty(_level))
         {
@@ -26,16 +40,10 @@ public class mainMenuManager : MonoBehaviour
             SceneManager.LoadScene(_level);
 
         }
-        
-
         PlayerPrefs.SetInt("MissionCompleted", 1);
-        PlayerPrefs.SetString("heisin", "SampleScene");
-        SceneManager.LoadScene(_level);
+        PlayerPrefs.SetString("heisin", _level);
 
-        Time.timeScale = 1;
-        
-        
-        //ler cena
+
     }
 
     public void quitGame()
