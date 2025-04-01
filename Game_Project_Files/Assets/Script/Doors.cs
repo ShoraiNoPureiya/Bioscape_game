@@ -12,7 +12,7 @@ public class Doors : MonoBehaviour
     [SerializeField] private string _level;
     private string _HeIsIn;
     private int _DidHeGo = 0;
-
+    private int _spawnID;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //first "if" verifys where he is (_HeIsIn), and the second "if" verifys where he want to go "_level"
@@ -28,18 +28,24 @@ public class Doors : MonoBehaviour
                 SceneManager.LoadScene(_level);
                 PlayerController.playercontroller.GetValues(1); //spawnpoint
                 _HeIsIn = _level;
+                _spawnID = 1;
+                SaveLevel();
             }
             if (_level.Equals("kitchen")) // if he is going to kitchen
             {
                 SceneManager.LoadScene(_level);
                 PlayerController.playercontroller.GetValues(2); //spawnpoint
                 _HeIsIn = _level;
+                _spawnID = 2;
+                SaveLevel();
             }
             if (_level.Equals("Bathroom")) // if he is going to BathRoom
             {
                 SceneManager.LoadScene(_level);
                 PlayerController.playercontroller.GetValues(3); //spawnpoint
                 _HeIsIn = _level;
+                _spawnID = 3;
+                SaveLevel();
             }
         } 
 
@@ -52,6 +58,8 @@ public class Doors : MonoBehaviour
                 SceneManager.LoadScene(_level);
                 PlayerController.playercontroller.GetValues(4);
                 _HeIsIn = _level;
+                _spawnID = 4;
+                SaveLevel();
             }
         }
 
@@ -65,11 +73,17 @@ public class Doors : MonoBehaviour
             
             if (_level.Equals("Hallway"))
             {
+                Debug.Log("Sai da cozinha e fui para o corredor ");
                 SceneManager.LoadScene(_level);
                 PlayerController.playercontroller.GetValues(6);
+                
+                 Debug.Log("Spawn---------------x "+_spawnID);
                 _HeIsIn = _level;
+                _spawnID = 5;
+                SaveLevel();
+
             }
-            if (_DidHeGo == 1) {
+            if (PlayerPrefs.GetInt("_DidHeGo") == 1) {
                 if (PlayerPrefs.GetInt("tutorialmission") == 1)
                 {
                      if (_level.Equals("Outside"))
@@ -77,11 +91,15 @@ public class Doors : MonoBehaviour
                         SceneManager.LoadScene(_level);
                         PlayerController.playercontroller.GetValues(9);
                         _HeIsIn = _level;
+                        _spawnID = 6;
+                        SaveLevel();
                      }
                     if (_level.Equals("Garden"))
                     {
                         SceneManager.LoadScene(_level);
                         PlayerController.playercontroller.GetValues(9);
+                        _spawnID = 7;
+                        SaveLevel();
                         _HeIsIn = _level;
                     }
                 }
@@ -105,6 +123,8 @@ public class Doors : MonoBehaviour
                 SceneManager.LoadScene(_level);
                 PlayerController.playercontroller.GetValues(7);
                 _HeIsIn = _level;
+                _spawnID = 8;
+                SaveLevel();
             }
         }
 
@@ -112,7 +132,7 @@ public class Doors : MonoBehaviour
         {
 
                 
-                if (_DidHeGo == 1)
+                if (PlayerPrefs.GetInt("_DidHeGo") == 1)
                 {
                     PlayerPrefs.SetInt("_Garden", 1);
                     if (_level.Equals("kitchen"))
@@ -120,6 +140,8 @@ public class Doors : MonoBehaviour
                         SceneManager.LoadScene(_level);
                         PlayerController.playercontroller.GetValues(10);
                         _HeIsIn = _level;
+                        _spawnID = 9;   
+                        SaveLevel();
                     }
                 }
             
@@ -151,7 +173,7 @@ public class Doors : MonoBehaviour
                         a = PlayerPrefs.GetInt("_Bathroom");
                         if (a == 1)
                         {
-                            _DidHeGo = 1;
+                            PlayerPrefs.SetInt("_DidHeGo",1);
                         }                   
                 }
             }
@@ -166,12 +188,26 @@ public class Doors : MonoBehaviour
         PlayerPrefs.SetInt("_Quarto2", 0);
         PlayerPrefs.SetInt("_Bathroom", 0);
         PlayerPrefs.SetInt("_Garden", 0);
-        _DidHeGo = 0;
+        PlayerPrefs.SetInt("_DidHeGo", 0);
         PlayerPrefs.SetInt("_Key", 0);
     }
 
     public void NewScene(string _Level) //scene loader
     {
         SceneManager.LoadScene(_Level);
+    }
+    public void SaveLevel(){
+         PlayerPrefs.SetString("__Level",_level);
+         PlayerPrefs.SetInt("_spawnID",_spawnID);
+         PlayerPrefs.Save();
+    }
+     public static string GetLevel(){
+        string resultado = PlayerPrefs.GetString("__Level");
+        return resultado;
+    }
+
+    public static int GetSpawnID(){
+        int resultado = PlayerPrefs.GetInt("_spawnID");
+        return resultado;
     }
 }

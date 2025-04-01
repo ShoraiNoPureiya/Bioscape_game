@@ -13,7 +13,8 @@ public class TransitionFirstMission : MonoBehaviour
     public Animator _Transition;
     public GameObject _TransitionScreen;
     public String _SceneName = "Outside"; //Verify if the character is in a specific scene
-    
+    private bool _CutscenePlayed = false;
+
 
     public void Start()
     {
@@ -25,26 +26,35 @@ public class TransitionFirstMission : MonoBehaviour
     {
         string CurrentSceneName = SceneManager.GetActiveScene().name; //Get the name of the current scene
 
-        if (CurrentSceneName == _SceneName )
+        if (CurrentSceneName == _SceneName && _CutscenePlayed == false)
         {
-            LoadTransitionScreen();
+            StartCoroutine(TransitionMission(8));
+
+            StopCoroutine(TransitionMission(8));
+            _CutscenePlayed = true;
+            Debug.Log("Repete");
         }
     }
 
 
-    public void LoadTransitionScreen()
-    {
-        StartCoroutine(TransitionMission(8));
-    }
+    
 
     IEnumerator TransitionMission (int levelindex)
     {
+
+        
         _TransitionScreen.SetActive(true);
 
         _Transition.SetTrigger("Start");
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
 
-        SceneManager.LoadScene(levelindex);
+
+        _TransitionScreen.SetActive(false);
+
+      
+
+
+
     }
 }

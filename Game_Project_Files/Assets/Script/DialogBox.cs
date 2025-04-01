@@ -6,23 +6,36 @@ using UnityEditor;
 //using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Localization.Settings;
+using UnityEngine.Localization;
+using UnityEditor.Localization.Editor;
+using System.Threading.Tasks;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class DialogBox : MonoBehaviour
 {
-    public List<string> _Phrases = new List<string>();
+    private List<string> _Phrases = new List<string>();
     public static DialogBox dialogbox;
-    public string _Phrase;
-    public string _NewPhrase; // helps show the phrase slowly
+    private string _Phrase;
+    private string _NewPhrase; // helps show the phrase slowly
     public Text _Text; // The gameboject "Text" will show the phrase
-    public int _Count; // its a counter
-    public int _Count2; // its a counter of the list
+    private int _Count; // its a counter
+    private int _Count2; // its a counter of the list
     public bool _CanPlay; // Helps to play the dialog only a once
     public bool _StopPlaying; // skips the dialog
     public bool _IsPlaying = true;
     public string _Name;
+    public AudioSource _characterVoice;
+    public LocalizedString localizedString;
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
+        localizedString.GetLocalizedStringAsync().Completed += handle =>
+        {
+            string[] textos = handle.Result.Split(';'); // Divide pelo delimitador ";"
+            _Phrases.AddRange(textos);
+
+        };
         _CanPlay = false;
         dialogbox = this;
         StartCoroutine(Dialog());
@@ -31,18 +44,18 @@ public class DialogBox : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    
+
         if (_IsPlaying)
         {
             if (_CanPlay) { StartCoroutine(Dialog()); _CanPlay = false; } // when the player come back again , the dialog plays again
         }
         if (Input.GetKeyDown(KeyCode.Space)) { _StopPlaying = true; } // if he press space skip the dialog
-        if (Input.GetKeyDown(KeyCode.Space)) { ConcludeDialog();} // if he press space skip the dialog
-        }
+        if (Input.GetKeyDown(KeyCode.Space)) { ConcludeDialog(); } // if he press space skip the dialog
+    }
 
     public IEnumerator Dialog() // synchronize the phrase with the audio , foreach letter the audio plays once
     {
-       StringForName();
+        StringForName();
         _IsPlaying = false;
         yield return new WaitForSeconds(0.08f);
         PlayerController.playercontroller.SetCanMove(false);
@@ -61,7 +74,7 @@ public class DialogBox : MonoBehaviour
                 yield return new WaitForSeconds(0.08f); // wait 0.8 seconds to run again
                 _NewPhrase = _NewPhrase + _Phrase[_Count]; //helps show the phrase slowly , putting letter by letter
                 _Text.text = _NewPhrase; // shows the new phrase
-                SongPlayer.songplayer.playsongs(SongPlayer.songplayer._Clip); // plays the audio
+                _characterVoice.Play();
                 _Count++; // increase 1 to the counter
                 if (_StopPlaying) { _Text.text = _Phrases[_Count2]; _StopPlaying = false; break; } // if he press space skip the dialog and reset the variable 
 
@@ -76,7 +89,7 @@ public class DialogBox : MonoBehaviour
 
         _StopPlaying = false; // reset the variable 
         _IsPlaying = true;
-       
+
     }
 
 
@@ -101,21 +114,25 @@ public class DialogBox : MonoBehaviour
         if (_IsPlaying)
         {
             _Text.text = "";
-            _Count2 = 0; 
+            _Count2 = 0;
             _Count = 0;
             _NewPhrase = "";
             _IsPlaying = true;
             _StopPlaying = false;
-            
-            if (PlayerController.playercontroller != null) { 
-            PlayerController.playercontroller.SetCanMove(true);}
+
+            if (PlayerController.playercontroller != null)
+            {
+                PlayerController.playercontroller.SetCanMove(true);
+            }
             if (transform.parent != null)
-            {   
+            {
                 _CanPlay = true;
                 transform.parent.gameObject.SetActive(false);
             }
         }
 
     }
+
+   
 
 }

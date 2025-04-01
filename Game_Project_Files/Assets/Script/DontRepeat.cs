@@ -3,28 +3,43 @@ using System.Collections.Generic;
 
 public class UniqueObject : MonoBehaviour
 {
-    // Static list to track which objects already exist
     private static HashSet<string> existingObjects = new HashSet<string>();
 
-    // Unique identifier for each object (can be the name or something customized)
+
     public string uniqueID;
 
-    void Awake()
+    void Start()
     {
-        // If uniqueID is not set, use the GameObject name as the identifier
+        // Gets the saved string from PlayerPrefs
+        string _SaveObjects = PlayerPrefs.GetString("_SavedObjects", "");
+
+        // Creates a copy to avoid modifying while iterating
+        HashSet<string> copyExistingObjects = new HashSet<string>(_SaveObjects.Split(';'));
+
+        // Adds new objects, ensuring no duplicates
+        copyExistingObjects.UnionWith(existingObjects);
+
+        // Converts to string and saves in PlayerPrefs
+        PlayerPrefs.SetString("_SavedObjects", string.Join(";", copyExistingObjects));
+        PlayerPrefs.Save();
+
+        // Updates existingObjects
+        existingObjects.Clear();
+        existingObjects.UnionWith(copyExistingObjects);
+
+        // If uniqueID is not set, use the GameObject name
         if (string.IsNullOrEmpty(uniqueID))
         {
             uniqueID = gameObject.name;
         }
 
-        // Checks if the identifier is already in the list of existing objects
+        // **Now we check if the object already exists, without modifying the HashSet while iterating**
         if (existingObjects.Contains(uniqueID))
         {
-            Destroy(gameObject); // Destroys the object if it already exists
+            Destroy(gameObject);
         }
         else
         {
-            // Marks the object as existing and keeps it when switching scenes
             existingObjects.Add(uniqueID);
         }
     }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEngine.Rendering.DebugUI;
 
 public class volumeControl : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class volumeControl : MonoBehaviour
     [SerializeField] private Sprite _Image4;
 
     [SerializeField] private AudioSource _music;
+    [SerializeField] private AudioSource _music2;
     [SerializeField] private float _Volume;
     [SerializeField] private float _Volume2;
     [SerializeField] private Text _textMusic;
@@ -24,7 +26,7 @@ public class volumeControl : MonoBehaviour
     public void musicVolume(float value)
     {
 
-        _music.volume = value;
+        _music2.volume = value;
         _Volume2 = value;
 
     }
@@ -38,43 +40,45 @@ public class volumeControl : MonoBehaviour
 
     void Update()
     {
-        _textMusic.text = (_music.volume*100).ToString();
-        textAmbient.text = (_music.volume * 100).ToString();
+        _textMusic.text = (Mathf.Round(_music2.volume*100).ToString());
+        textAmbient.text = (Mathf.Round(_music.volume * 100).ToString());
         if (_Volume == 0)
         {
-            _NewImage.sprite = _Image;
+            _NewImage2.sprite = _Image;
         }
         if (_Volume > 0)
         {
-            _NewImage.sprite = _Image2;
+            _NewImage2.sprite = _Image2;
         }
         if (_Volume > 0.33)
         {
-            _NewImage.sprite = _Image3;
+            _NewImage2.sprite = _Image3;
         }
         if (_Volume > 0.66)
+        {
+            _NewImage2.sprite = _Image4;
+        }
+
+
+
+        // /////////////////////////////////////////////////////////////////
+        if (_Volume2 == 0)
+        {
+            _NewImage.sprite = _Image;
+        }
+        if (_Volume2 > 0)
+        {
+            _NewImage.sprite = _Image2;
+        }
+        if (_Volume2 > 0.33)
+        {
+            _NewImage.sprite = _Image3;
+        }
+        if (_Volume2 > 0.66)
         {
             _NewImage.sprite = _Image4;
         }
 
-
-    // /////////////////////////////////////////////////////////////////
-        if (_Volume2 == 0)
-        {
-            _NewImage2.sprite = _Image;
-        }
-        if (_Volume2 > 0)
-        {
-            _NewImage2.sprite = _Image2;
-        }
-        if (_Volume2 > 0.33)
-        {
-            _NewImage2.sprite = _Image3;
-        }
-        if (_Volume2 > 0.66)
-        {
-            _NewImage2.sprite = _Image4;
-        }
     }
 
 }
