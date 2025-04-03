@@ -24,11 +24,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690046816215040
-    m_Key: Text
+    m_Key: TextKeyLaundryBasket
     m_Metadata:
       m_Items: []
   - m_Id: 2207081754570752
-    m_Key: New Entry
+    m_Key: TextKeyShelf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3245857350344704
+    m_Key: TextKeyJournal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3246374268952576
+    m_Key: TextKeyMiltinho
     m_Metadata:
       m_Items: []
   m_Metadata:
