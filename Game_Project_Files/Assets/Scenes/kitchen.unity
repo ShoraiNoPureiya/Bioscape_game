@@ -3295,7 +3295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197615215865298833, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21.64
+      value: 21.17
       objectReference: {fileID: 0}
     - target: {fileID: 8197615215865298833, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4279,6 +4279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Text: Verifique da onde veio esse som.
+  _Texts: 
   localizedString:
     m_TableReference:
       m_TableCollectionName: GUID:32d5da7f158a1d7439d01243c44094e2

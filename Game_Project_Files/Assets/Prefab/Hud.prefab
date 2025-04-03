@@ -1112,6 +1112,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Text: {fileID: 1100455064466967801}
+  _Texts: 
+  localizedStringDef:
+    m_TableReference:
+      m_TableCollectionName: GUID:df1683391ce529647b970260552936fd
+    m_TableEntryReference:
+      m_KeyId: 22388715520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringBath:
+    m_TableReference:
+      m_TableCollectionName: GUID:df1683391ce529647b970260552936fd
+    m_TableEntryReference:
+      m_KeyId: 2015865909248
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringKitchen:
+    m_TableReference:
+      m_TableCollectionName: GUID:df1683391ce529647b970260552936fd
+    m_TableEntryReference:
+      m_KeyId: 2181595443200
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringGarden:
+    m_TableReference:
+      m_TableCollectionName: GUID:df1683391ce529647b970260552936fd
+    m_TableEntryReference:
+      m_KeyId: 2369294741504
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &4050966302051949552
 GameObject:
   m_ObjectHideFlags: 0

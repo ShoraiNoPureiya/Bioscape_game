@@ -8,8 +8,8 @@ public class TutorialMissions2 : MonoBehaviour
 {
     public string _Text; // texto que vai ser usado
     private string _ChangedText; // texto que esta agora
+    private string _IfText; // texto que esta agora
     public string _Texts;
-    public LocalizedString localizedString;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,42 +20,29 @@ public class TutorialMissions2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        localizedString.GetLocalizedStringAsync().Completed += handle =>
-        {
-            _Texts = handle.Result;
-            _ChangedText = PlayerPrefs.GetString("text"); // retrieves the text stored in PlayerPrefs
-            if (_ChangedText == null) // // if there's no text, uses the one in the scene
+            if (PlayerPrefs.GetString("textIf") == "") // // if there's no text, uses the one in the scene
             {
-                PlayerPrefs.SetString("text", _Texts);
-                Changetext();
+                PlayerPrefs.SetString("textIf", _Text);
                 PlayerPrefs.SetInt("Order", 1);
             }
 
-            if (_ChangedText.Equals("Verifique se a chave está na estante do laboratório") && _Text.Equals("Verifique se a chave está no banheiro")) // if the player interacts with the CORRECT object, changes the text
+            if (PlayerPrefs.GetString("textIf").Equals("Verifique se a chave está na estante do laboratório") && _Text.Equals("Verifique se a chave está no banheiro")) // if the player interacts with the CORRECT object, changes the text
             {
-                PlayerPrefs.SetString("text", _Texts);
-                Changetext();
+                PlayerPrefs.SetString("textIf", "Verifique se a chave está no banheiro");
                 PlayerPrefs.SetInt("Order", 2);
             }
-            if (_ChangedText.Equals("Verifique se a chave está no banheiro") && _Text.Equals("Verifique se a chave está na sala/cozinha (dentro do diário)")) // if the player interacts with the CORRECT object, changes the text
+            if (PlayerPrefs.GetString("textIf").Equals("Verifique se a chave está no banheiro") && _Text.Equals("Verifique se a chave está na sala/cozinha (dentro do diário)")) // if the player interacts with the CORRECT object, changes the text
             {
-                PlayerPrefs.SetString("text", _Texts);
-                Changetext();
+                PlayerPrefs.SetString("textIf", "Verifique se a chave está na sala/cozinha (dentro do diário)");
                 PlayerPrefs.SetInt("Order", 3);
             }
-            if (_ChangedText.Equals("Verifique se a chave está na sala/cozinha (dentro do diário)") && _Text.Equals("Verifique da onde veio esse som.")) // if the player interacts with the CORRECT object, changes the text
+            if (PlayerPrefs.GetString("textIf").Equals("Verifique se a chave está na sala/cozinha (dentro do diário)") && _Text.Equals("Verifique da onde veio esse som.")) // if the player interacts with the CORRECT object, changes the text
             {
-                PlayerPrefs.SetString("text", _Texts);
+                PlayerPrefs.SetString("textIf", "Verifique da onde veio esse som.");
                 PlayerPrefs.SetInt("tutorialmission", 1);
-                Changetext();
                 PlayerPrefs.SetInt("Order", 4);
             }
-        };
-    }
-    void Changetext()
-    {
-
-        TutorialMission.tutorialmission.ChangeText(_Texts); // used to change the text to "_Text"
+        
     }
 
     private void OnApplicationQuit()

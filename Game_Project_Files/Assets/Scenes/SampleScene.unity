@@ -3353,18 +3353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Text: "Verifique se a chave est\xE1 no banheiro"
-  localizedString:
-    m_TableReference:
-      m_TableCollectionName: GUID:df1683391ce529647b970260552936fd
-    m_TableEntryReference:
-      m_KeyId: 22388715520
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  _Texts: 
 --- !u!114 &1060594981
 MonoBehaviour:
   m_ObjectHideFlags: 0
