@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 16061231104
-    m_Localized: "Verifique se a chave est\xE1 na estante do quarto."
+    m_Localized: "Verifique se a chave est\xE1 na estante do laborat\xF3rio"
     m_Metadata:
       m_Items: []
   - m_Id: 12427308756992
@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17304600637440
-    m_Localized: "Verifique se a chave est\xE1 na sala/cozinha. (dentro do di\xE1rio)"
+    m_Localized: "Verifique se a chave est\xE1 na sala/cozinha (dentro do di\xE1rio)"
     m_Metadata:
       m_Items: []
   - m_Id: 17906856554496
@@ -44,6 +44,43 @@ MonoBehaviour:
       dia\nXX/XX/XXXX.\n\nAtenciosamente\n\nCarlos G.(Coordenador do meio ambiete
       da\nregi\xE3o YY)\nCFJC - Conselho federal de justi\xE7a e\nConseva\xE7\xE3o.\nAperte
       a tecla Espa\xE7o para continuar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2966320068472832
+    m_Localized: "Primeira Miss\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2968335813226496
+    m_Localized: "Esta estante aqui \xE9 onde voc\xEA pode encontrar itens valiosos
+      e colecion\xE1-los durante a sua aventura."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2970749941362688
+    m_Localized: Quarto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2971562654871552
+    m_Localized: Corredor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2972602099871744
+    m_Localized: Cozinha
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2972673981853696
+    m_Localized: Banheiro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2972803665539072
+    m_Localized: Livro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2976236254572544
+    m_Localized: Cesto de roupas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2976500684468224
+    m_Localized: Jardim
     m_Metadata:
       m_Items: []
   references:

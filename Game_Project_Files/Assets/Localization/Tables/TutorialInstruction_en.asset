@@ -86,6 +86,43 @@ MonoBehaviour:
       Press the Space key to continue'
     m_Metadata:
       m_Items: []
+  - m_Id: 2966320068472832
+    m_Localized: First Mission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2968335813226496
+    m_Localized: This shelf is where you can find valuable items and collect them
+      during your adventure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2970749941362688
+    m_Localized: Bed Room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2971562654871552
+    m_Localized: Hallway
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2972602099871744
+    m_Localized: Kitchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2972673981853696
+    m_Localized: Bath Room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2972803665539072
+    m_Localized: Book
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2976236254572544
+    m_Localized: Laundry basket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2976500684468224
+    m_Localized: Garden
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
