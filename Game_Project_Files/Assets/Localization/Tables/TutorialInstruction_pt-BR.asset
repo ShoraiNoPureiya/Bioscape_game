@@ -83,6 +83,16 @@ MonoBehaviour:
     m_Localized: Jardim
     m_Metadata:
       m_Items: []
+  - m_Id: 4007134445252608
+    m_Localized: "Desculpe, eu derrubei umas coisas aqui, enfim eu peguei a sua chave
+      sem querer, sempre que precisar de algumas informa\xE7\xF5es cient\xEDficas
+      fale comigo!\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4008192412299264
+    m_Localized: nada
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
