@@ -10,35 +10,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: TextBoxLocalizationTutorial Shared Data
+  m_Name: TutorialMissionTexts Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: TextBoxLocalizationTutorial
-  m_TableCollectionNameGuidString: 35116a5e002bbed459939d98f7088e46
+  m_TableCollectionName: TutorialMissionTexts
+  m_TableCollectionNameGuidString: df1683391ce529647b970260552936fd
   m_Entries:
-  - m_Id: 43729334272
-    m_Key: TextBoxKey
+  - m_Id: 22388715520
+    m_Key: laboratoryText
     m_Metadata:
       m_Items: []
-  - m_Id: 689133774954496
-    m_Key: TextBoxKeySpace
+  - m_Id: 2015865909248
+    m_Key: BathRoomText
     m_Metadata:
       m_Items: []
-  - m_Id: 690046816215040
-    m_Key: Text
+  - m_Id: 2181595443200
+    m_Key: KitchenText
     m_Metadata:
       m_Items: []
-  - m_Id: 2207081754570752
-    m_Key: New Entry
+  - m_Id: 2369294741504
+    m_Key: GardenText
     m_Metadata:
       m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    rid: 4922390997120057344
+    rid: 4922391135004131330
   references:
     version: 2
     RefIds:
-    - rid: 4922390997120057344
+    - rid: 4922391135004131330
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1742931899866
+        m_CustomEpoch: 1743462717711

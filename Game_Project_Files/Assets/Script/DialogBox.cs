@@ -30,12 +30,7 @@ public class DialogBox : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
-        localizedString.GetLocalizedStringAsync().Completed += handle =>
-        {
-            string[] textos = handle.Result.Split(';'); // Divide pelo delimitador ";"
-            _Phrases.AddRange(textos);
 
-        };
         _CanPlay = false;
         dialogbox = this;
         StartCoroutine(Dialog());
@@ -55,6 +50,13 @@ public class DialogBox : MonoBehaviour
 
     public IEnumerator Dialog() // synchronize the phrase with the audio , foreach letter the audio plays once
     {
+        _Phrases.Clear();
+        localizedString.GetLocalizedStringAsync().Completed += handle =>
+        {
+            string[] textos = handle.Result.Split(';'); // Divide pelo delimitador ";"
+            _Phrases.AddRange(textos);
+
+        };
         StringForName();
         _IsPlaying = false;
         yield return new WaitForSeconds(0.08f);

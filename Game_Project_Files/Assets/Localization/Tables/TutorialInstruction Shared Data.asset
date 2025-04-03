@@ -35,6 +35,42 @@ MonoBehaviour:
     m_Key: Letter
     m_Metadata:
       m_Items: []
+  - m_Id: 2966320068472832
+    m_Key: Mission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2968335813226496
+    m_Key: Shelf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2970749941362688
+    m_Key: RoomBedRoom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2971562654871552
+    m_Key: RoomHallWay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2972602099871744
+    m_Key: RoomKitchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2972673981853696
+    m_Key: RoomBathRoom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2972803665539072
+    m_Key: BookKitchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2976236254572544
+    m_Key: Laundrybasket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2976500684468224
+    m_Key: RoomGarden
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

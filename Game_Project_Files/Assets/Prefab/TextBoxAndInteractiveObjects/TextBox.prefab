@@ -171,11 +171,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e34c1756ee5286a4e84d1eaeff1aef0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Phrases:
-  - "Minha campainha est\xE1 tocando, tenho que atender"
-  _Phrase: aaaaaaaaaaaaaaaaaaaaaaaaaaaa
   _Text: {fileID: 7824523688253475750}
+  _CanPlay: 0
+  _StopPlaying: 0
+  _IsPlaying: 1
   _Name: 
+  _characterVoice: {fileID: 0}
+  localizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:35116a5e002bbed459939d98f7088e46
+    m_TableEntryReference:
+      m_KeyId: 43729334272
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &4880571065667057994
 GameObject:
   m_ObjectHideFlags: 0

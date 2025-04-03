@@ -1112,6 +1112,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Text: {fileID: 1100455064466967801}
+  _Texts: 
+  localizedStringDef:
+    m_TableReference:
+      m_TableCollectionName: GUID:df1683391ce529647b970260552936fd
+    m_TableEntryReference:
+      m_KeyId: 22388715520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringBath:
+    m_TableReference:
+      m_TableCollectionName: GUID:df1683391ce529647b970260552936fd
+    m_TableEntryReference:
+      m_KeyId: 2015865909248
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringKitchen:
+    m_TableReference:
+      m_TableCollectionName: GUID:df1683391ce529647b970260552936fd
+    m_TableEntryReference:
+      m_KeyId: 2181595443200
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringGarden:
+    m_TableReference:
+      m_TableCollectionName: GUID:df1683391ce529647b970260552936fd
+    m_TableEntryReference:
+      m_KeyId: 2369294741504
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &4050966302051949552
 GameObject:
   m_ObjectHideFlags: 0
@@ -2135,17 +2175,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e34c1756ee5286a4e84d1eaeff1aef0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Phrases: []
-  _Phrase: "Clique E para pegar a miss\xE3o  (Tome 5 hits do monstro)"
-  _NewPhrase: 
   _Text: {fileID: 5205832738216630200}
-  _Count: 0
-  _Count2: 0
   _CanPlay: 0
   _StopPlaying: 0
   _IsPlaying: 1
   _Name: 
   _characterVoice: {fileID: 0}
+  localizedString:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &8136413318790085152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2241,8 +2288,22 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2544044855063596517, guid: 7777212b23c4aee4fa7ede584b7faef8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3728108494106517862}
   m_SourcePrefab: {fileID: 100100000, guid: 7777212b23c4aee4fa7ede584b7faef8, type: 3}
+--- !u!114 &385705653482592257 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8480302225377059361, guid: 7777212b23c4aee4fa7ede584b7faef8, type: 3}
+  m_PrefabInstance: {fileID: 8136413318790085152}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6026972571487221701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1100455064466967801 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9200786706329515737, guid: 7777212b23c4aee4fa7ede584b7faef8, type: 3}
@@ -2259,3 +2320,48 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4194954864941052445, guid: 7777212b23c4aee4fa7ede584b7faef8, type: 3}
   m_PrefabInstance: {fileID: 8136413318790085152}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6026972571487221701 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2544044855063596517, guid: 7777212b23c4aee4fa7ede584b7faef8, type: 3}
+  m_PrefabInstance: {fileID: 8136413318790085152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3728108494106517862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6026972571487221701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:32d5da7f158a1d7439d01243c44094e2
+    m_TableEntryReference:
+      m_KeyId: 2966320068472832
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 385705653482592257}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []

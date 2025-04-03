@@ -2928,6 +2928,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hud
       objectReference: {fileID: 0}
+    - target: {fileID: 3728108494106517862, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1690499218}
+    - target: {fileID: 3728108494106517862, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_text
+      objectReference: {fileID: 0}
     - target: {fileID: 5379730280930620844, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.9819345
@@ -3024,67 +3032,19 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 3351288803365448810, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3054250116970558682, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1690499217}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
---- !u!1 &1690499215 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3054250116970558682, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+--- !u!114 &1690499218 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 385705653482592257, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
   m_PrefabInstance: {fileID: 1690499214}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1690499216 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1100455064466967801, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
-  m_PrefabInstance: {fileID: 1690499214}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1690499215}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1690499217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1690499215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_StringReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:32d5da7f158a1d7439d01243c44094e2
-    m_TableEntryReference:
-      m_KeyId: 16061231104
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  m_FormatArguments: []
-  m_UpdateString:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1690499216}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  references:
-    version: 2
-    RefIds: []
 --- !u!1 &1719263506 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 404640406803433231, guid: d933147ef6aaaed4095e14c7566f4b98, type: 3}
@@ -3335,7 +3295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197615215865298833, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21.64
+      value: 21.17
       objectReference: {fileID: 0}
     - target: {fileID: 8197615215865298833, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3415,6 +3375,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1025631141}
     m_Modifications:
+    - target: {fileID: 1796876080196806658, guid: 8fd3d464d5a9cdd40960f9a4a8435173, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 2972602099871744
+      objectReference: {fileID: 0}
     - target: {fileID: 2065985392567004925, guid: 8fd3d464d5a9cdd40960f9a4a8435173, type: 3}
       propertyPath: m_Name
       value: Comodo
@@ -4232,6 +4196,14 @@ PrefabInstance:
       propertyPath: _Phrases.Array.data[0]
       value: "Droga, tamb\xE9m n\xE3o est\xE1 aqui, aonde eu deixei essa chave?"
       objectReference: {fileID: 0}
+    - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: localizedString.m_TableEntryReference.m_KeyId
+      value: 17304600637440
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: localizedString.m_TableReference.m_TableCollectionName
+      value: GUID:32d5da7f158a1d7439d01243c44094e2
+      objectReference: {fileID: 0}
     - target: {fileID: 9051514623688179711, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1313.1964
@@ -4272,7 +4244,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 129026919609058130, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -4306,6 +4279,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Text: Verifique da onde veio esse som.
+  _Texts: 
+  localizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:32d5da7f158a1d7439d01243c44094e2
+    m_TableEntryReference:
+      m_KeyId: 17906856554496
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &2105581339
 MonoBehaviour:
   m_ObjectHideFlags: 0
