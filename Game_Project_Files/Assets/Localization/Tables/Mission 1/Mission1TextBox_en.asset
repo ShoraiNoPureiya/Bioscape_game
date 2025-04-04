@@ -24,6 +24,36 @@ MonoBehaviour:
       on your property.
     m_Metadata:
       m_Items: []
+  - m_Id: 367241695784960
+    m_Localized: "Son they taught me like this, as my old gramps used to do, we\u2019ve
+      always done it like this"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372002767695872
+    m_Localized: Why don't you introduce me to the farm and I'll help you with some
+      suggestions?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372483053252608
+    m_Localized: Wow, what a dirty stream! How did it get that color?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373189357268992
+    m_Localized: The cattle are so scattered, what a waste of space.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374052133990400
+    m_Localized: What a muscular bull, I'm afraid to go near it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 375064529924096
+    m_Localized: Could more fences be useful? The material is already here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 376166629437440
+    m_Localized: I wonder what happened to that cow, how it died?
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
