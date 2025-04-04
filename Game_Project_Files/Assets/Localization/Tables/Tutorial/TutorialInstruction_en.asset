@@ -123,13 +123,18 @@ MonoBehaviour:
     m_Localized: Garden
     m_Metadata:
       m_Items: []
-  - m_Id: 4007134445252608
-    m_Localized: Sorry, I knocked some things over here. Anyway, I accidentally took
-      your key. Whenever you need any scientific information, just talk to me!
+  - m_Id: 4005711203524608
+    m_Localized: The bathroom has many uses, so if you want tips on how to continue
+      in the game, try thinking deeply in the mirror.
     m_Metadata:
       m_Items: []
-  - m_Id: 4008192412299264
-    m_Localized: nothing
+  - m_Id: 4006337106927616
+    m_Localized: ' A great place to relax or cook a little, plus use the diary to
+      see the record of what you''ve learned.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4006806860587008
+    m_Localized: BAMF!!! A VERY LOUD SOUND COMES FROM THE ORCHARD
     m_Metadata:
       m_Items: []
   references:

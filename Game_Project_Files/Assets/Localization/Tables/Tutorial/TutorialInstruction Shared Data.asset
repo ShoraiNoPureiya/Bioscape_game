@@ -71,12 +71,16 @@ MonoBehaviour:
     m_Key: RoomGarden
     m_Metadata:
       m_Items: []
-  - m_Id: 4007134445252608
-    m_Key: MiltinhoText
+  - m_Id: 4005711203524608
+    m_Key: BathroomDescription
     m_Metadata:
       m_Items: []
-  - m_Id: 4008192412299264
-    m_Key: MiltinhoTextSay
+  - m_Id: 4006337106927616
+    m_Key: KitchenDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4006806860587008
+    m_Key: Loud Sound
     m_Metadata:
       m_Items: []
   m_Metadata:
