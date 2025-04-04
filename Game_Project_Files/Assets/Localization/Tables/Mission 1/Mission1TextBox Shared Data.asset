@@ -14,7 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TableCollectionName: Mission1TextBox
   m_TableCollectionNameGuidString: 357c08b7546eb4d42829d3e607e64172
-  m_Entries: []
+  m_Entries:
+  - m_Id: 366816611463168
+    m_Key: FirstTextBoxCientista
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367241695784960
+    m_Key: FirstTextBoxFrancisco
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
