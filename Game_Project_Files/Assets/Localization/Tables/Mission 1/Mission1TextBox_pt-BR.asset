@@ -24,6 +24,37 @@ MonoBehaviour:
       na sua propriedade.\r\n"
     m_Metadata:
       m_Items: []
+  - m_Id: 367241695784960
+    m_Localized: "\u2019Fio\u2019, \u2018mi\u2019 foi ensinado assim, como meu \u2018v\xF4\u2019
+      fazia, sempre fizemos assim."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372002767695872
+    m_Localized: "Por que voc\xEA n\xE3o me apresenta a fazenda e eu te ajudo com
+      algumas sugest\xF5es?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372483053252608
+    m_Localized: Nossa, que riacho sujo! Como ele ficou dessa cor.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373189357268992
+    m_Localized: "O gado est\xE1 t\xE3o disperso, que desperd\xEDcio de espa\xE7o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374052133990400
+    m_Localized: Nossa que boi musculoso, eu tenho medo de chegar perto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 375064529924096
+    m_Localized: "Ser\xE1 que mais cercas poderiam ser \xFAteis? J\xE1 tem at\xE9
+      o material."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 376166629437440
+    m_Localized: "Nossa, o que ser\xE1 que aconteceu com essa vaca, como ela morreu?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

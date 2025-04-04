@@ -23,6 +23,30 @@ MonoBehaviour:
     m_Key: FirstTextBoxFrancisco
     m_Metadata:
       m_Items: []
+  - m_Id: 372002767695872
+    m_Key: SecondTextBoxCientista
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372483053252608
+    m_Key: TextBoxStream
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373189357268992
+    m_Key: TextBoxPasture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374052133990400
+    m_Key: TextBoxBull
+    m_Metadata:
+      m_Items: []
+  - m_Id: 375064529924096
+    m_Key: TextBoxFence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 376166629437440
+    m_Key: TextBoxCowSkeleton
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
