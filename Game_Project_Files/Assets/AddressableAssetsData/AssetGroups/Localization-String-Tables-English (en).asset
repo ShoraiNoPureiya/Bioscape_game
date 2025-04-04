@@ -25,7 +25,7 @@ MonoBehaviour:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4c4e50aa75e153247b2d5bd4f62391f9
-    m_Address: TextBoxLocalization_en
+    m_Address: TextBoxLocalizationTutorial_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
@@ -33,6 +33,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c7aa8e6c937762b41b7462619c600178
     m_Address: TutorialMissionTexts_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 81d28b71897809a43989f9754b3921d2
+    m_Address: Mission1TextBox_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
