@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Mission1Obejcts_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 27129f9a636a5424ea1e2084a01b13f7, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 7861366784
+    m_Localized: Water sample from the stream
+    m_Metadata:
+      m_Items: []
+  - m_Id: 282395340800
+    m_Localized: Bull picture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1243260055552
+    m_Localized: Common Lantana chewed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7904334901248
+    m_Localized: It can be used to take photos of samples and also to call acquaintances.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

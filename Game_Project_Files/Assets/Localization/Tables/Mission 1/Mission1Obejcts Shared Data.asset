@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Mission1Obejcts Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Mission1Obejcts
+  m_TableCollectionNameGuidString: 27129f9a636a5424ea1e2084a01b13f7
+  m_Entries:
+  - m_Id: 7861366784
+    m_Key: WaterSampleStream
+    m_Metadata:
+      m_Items: []
+  - m_Id: 282395340800
+    m_Key: BullPicture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1243260055552
+    m_Key: CommonLantana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7904334901248
+    m_Key: Cellpfone
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3201297527169613824
+  references:
+    version: 2
+    RefIds:
+    - rid: 3201297527169613824
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1743965394752

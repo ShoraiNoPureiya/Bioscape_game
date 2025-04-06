@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Mission1Options_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: eae335ba96c183c42a93f2db0831dacf, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 8138190848
+    m_Localized: Sleep or talk to Miltinho?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 184030523392
+    m_Localized: Fence the stream.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 441191690240
+    m_Localized: Fence in half the cattle and rotate with the other half.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 481809330176
+    m_Localized: Fence the cattle in several paddocks of a few meters and rotate
+      them over time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 508124393472
+    m_Localized: Do nothing and leave it as it is.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1378811572224
+    m_Localized: Leave an opening for the cattle to drink water from the stream.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1518465118208
+    m_Localized: ' Use water from the stream for cattle watering troughs.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1718340481024
+    m_Localized: Use filtered water for the cattle's drinking troughs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2377974476800
+    m_Localized: Do nothing and leave it as it is.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2510048915456
+    m_Localized: Replant the entire pasture.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3038015320064
+    m_Localized: Replant only the part where the cattle are not.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3081841602560
+    m_Localized: Do nothing and let it grow on its own.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3453343690752
+    m_Localized: Try again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3789026422784
+    m_Localized: It was a close call
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4155436625920
+    m_Localized: Happy cattle and everything settled
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5924262703104
+    m_Localized: Stream
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6028998668288
+    m_Localized: Pasture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6138331590656
+    m_Localized: Muscular bull
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6596081152000
+    m_Localized: Fence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6699533660160
+    m_Localized: Cow's skeleton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7196441243648
+    m_Localized: Ask to Miltinho
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10421567418368
+    m_Localized: Talk later
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14546216611840
+    m_Localized: "This chart defines what actions will be taken on the spot, depending
+      on what you decide the \u201CPercentage of success\u201D will be higher or
+      lower, choose wisely."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14987176374272
+    m_Localized: "You have a \u201Cbudget\u201D limit that you can use, each option
+      costs an amount of money and brings a percentage of success or failure."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
