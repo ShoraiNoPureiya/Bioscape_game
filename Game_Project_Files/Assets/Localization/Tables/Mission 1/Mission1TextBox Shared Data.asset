@@ -16,11 +16,91 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 357c08b7546eb4d42829d3e607e64172
   m_Entries:
   - m_Id: 366816611463168
-    m_Key: FirstTextBoxCientista
+    m_Key: FirstTextBoxScientist
     m_Metadata:
       m_Items: []
   - m_Id: 367241695784960
     m_Key: FirstTextBoxFrancisco
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372002767695872
+    m_Key: SecondTextBoxScientist
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372483053252608
+    m_Key: TextBoxStream
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373189357268992
+    m_Key: TextBoxPasture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374052133990400
+    m_Key: TextBoxBull
+    m_Metadata:
+      m_Items: []
+  - m_Id: 375064529924096
+    m_Key: TextBoxFence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 376166629437440
+    m_Key: TextBoxCowSkeleton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1095585592700928
+    m_Key: TextBoxScientistStream
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1096529193660416
+    m_Key: TextBoxScientistPasture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1096843078594560
+    m_Key: TextBoxScientistBull
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1097077754097664
+    m_Key: TextBoxScientistFence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1097430847385600
+    m_Key: TextBoxScientistCommonLantana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1098511014883328
+    m_Key: TextBoxScientistTalkLater
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1099244493795328
+    m_Key: TextBoxMiltinhoStream
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1099574094786560
+    m_Key: TextBoxMiltinhoPasture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1099912034054144
+    m_Key: TextBoxMiltinhoBull
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100128778907648
+    m_Key: TextBoxMiltinhoFence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100333691629568
+    m_Key: TextBoxMiltinhoCommonLantana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100952200474624
+    m_Key: TextBoxMiltinhoCellphone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1101426387513344
+    m_Key: TextBoxScientistThought
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1101780890087424
+    m_Key: SecondTextBoxFrancisco
     m_Metadata:
       m_Items: []
   m_Metadata:

@@ -24,6 +24,110 @@ MonoBehaviour:
       on your property.
     m_Metadata:
       m_Items: []
+  - m_Id: 367241695784960
+    m_Localized: "Son they taught me like this, as my old gramps used to do, we\u2019ve
+      always done it like this"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372002767695872
+    m_Localized: Why don't you introduce me to the farm and I'll help you with some
+      suggestions?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372483053252608
+    m_Localized: Wow, what a dirty stream! How did it get that color?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373189357268992
+    m_Localized: The cattle are so scattered, what a waste of space.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374052133990400
+    m_Localized: What a muscular bull, I'm afraid to go near it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 375064529924096
+    m_Localized: Could more fences be useful? The material is already here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 376166629437440
+    m_Localized: I wonder what happened to that cow, how it died?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1095585592700928
+    m_Localized: Miltinho, there's this stream on the cattle property that's muddy
+      and polluted, but I have no idea how...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1096529193660416
+    m_Localized: I noticed that in that large pasture there were approximately 10
+      cattle per 5 hectares, it seemed very spaced out and the grasses were practically
+      non-existent, would you know the correct number of cattle per hectare?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1096843078594560
+    m_Localized: I noticed that there was a very muscular bull in the pasture, do
+      you know why?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1097077754097664
+    m_Localized: Miltinho, I noticed that there are fences left on the farm, could
+      I use them for something?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1097430847385600
+    m_Localized: Look, I found a cow's skeleton and I found this plant nearby, do
+      you think it's related?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1098511014883328
+    m_Localized: ' Thank you very much Miltinho, I''ll talk to you later.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1099244493795328
+    m_Localized: If you've seen footprints and chewed plants near the lake, it's
+      very likely that the cattle are polluting the lake with soil and other contaminants
+      such as feces.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1099574094786560
+    m_Localized: This method is known as extensive livestock farming, which uses
+      a lot of land for very few animals. A more efficient method would be intensive
+      livestock farming, where we could take all these cattle and put them on one
+      hectare of land, confined. In other words, we need them to be closer together,
+      just like when your mother tells you to keep your toys scattered around the
+      room.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1099912034054144
+    m_Localized: 'When you go to the gym, don''t you get muscular? It''s the same
+      principle with cattle: too much walking, especially on hills, results in this.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100128778907648
+    m_Localized: So since they're available, why don't you find a use for them?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100333691629568
+    m_Localized: This plant is known as Common Lantana and is extremely toxic to
+      cattle. The animal probably ate it because there was little pasture and because
+      it had access to the stream.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100952200474624
+    m_Localized: Wait! If you need help with anything else, you can call me on this
+      number on your cell phone. See you later!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1101426387513344
+    m_Localized: Let's get back to work
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1101780890087424
+    m_Localized: "Howdy son, let\u2019s get-R work done. Have you thought of anything?
+      I've got about (500 caurias)."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

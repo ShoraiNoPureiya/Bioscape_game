@@ -43,6 +43,18 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-pt-BR
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c73b63e068f3bfd4db515886c31f7beb
+    m_Address: Mission1Obejcts_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b5c0cd73ac393a4e82cb20a3db677d0
+    m_Address: Mission1Options_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: cc20eab5d2c146242bdb26be2ab36237, type: 2}
   m_SchemaSet:
