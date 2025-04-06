@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Mission1Options_pt-BR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: eae335ba96c183c42a93f2db0831dacf, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 8138190848
+    m_Localized: Dormir ou falar com o Miltinho?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 184030523392
+    m_Localized: Cercar o riacho.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 441191690240
+    m_Localized: Cercar metade do gado e rotacionar com a outra metade.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 481809330176
+    m_Localized: "Cercar o gado em v\xE1rios cercados de alguns metros e rotacionar
+      com o tempo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 508124393472
+    m_Localized: "Fazer nada e deixar como est\xE1."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1378811572224
+    m_Localized: "Deixar uma abertura para o gado tomar \xE1gua do riacho."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1518465118208
+    m_Localized: " Usar \xE1gua do riacho em bebedouros para o gado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1718340481024
+    m_Localized: "Usar \xE1gua filtrada para os bebedouros do gado. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2377974476800
+    m_Localized: "Fazer nada e deixar como est\xE1."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2510048915456
+    m_Localized: Replantar o pasto todo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3038015320064
+    m_Localized: "Replantar apenas a parte em que os gados n\xE3o est\xE3o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3081841602560
+    m_Localized: Fazer nada e deixar ele crescer sozinho.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3453343690752
+    m_Localized: Tente novamente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3789026422784
+    m_Localized: Foi por pouco
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4155436625920
+    m_Localized: 'Gado feliz e tudo resolvido '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5924262703104
+    m_Localized: Riacho
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6028998668288
+    m_Localized: Pasto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6138331590656
+    m_Localized: Boi musculoso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6596081152000
+    m_Localized: Cerca
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6699533660160
+    m_Localized: Ossada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7196441243648
+    m_Localized: Perguntar para o miltinho
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10421567418368
+    m_Localized: Falar mais tarde
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14546216611840
+    m_Localized: "Esse quadro define que a\xE7\xF5es v\xE3o ser tomadas no local,
+      dependendo do que voc\xEA decidir a \u201CPorcentagem de sucesso\u201D ser\xE1
+      mais alta ou mais baixa, escolha com sabedoria. \r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14987176374272
+    m_Localized: "Voc\xEA tem um limite de \u201Cor\xE7amento\u201D que pode usar,
+      cada op\xE7\xE3o custa uma quantidade de dinheiro e traz uma porcentagem de
+      sucesso ou falha.\n"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -55,6 +55,81 @@ MonoBehaviour:
     m_Localized: "Nossa, o que ser\xE1 que aconteceu com essa vaca, como ela morreu?"
     m_Metadata:
       m_Items: []
+  - m_Id: 1095585592700928
+    m_Localized: "Miltinho, tem esse riacho na propriedade do gado que est\xE1 turvo
+      e polu\xEDdo, mas n\xE3o tenho ideia de como\u2026\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1096529193660416
+    m_Localized: "Eu percebi que naquele grande pasto tinha aproximadamente 10 gados
+      por 5 hectares, me pareceu muito espa\xE7ado e as gram\xEDneas praticamente
+      inexistentes, voc\xEA saberia a quantidade correta de gados por hectare? \r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1096843078594560
+    m_Localized: "Eu notei que no pasto havia um boi muito musculoso, voc\xEA saberia
+      a raz\xE3o?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1097077754097664
+    m_Localized: "Miltinho, eu observei que tem cercas sobrando na fazenda, ser\xE1
+      que eu poderia usar elas em alguma coisa?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1097430847385600
+    m_Localized: "Olha, eu encontrei uma ossada de uma vaca e encontrei essa planta
+      pr\xF3xima, voc\xEA acha que tem alguma rela\xE7\xE3o?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1098511014883328
+    m_Localized: ' Muito obrigado Miltinho, falamos mais tarde.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1099244493795328
+    m_Localized: "Se voc\xEA conseguiu observar pegadas e plantas mastigadas pr\xF3ximo
+      do lago, \xE9 muito prov\xE1vel que o gado esteja poluindo o lago com terra
+      e outras contamina\xE7\xF5es como fezes. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1099574094786560
+    m_Localized: "Esse m\xE9todo \xE9 conhecido como pecu\xE1ria extensiva, que utiliza
+      muita terra para pouco animal. Um m\xE9todo mais eficiente seria a pecu\xE1ria
+      intensiva, onde poder\xEDamos pegar todo esse gado e colocar em um hectare
+      de terra, confinado. Ou seja, precisamos que eles fiquem mais pertinho, igual
+      quando sua m\xE3e manda voc\xEA guardar seus brinquedos espalhados pelo quarto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1099912034054144
+    m_Localized: "Quando voc\xEA vai para a academia voc\xEA n\xE3o fica musculoso?
+      \xC9 o mesmo princ\xEDpio com o gado, ele andar demais, principalmente em morros,
+      resulta nisso.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100128778907648
+    m_Localized: "Ent\xE3o j\xE1 que elas est\xE3o dispon\xEDveis, por que voc\xEA
+      n\xE3o arranja uma utilidade pra elas?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100333691629568
+    m_Localized: " Essa planta \xE9 conhecida como Cambar\xE1 (Lantana camara) ela
+      \xE9 extremamente t\xF3xica para o gado, provavelmente o animal comeu por conta
+      do pouco pasto e por ter acesso \xE0s proximidades do riacho."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100952200474624
+    m_Localized: "Espere! Se precisar de ajuda com mais alguma coisa, voc\xEA pode
+      me ligar neste n\xFAmero, pelo seu celular. At\xE9 depois!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1101426387513344
+    m_Localized: Vamos voltar ao trabalho
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1101780890087424
+    m_Localized: "Bom dia meu fio, bora trabai\xE1? Pensou em alguma coisa? Eu tenho
+      aproximadamente (500 c\xE1urias).\r\n"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

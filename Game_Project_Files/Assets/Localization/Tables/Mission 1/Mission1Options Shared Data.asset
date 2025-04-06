@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Mission1Options Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Mission1Options
+  m_TableCollectionNameGuidString: eae335ba96c183c42a93f2db0831dacf
+  m_Entries:
+  - m_Id: 8138190848
+    m_Key: SleepOrTalk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 184030523392
+    m_Key: FenceOption1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 441191690240
+    m_Key: FenceOption2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 481809330176
+    m_Key: FenceOption3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 508124393472
+    m_Key: 'FenceOption4
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1378811572224
+    m_Key: StreamOption1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1518465118208
+    m_Key: StreamOption2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1718340481024
+    m_Key: StreamOption3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2377974476800
+    m_Key: StreamOption4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2510048915456
+    m_Key: PastureOption1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3038015320064
+    m_Key: PastureOption2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3081841602560
+    m_Key: PastureOption3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3453343690752
+    m_Key: TotalFailure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3789026422784
+    m_Key: PartialSucess
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4155436625920
+    m_Key: TotalSucess
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5924262703104
+    m_Key: StreamDialog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6028998668288
+    m_Key: PastureDialog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6138331590656
+    m_Key: BullDialog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6596081152000
+    m_Key: FenceDialog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6699533660160
+    m_Key: CowSkeletonDialog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7196441243648
+    m_Key: AskMiltinho
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10421567418368
+    m_Key: TalkLater
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14546216611840
+    m_Key: FirstInstructionOptions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14987176374272
+    m_Key: SecondInstructionOptions
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3201297527169613825
+  references:
+    version: 2
+    RefIds:
+    - rid: 3201297527169613825
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1743966009437
