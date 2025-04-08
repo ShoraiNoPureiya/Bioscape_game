@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Mission2DialogueOptions_pt-BR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: ed9e825a76343634a9d3ba2ed0e0faa9, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 437584588800
+    m_Localized: "Indenizar todos os propriet\xE1rios pelas suas terras enquanto
+      elas regeneram, mesmo que isso aumente os impostos do resto da popula\xE7\xE3o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 595747598336
+    m_Localized: "Convencer os governantes a aumentar a porcentagem m\xEDnima de
+      vegeta\xE7\xE3o nativa em cada propriedade, de uma forma que possa conciliar
+      produ\xE7\xE3o e conserva\xE7\xE3o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 869522403328
+    m_Localized: "Subornar os moradores locais a sa\xEDrem de suas terras."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1025072361472
+    m_Localized: "O aqu\xEDfero ainda vai durar tempo o suficiente pra n\xF3s que
+      estamos aqui hoje. N\xE3o precisa fazer nada, as gera\xE7\xF5es futuras resolvam."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1275539419136
+    m_Localized: "Reflorestar TODA a \xE1rea, parando as atividades econ\xF4micas
+      dos propriet\xE1rios, por\xE9m recuperando a vegeta\xE7\xE3o por completo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1326877700096
+    m_Localized: "Recentemente foi aprovado um projeto de lei que altera a porcentagem
+      m\xEDnima de vegeta\xE7\xE3o de mata local, e isso pode ocasionar em menor
+      \xE1rea de mata ciliar, maior eros\xE3o das margens, menos reabastecimento
+      h\xEDdrico."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1887983300608
+    m_Localized: "Ter uma \xE1rea m\xEDnima de vegeta\xE7\xE3o nativa regula novamente
+      os ciclos da chuva, o que pode ser ben\xE9fico para a agricultura. Tamb\xE9m,
+      quem tiver regularizado pode receber benef\xEDcios, isen\xE7\xF5es de impostos,
+      etc."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2132158902272
+    m_Localized: "A prioridade \xE9 o meio ambiente, n\xE3o importa a economia, o
+      que perderem agora voc\xEAs ganhar\xE3o no futuro na forma de um ar mais puro
+      para nossos filhos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2725170573312
+    m_Localized: " Realocar os moradores para um local j\xE1 desmatado enquanto l\xE1
+      \xE9 recuperado. Ap\xF3s alguns anos, volt\xE1-los \xE0 regi\xE3o e desmatar
+      novamente."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
