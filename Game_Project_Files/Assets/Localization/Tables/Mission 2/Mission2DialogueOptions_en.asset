@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Mission2DialogueOptions_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: ed9e825a76343634a9d3ba2ed0e0faa9, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 437584588800
+    m_Localized: Compensate all landowners for their land while it regenerates, even
+      if this increases taxes for the rest of the population.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 595747598336
+    m_Localized: Convince governments to increase the minimum percentage of native
+      vegetation on each property, in a way that reconciles production and conservation.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 869522403328
+    m_Localized: Bribe the locals to leave their land.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1025072361472
+    m_Localized: The aquifer will last long enough for those of us who are here today.
+      We don't have to do anything, future generations will take care of it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1275539419136
+    m_Localized: Reforest the ENTIRE area, stopping the economic activities of the
+      owners, but recovering the vegetation completely.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1326877700096
+    m_Localized: A bill was recently passed that changes the minimum percentage of
+      local forest vegetation, and this could lead to a smaller area of riparian
+      forest, greater erosion of the banks and less water replenishment.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1887983300608
+    m_Localized: Having a minimum area of native vegetation once again regulates
+      the rain cycles, which can be beneficial for agriculture. Also, those who have
+      regularized can receive benefits, tax exemptions, etc.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2132158902272
+    m_Localized: The priority is the environment, no matter the economy, what you
+      lose now you will gain in the future in the form of cleaner air for our children.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2725170573312
+    m_Localized: Relocate the residents to a site that has already been deforested
+      while it is restored. After a few years, return them to the area and deforest
+      again.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
