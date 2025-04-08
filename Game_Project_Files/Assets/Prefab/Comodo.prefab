@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2986686908419878945}
   - component: {fileID: 365565535524815987}
   - component: {fileID: 5793700555581113824}
-  - component: {fileID: 7969198882266148629}
   - component: {fileID: 1796876080196806658}
   - component: {fileID: 3533363436050479390}
   m_Layer: 5
@@ -82,19 +81,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Quarto 2
---- !u!114 &7969198882266148629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2065985392567004925}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 226658f93c399634a9336788557eff00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uniqueID: 
 --- !u!114 &1796876080196806658
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -293,7 +293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: localizedString.m_TableEntryReference.m_KeyId
-      value: 12427308756992
+      value: 17304600637440
       objectReference: {fileID: 0}
     - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: localizedString.m_TableReference.m_TableCollectionName
@@ -369,18 +369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Text: "Verifique se a chave est\xE1 na sala/cozinha (dentro do di\xE1rio)"
-  localizedString:
-    m_TableReference:
-      m_TableCollectionName: GUID:32d5da7f158a1d7439d01243c44094e2
-    m_TableEntryReference:
-      m_KeyId: 17304600637440
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  _Texts: 
 --- !u!4 &93244104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9051514623688179711, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}

@@ -1912,7 +1912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4880571065667057994, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: m_Name
-      value: TextBox01
+      value: TextBoxLab
       objectReference: {fileID: 0}
     - target: {fileID: 4880571065667057994, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: m_IsActive
@@ -2014,6 +2014,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4880571065667057994, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1395405701}
     - targetCorrespondingSourceObject: {fileID: 3146647395913583052, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 34604499}
@@ -3194,6 +3197,11 @@ RectTransform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1661509128655220965, guid: 769f46155c54de9488e72a3e3be08987, type: 3}
   m_PrefabInstance: {fileID: 6322045924889965057}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1020542483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4880571065667057994, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
+  m_PrefabInstance: {fileID: 424759311}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1021320752
 GameObject:
@@ -4395,6 +4403,19 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5337425759441772593, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
   m_PrefabInstance: {fileID: 424759311}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1395405701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020542483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226658f93c399634a9336788557eff00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueID: 
 --- !u!1 &1419002693
 GameObject:
   m_ObjectHideFlags: 0
@@ -5546,8 +5567,7 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 80
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7969198882266148629, guid: 8fd3d464d5a9cdd40960f9a4a8435173, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -6289,7 +6309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1886886989
 Transform:
   m_ObjectHideFlags: 0
@@ -7727,7 +7747,7 @@ PrefabInstance:
       objectReference: {fileID: 1526364664}
     - target: {fileID: 5023358769468370839, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: localizedString.m_TableEntryReference.m_KeyId
-      value: 12427308756992
+      value: 2968335813226496
       objectReference: {fileID: 0}
     - target: {fileID: 5023358769468370839, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: localizedString.m_TableReference.m_TableCollectionName
@@ -7759,7 +7779,7 @@ PrefabInstance:
       objectReference: {fileID: 1526364664}
     - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: localizedString.m_TableEntryReference.m_KeyId
-      value: 16061231104
+      value: 12427308756992
       objectReference: {fileID: 0}
     - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: localizedString.m_TableReference.m_TableCollectionName
