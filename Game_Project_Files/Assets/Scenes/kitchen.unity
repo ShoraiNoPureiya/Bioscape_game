@@ -4156,6 +4156,14 @@ PrefabInstance:
       propertyPath: _Phrases.Array.data[0]
       value: "N\xE3o tem nada aqui"
       objectReference: {fileID: 0}
+    - target: {fileID: 5023358769468370839, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: localizedString.m_TableEntryReference.m_KeyId
+      value: 2972803665539072
+      objectReference: {fileID: 0}
+    - target: {fileID: 5023358769468370839, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: localizedString.m_TableReference.m_TableCollectionName
+      value: GUID:32d5da7f158a1d7439d01243c44094e2
+      objectReference: {fileID: 0}
     - target: {fileID: 6579493748752033329, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: _Order
       value: 3
@@ -4198,7 +4206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: localizedString.m_TableEntryReference.m_KeyId
-      value: 17304600637440
+      value: 17906856554496
       objectReference: {fileID: 0}
     - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: localizedString.m_TableReference.m_TableCollectionName
@@ -4280,18 +4288,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Text: Verifique da onde veio esse som.
   _Texts: 
-  localizedString:
-    m_TableReference:
-      m_TableCollectionName: GUID:32d5da7f158a1d7439d01243c44094e2
-    m_TableEntryReference:
-      m_KeyId: 17906856554496
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
 --- !u!114 &2105581339
 MonoBehaviour:
   m_ObjectHideFlags: 0
