@@ -68,7 +68,8 @@ public class PlayerController : MonoBehaviour
             _playerAnimator.SetFloat("Vertical_Idle", _playerDirection.y); // If the player is still vertically the vertical idle animation starts playing
             _playerAnimator.SetFloat("Movement", _playerDirection.sqrMagnitude);
         }
-        _isMoving = _playerDirection != Vector2.zero;
+        _isMoving = (_playerDirection != Vector2.zero);
+        
 
         if (_isMoving)  //Player is moving reset the timer
         {

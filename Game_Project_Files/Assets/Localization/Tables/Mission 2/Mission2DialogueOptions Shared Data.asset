@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Mission2DialogueOptions Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Mission2DialogueOptions
+  m_TableCollectionNameGuidString: ed9e825a76343634a9d3ba2ed0e0faa9
+  m_Entries:
+  - m_Id: 437584588800
+    m_Key: ThirdDialogueOption1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 595747598336
+    m_Key: ThirdDialogueOption2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 869522403328
+    m_Key: ThirdDialogueOption3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1025072361472
+    m_Key: FirstDialogueOption1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1275539419136
+    m_Key: 'FirstDialogueOption2
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1326877700096
+    m_Key: FirstDialogueOption3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1887983300608
+    m_Key: SecondDialogueOption1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2132158902272
+    m_Key: SecondDialogueOption2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2725170573312
+    m_Key: SecondDialogueOption3
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3201297573400805383
+  references:
+    version: 2
+    RefIds:
+    - rid: 3201297573400805383
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1744145442170
