@@ -249,6 +249,14 @@ PrefabInstance:
       propertyPath: _Phrases.Array.data[0]
       value: cesto
       objectReference: {fileID: 0}
+    - target: {fileID: 5023358769468370839, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: localizedString.m_TableEntryReference.m_KeyId
+      value: 2976236254572544
+      objectReference: {fileID: 0}
+    - target: {fileID: 5023358769468370839, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: localizedString.m_TableReference.m_TableCollectionName
+      value: GUID:32d5da7f158a1d7439d01243c44094e2
+      objectReference: {fileID: 0}
     - target: {fileID: 6579493748752033329, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: _Order
       value: 2
@@ -282,6 +290,14 @@ PrefabInstance:
       propertyPath: _Phrases.Array.data[0]
       value: "Eca! Sua chave definitivamente n\xE3o est\xE1 aqui, talvez procurar
         na sala"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: localizedString.m_TableEntryReference.m_KeyId
+      value: 17304600637440
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: localizedString.m_TableReference.m_TableCollectionName
+      value: GUID:32d5da7f158a1d7439d01243c44094e2
       objectReference: {fileID: 0}
     - target: {fileID: 9051514623688179711, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: m_LocalPosition.x
@@ -323,7 +339,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 129026919609058130, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -352,6 +369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Text: "Verifique se a chave est\xE1 na sala/cozinha (dentro do di\xE1rio)"
+  _Texts: 
 --- !u!4 &93244104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9051514623688179711, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
@@ -824,6 +842,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 930364248}
     m_Modifications:
+    - target: {fileID: 1796876080196806658, guid: 8fd3d464d5a9cdd40960f9a4a8435173, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 2972673981853696
+      objectReference: {fileID: 0}
     - target: {fileID: 2065985392567004925, guid: 8fd3d464d5a9cdd40960f9a4a8435173, type: 3}
       propertyPath: m_Name
       value: Comodo
@@ -1161,6 +1183,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hud
       objectReference: {fileID: 0}
+    - target: {fileID: 3728108494106517862, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1190497315}
+    - target: {fileID: 3728108494106517862, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_text
+      objectReference: {fileID: 0}
     - target: {fileID: 5379730280930620844, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.1642246
@@ -1206,6 +1236,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+--- !u!114 &1190497315 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 385705653482592257, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+  m_PrefabInstance: {fileID: 1190497314}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1252311175 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2986686908419878945, guid: 8fd3d464d5a9cdd40960f9a4a8435173, type: 3}

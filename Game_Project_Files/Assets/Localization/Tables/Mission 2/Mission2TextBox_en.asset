@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Mission2TextBox_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: e7887c5772c296c4a94f19fe39de8f4e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 17441157120
+    m_Localized: This is the aquifer I told you about. Until a few years ago, it
+      had twice the flow and supplied more homes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1046979211264
+    m_Localized: Is it all right if I take a look at the area?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1683884273664
+    m_Localized: Of course, be my guest!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1968996282368
+    m_Localized: The flow rate is really low...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2712348585984
+    m_Localized: I feel there should be a lot more vegetation here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4095248363520
+    m_Localized: Wow, how many bifurcations, this aquifer must supply several cities,
+      with several different rulers, will they all agree?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4344037699584
+    m_Localized: I noticed that the vegetation here was recently cut down, do you
+      know why?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4766567690240
+    m_Localized: They recently passed a law reducing the minimum percentage of native
+      vegetation on each property, and most of them ended up giving in and deforesting.
+      It's absurd, if you ask me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5128901029888
+    m_Localized: Wow, let me look into this...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5383616917504
+    m_Localized: 'In urban areas, the suppression of Cerrado Biome vegetation for
+      land parceling or any building, subject to the provisions of the municipality''s
+      master plan and other applicable rules, will depend on prior authorization
+      from the competent environmental agency and must meet the following requirements:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6261082091520
+    m_Localized: I - preservation of native vegetation in an area corresponding to
+      at least 10% (twenty percent) of the property's area.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6495354941440
+    m_Localized: You were right, I'll see what I can do...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6818672865280
+    m_Localized: ' Good evening! How was work?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7090916749312
+    m_Localized: Wow, I heard something sad, I was even going to ask your opinion
+      on how to proceed... speaking of which, what's that good smell?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7400422830080
+    m_Localized: 'A new recipe I''m trying out: braised Ipe blossom. Would you like
+      some?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7636985769984
+    m_Localized: Of course! What a treat! I didn't even know Ipe flowers were edible!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8118659641344
+    m_Localized: 'Ipe blossom stew recipe: restores +16 life'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8354727653376
+    m_Localized: So, today I visited an aquifer with low flow, and I found out that
+      they recently passed a law changing the percentage of minimum vegetation on
+      properties. Do you think this is related?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8657610928128
+    m_Localized: See well....(reference to scientific research on minimal vegetation).
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9217311436800
+    m_Localized: And do you think there is any way to remedy this?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9673215504384
+    m_Localized: Maybe if you can prove it and convince the Basin Committee, they
+      can put pressure on the local government and go back to the way things were
+      before.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10003554693120
+    m_Localized: Great idea! I'll try it tomorrow.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10405079609344
+    m_Localized: Good morning everyone!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10876393549824
+    m_Localized: Good morning!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11025656246272
+    m_Localized: "We are meeting here today to discuss the future of the X aquifer,
+      which \r\nis currently facing low flow rates and little riparian vegetation.
+      I'm here to present some options that could help improve this problem."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11306800443392
+    m_Localized: Oh, that's interesting about reforestation. But what about the economic
+      issue, what about the landowners in the region? They need to produce.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11546462973952
+    m_Localized: And what do you propose we do about it?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15448650477568
+    m_Localized: Thank you very much for your time, we on the committee support your
+      initiatives and will work to implement your ideas and solutions.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15619320901632
+    m_Localized: Thank you very much for your time, but we see that the alternatives
+      are not viable, either economically or ecologically.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

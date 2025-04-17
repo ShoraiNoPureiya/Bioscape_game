@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: TutorialInstruction Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: TutorialInstruction
+  m_TableCollectionNameGuidString: 32d5da7f158a1d7439d01243c44094e2
+  m_Entries:
+  - m_Id: 16061231104
+    m_Key: FirstInstruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12427308756992
+    m_Key: SecondInstruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17304600637440
+    m_Key: ThirdInstruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17906856554496
+    m_Key: FourthInstruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19534431055872
+    m_Key: Letter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2966320068472832
+    m_Key: Mission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2968335813226496
+    m_Key: Shelf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2970749941362688
+    m_Key: RoomBedRoom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2971562654871552
+    m_Key: RoomHallWay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2972602099871744
+    m_Key: RoomKitchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2972673981853696
+    m_Key: RoomBathRoom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2972803665539072
+    m_Key: BookKitchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2976236254572544
+    m_Key: Laundrybasket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2976500684468224
+    m_Key: RoomGarden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4005711203524608
+    m_Key: BathroomDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4006337106927616
+    m_Key: KitchenDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4006806860587008
+    m_Key: Loud Sound
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 640497946349535280
+  references:
+    version: 2
+    RefIds:
+    - rid: 640497946349535280
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1742750944142

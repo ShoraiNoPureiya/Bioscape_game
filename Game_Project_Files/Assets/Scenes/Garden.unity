@@ -465,6 +465,14 @@ PrefabInstance:
       value: "sempre que precisar de algumas informa\xE7\xF5es cient\xEDficas fale
         comigo!"
       objectReference: {fileID: 0}
+    - target: {fileID: 5023358769468370839, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: localizedString.m_TableEntryReference.m_KeyId
+      value: 3246374268952576
+      objectReference: {fileID: 0}
+    - target: {fileID: 5023358769468370839, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: localizedString.m_TableReference.m_TableCollectionName
+      value: GUID:35116a5e002bbed459939d98f7088e46
+      objectReference: {fileID: 0}
     - target: {fileID: 6579493748752033329, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: _Order
       value: 4
@@ -489,6 +497,14 @@ PrefabInstance:
       propertyPath: _Phrases.Array.data[0]
       value: Desculpe, eu derrubei umas coisas aqui, enfim eu peguei a sua chave
         sem querer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: localizedString.m_TableEntryReference.m_KeyId
+      value: 3246374268952576
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: localizedString.m_TableReference.m_TableCollectionName
+      value: GUID:35116a5e002bbed459939d98f7088e46
       objectReference: {fileID: 0}
     - target: {fileID: 9051514623688179711, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: m_LocalPosition.x
@@ -672,6 +688,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hud
       objectReference: {fileID: 0}
+    - target: {fileID: 3728108494106517862, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 377537664}
+    - target: {fileID: 3728108494106517862, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_text
+      objectReference: {fileID: 0}
     - target: {fileID: 5379730280930620844, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.21753538
@@ -722,6 +746,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5379730280930620844, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
   m_PrefabInstance: {fileID: 377537662}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &377537664 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 385705653482592257, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+  m_PrefabInstance: {fileID: 377537662}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &579223385 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2529133758981385833, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
@@ -1391,11 +1426,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8118986462949255261, guid: 5bc0b521543548941b5023f115e6b589, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.3637743
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8118986462949255261, guid: 5bc0b521543548941b5023f115e6b589, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.695457
+      value: -9.88
       objectReference: {fileID: 0}
     - target: {fileID: 8118986462949255261, guid: 5bc0b521543548941b5023f115e6b589, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1524,6 +1559,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 51906807}
     m_Modifications:
+    - target: {fileID: 1796876080196806658, guid: 8fd3d464d5a9cdd40960f9a4a8435173, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 2976500684468224
+      objectReference: {fileID: 0}
     - target: {fileID: 2065985392567004925, guid: 8fd3d464d5a9cdd40960f9a4a8435173, type: 3}
       propertyPath: m_Name
       value: Comodo
@@ -1895,7 +1934,7 @@ Transform:
   m_GameObject: {fileID: 1573789668}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.1, y: -7, z: 0}
+  m_LocalPosition: {x: 19.65, y: 2.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

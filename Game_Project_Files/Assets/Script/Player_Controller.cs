@@ -30,7 +30,8 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        spawnar(); 
+        spawnar();
+        
         _playerRigidBody2d = GetComponent<Rigidbody2D>();
         _playerAnimator = GetComponent<Animator>();
        
@@ -66,99 +67,51 @@ public class PlayerController : MonoBehaviour
             _playerAnimator.SetFloat("Horizontal_Idle", _playerDirection.x); // If the player is still horizontally the horizontal idle animation starts playing
             _playerAnimator.SetFloat("Vertical_Idle", _playerDirection.y); // If the player is still vertically the vertical idle animation starts playing
             _playerAnimator.SetFloat("Movement", _playerDirection.sqrMagnitude);
-
-
         }
-
-
-        _isMoving = _playerDirection != Vector2.zero;
-
+        _isMoving = (_playerDirection != Vector2.zero);
         
-
-
-
-
-
-
-
-
 
         if (_isMoving)  //Player is moving reset the timer
         {
-
             _StillTimer = 0.0f; //Resets the variable still timer
-
-
         }
-
         else
         {
             //Player is not moving timer start to count
             _StillTimer += Time.deltaTime;
-
             if (_StillTimer > 20.0f)
             {
                 //  Player has been still for more than 20 seconds, active the waiting animatio
                 StartCoroutine(PlayWaitingAnimation());
                 _StillTimer = 0.0f; //Reset the timer
-
-
-
             }
-
-
         }
-
-
         if (Input.GetKeyDown(KeyCode.E) && _CanInteract)// If player press E the interaction animation starts playing
         {
             _playerAnimator.SetBool("Interaction", true);
             _CanInteract = false;
             StartCoroutine(InteractionCooldown());
         }
-
-
-
-
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pauseGame();
         }
-
-
-
-
-
     }
-
-
-
-
-
-
     void FixedUpdate()
-    {
-        
+    {  
         _playerDirection.Normalize();
-
-        _playerRigidBody2d.MovePosition(_playerRigidBody2d.position + _playerDirection * _playerSpeed * Time.fixedDeltaTime);
-        
+        _playerRigidBody2d.MovePosition(_playerRigidBody2d.position + _playerDirection * _playerSpeed * Time.fixedDeltaTime);     
     }
-
 
     public void IncreaseSpeed(float Speed) // increases character speed
     {
         _playerSpeed = _playerSpeed * Speed; // increases character speed
         StartCoroutine(Sleep());
-
-
     }
     IEnumerator Sleep()
     {
-
         yield return new WaitForSeconds(3); // 3 sec cooldown
         _playerSpeed = 5; // speed return to normal
-
     }
     IEnumerator PlayFootstepSound()
     {
@@ -170,17 +123,12 @@ public class PlayerController : MonoBehaviour
             }
             yield return new WaitForSeconds(0.5f); // Adjust delay between sounds
         }
-
-
     }
-
     IEnumerator PlayWaitingAnimation() //Coroutine that controls the player waiting animation
     {
         _playerAnimator.SetBool("Waiting", true);
         yield return new WaitForSeconds(3.4f);
         _playerAnimator.SetBool("Waiting", false);
-
-
 
         bool _StopAnimation = false;
 
@@ -194,13 +142,8 @@ public class PlayerController : MonoBehaviour
             }
 
             yield return new WaitForEndOfFrame(); 
-        }
-
-        
-
-       
+        }           
     }
-
     IEnumerator InteractionCooldown() //Coroutine that controls the interaction animation
     {
         _playerAnimator.SetBool("Interaction", true);
@@ -222,40 +165,59 @@ public class PlayerController : MonoBehaviour
     }
     public void spawnar()
     {
-        spawnID = PlayerPrefs.GetInt("id");
+        //spawnID = PlayerPrefs.GetInt("id");
+        spawnID = Doors.GetSpawnID();
+        Debug.Log("Spawn--------------- "+ spawnID);
+
+        if(spawnID ==0)
+        {
+            spawnID = PlayerPrefs.GetInt("id");
+        }
+        
         switch (spawnID)
         {
             case 1:
-                _Player.position = new Vector3(-0.14f, -4.68f, 0);
+            //hallway to SampleScene
+                _Player.position = new Vector3(-0.14f, -4.78f, 0);
                 break;
             case 2:
-                _Player.position = new Vector3(8.9f, -15.85f, 0);
+            //Hallway to Kitchen
+                _Player.position = new Vector3(9.301f, -14.85f, 0);
                 break;
             case 3:
-                _Player.position = new Vector3(-0.61f, -7.46f, 0);
+            //Hallway to Bathroom
+                _Player.position = new Vector3(-3.40f, -6.86f, 0);
                 break;
             case 4:
+            //SampleScene to Hallway
                 _Player.position = new Vector3(2.21f, -2.54f, 0);
                 break;
             case 5:
-                _Player.position = new Vector3(1f, -7.56f, 0);
+            //Kitchen to Hallway
+                _Player.position = new Vector3(-3.98f, -3.53f, 0);
                 break;
             case 6:
+            //kitche to Outside
                 _Player.position = new Vector3(-4.25f, -4.78f, 0);
                 break;
             case 7:
-                _Player.position = new Vector3(-3.36f, -2.34f, 0);
+            //Kitchen to garden
+                _Player.position = new Vector3(-1.75f, -8.24f, 0);
                 break;
             case 8:
-               
+            //Bathroom to Hallway
+                _Player.position = new Vector3(-3.38f, -2.57f, 0);
                 break;
             case 9:
+            //Garden to Kitchen
                 _Player.position = new Vector3(-5.51f, -7.95f, 0);
                 break;
             case 10:
+                //void
                 _Player.position = new Vector3(10.15f, -4.79f, 0);
                 break;
             case 11:
+                //void
                 _Player.position = new Vector3(10.56f, -3.4f, 0);
                 break;
             default:
@@ -300,9 +262,4 @@ public class PlayerController : MonoBehaviour
         _playerSpeed = 5;
         _InDialog = true;
     }
-
-
 }
-
-
-

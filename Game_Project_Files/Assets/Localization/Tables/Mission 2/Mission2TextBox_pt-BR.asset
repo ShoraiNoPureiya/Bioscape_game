@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Mission2TextBox_pt-BR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: e7887c5772c296c4a94f19fe39de8f4e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 17441157120
+    m_Localized: "Esse \xE9 o aqu\xEDfero que te falei. At\xE9 alguns anos atr\xE1s,
+      ele tinha o dobro da vaz\xE3o e abastecia mais casas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1046979211264
+    m_Localized: " Tudo bem eu dar uma olhada na \xE1rea?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1683884273664
+    m_Localized: Claro, fique a vontade!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1968996282368
+    m_Localized: "A vaz\xE3o realmente est\xE1 baixa..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2712348585984
+    m_Localized: "Eu sinto que deveriam ter bem mais vegeta\xE7\xE3o aqui."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4095248363520
+    m_Localized: "Nossa, quantas bifurca\xE7\xF5es, esse aqu\xEDfero deve abastecer
+      v\xE1rias cidades, com v\xE1rios governantes diferentes, ser\xE1 que todos
+      v\xE3o concordar?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4344037699584
+    m_Localized: "Eu percebi que a vegeta\xE7\xE3o aqui foi recentemente derrubada,
+      voc\xEA saberia o porqu\xEA?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4766567690240
+    m_Localized: "Recentemente passaram uma lei que diminui a porcentagem de vegeta\xE7\xE3o 
+      nativa m\xEDnima de cada propriedade, e a maioria acabou cedendo e desmatando.
+      Um absurdo, se quer saber minha opini\xE3o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5128901029888
+    m_Localized: "Nossa! Deixa eu dar uma pesquisada nisso\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5383616917504
+    m_Localized: "Nas \xE1reas urbanas, a supress\xE3o da vegeta\xE7\xE3o do Bioma
+      Cerrado para parcelamento do solo ou qualquer edifica\xE7\xE3o, observado o
+      disposto no plano diretor do Munic\xEDpio e demais normas aplic\xE1veis, depender\xE1
+      de pr\xE9via autoriza\xE7\xE3o do \xF3rg\xE3o ambiental competente e dever\xE1
+      atender os seguintes requisitos:\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6261082091520
+    m_Localized: "I - preserva\xE7\xE3o da vegeta\xE7\xE3o nativa em \xE1rea correspondente
+      a, no m\xEDnimo, 10% (vinte por cento) da \xE1rea da propriedade.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6495354941440
+    m_Localized: "Voc\xEA tinha raz\xE3o, vou ver o que consigo fazer\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6818672865280
+    m_Localized: ' Boa noite! Como foi o trabalho?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7090916749312
+    m_Localized: "Nossa, fiquei sabendo de uma coisa triste, at\xE9 ia pedir sua
+      opini\xE3o de como prosseguir\u2026falando nisso, que cheiro bom \xE9 esse?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7400422830080
+    m_Localized: "Uma nova receita que estou testando: flor de ip\xEA refogada. Quer
+      um pouco?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7636985769984
+    m_Localized: "Claro! Que del\xEDcia! Nem sabia que flor de ip\xEA era comest\xEDvel!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8118659641344
+    m_Localized: "Receita de flor de ip\xEA refogada: recupera +16 vida"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8354727653376
+    m_Localized: "Ent\xE3o, hoje visitei um aqu\xEDfero com baixa vaz\xE3o, e descobri
+      que recentemente passaram uma lei que altera a porcentagem de vegeta\xE7\xE3o
+      m\xEDnima nas propriedades. Voc\xEA acha que isso est\xE1 relacionado?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8657610928128
+    m_Localized: "Veja bem\u2026.(refer\xEAncia \xE0 pesquisa cient\xEDfica de m\xEDnima
+      vegeta\xE7\xE3o)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9217311436800
+    m_Localized: "E voc\xEA acha que existe alguma forma de remediar isso?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9673215504384
+    m_Localized: "Talvez se voc\xEA conseguir provar e convencer o Comit\xEA das
+      Bacias, eles possam pressionar os governantes locais e voltar ao que era antes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10003554693120
+    m_Localized: "\xD3tima ideia! Vou tentar amanh\xE3."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10405079609344
+    m_Localized: Bom dia a todos!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10876393549824
+    m_Localized: Bom dia!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11025656246272
+    m_Localized: "Estamos reunidos aqui hoje para discutir o futuro do aqu\xEDfero
+      X, que \r\natualmente est\xE1 enfrentando baixa vaz\xE3o e pouca vegeta\xE7\xE3o
+      ciliar. Venho aqui apresentar algumas op\xE7\xF5es que podem ajudar a melhorar
+      esse problema.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11306800443392
+    m_Localized: "Ah, \xE9 interessante isso de reflorestar. Mas e a quest\xE3o econ\xF4mica,
+      como ficam os propriet\xE1rios da regi\xE3o? Eles precisam produzir.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11546462973952
+    m_Localized: "E o que voc\xEA prop\xF5e para realizarmos essa a\xE7\xE3o?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15448650477568
+    m_Localized: "Muito obrigado pelo seu tempo, n\xF3s do comit\xEA apoiamos as
+      iniciativas e vamos atr\xE1s de implementar suas ideias e solu\xE7\xF5es."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15619320901632
+    m_Localized: "Muito obrigado pelo seu tempo, mas vemos que as alternativas n\xE3o
+      s\xE3o vi\xE1veis, seja economicamente ou ecologicamente."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
