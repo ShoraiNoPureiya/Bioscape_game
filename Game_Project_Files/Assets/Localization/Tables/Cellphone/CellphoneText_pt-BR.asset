@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: CellphoneText_pt-BR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: 2cdff82d501a7664ebf91164c4ebab75, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 4914958096470900743
+  m_TableData:
+  - m_Id: 149561090048
+    m_Localized: "Receita:\nCh\xE1 de l\xEDrio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19320005009408
+    m_Localized: "Receita:\n1. Lave bem.\n2. Triture.\n3. Ferva \xE1gua.\n4. Misture
+      o l\xEDrio com a \xE1gua e deixe descansar por 5 minutos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46049511677952
+    m_Localized: "Not\xEDcia:\nInc\xEAndios no Cerrado"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46065743634432
+    m_Localized: "Inc\xEAndios n\xE3o naturais foram rastreados nessa \xFAltima sexta-feira
+      no norte de Minas Gerais. Autoridades j\xE1 est\xE3o cientes da situa\xE7\xE3o
+      e planjeam poss\xEDveis medidas de controle."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 196124544147456
+    m_Localized: "Digite uma anota\xE7\xE3o..."
+    m_Metadata:
+      m_Items:
+      - rid: 4914958096470900743
+  references:
+    version: 2
+    RefIds:
+    - rid: 4914958096470900743
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0020c9cd5fb20000
