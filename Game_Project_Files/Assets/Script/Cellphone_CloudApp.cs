@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Cellphone_CloudApp : MonoBehaviour
 {
-    public void TurnPurpleOnceClicked(GameObject _News){
+    public void TurnPurpleOnceClicked(TextMeshProUGUI _NewsItem){
         //PlayerPrefs.SetInt(_News.ToString() ,1);
-        print(_News.ToString());
+        _NewsItem.color = new Color(0.8f, 0f, 1f, 1f); //Change color to purple
     }
 
     public void DisableAllChildren(GameObject _Parent)

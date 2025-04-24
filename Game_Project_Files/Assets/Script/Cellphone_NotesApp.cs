@@ -9,17 +9,21 @@ using UnityEngine.Localization.Settings;
 public class Cellphone_NotesApp : MonoBehaviour
 {
     // Start is called before the first frame update
-    public PlayerController _Player; //This object will serve to stop player movement when writing in the notes
-    
-    public TMP_InputField _NotesTMPro; //Text field where the player types the notes
+    [SerializeField] private PlayerController _Player; //This object will serve to stop player movement when writing in the notes
 
-    public TMP_Text _PageIndicatorTMPro; //Simple text that shows what page the player is currently at
+    [SerializeField] private TMP_InputField _NotesTMPro; //Text field where the player types the notes
 
-    public  LocalizedString localizedString; //String to display sample text in different languages
+    [SerializeField] private TMP_Text _PageIndicatorTMPro; //Simple text that shows what page the player is currently at
+
+    [SerializeField] private TMP_Text _currentPlaceholder; //string that stores the old placeholder for when the laguage is changed
+
+    [SerializeField] private  LocalizedString _localizedString; //String to display sample text in different languages
+
+    [SerializeField] private AudioClip _SFXPageFlipping; //AudioClip containing the sound of flipping a page
+
+    [SerializeField] private AudioSource _audioSource; //AudioSource to play audio clip
 
     private string[] notes = new string [10]; //array of strings where each element of the array is a page of the notes
-    
-    private string _currentPlaceholder = ""; //string that stores the old placeholder for when the laguage is changed
 
     private int currentPage = 0; //keeps track of which page the player is at the moment. It always starts at the first page
     void Start()
@@ -31,30 +35,25 @@ public class Cellphone_NotesApp : MonoBehaviour
             //     notes[i] = "";
                 
             // }
-            Debug.Log(notes[i]);
+            // Debug.Log(notes[i]);
         }
-        _NotesTMPro.text = notes[0]; //Sets the text to the first page
+        ReloadStoredPageToTextField(); //Sets the text to the first page
         
     }
 
-     private void OnEnable()
+     private void OnEnable() //Whenever the language is changed, it updates the placeholder text
     {
-        localizedString.StringChanged += UpdateMessage;
+        _localizedString.StringChanged += UpdateMessage;
     }
 
     private void OnDisable()
     {
-        localizedString.StringChanged -= UpdateMessage;
+        _localizedString.StringChanged -= UpdateMessage;
     }
 
     private void UpdateMessage(string value)
     {
-        if(string.IsNullOrEmpty(_NotesTMPro.text) || _NotesTMPro.text == _currentPlaceholder){ //if the displayed text is "" or a placeholder for a different language, it sets the text as the placeholder for the newly selected language
-            _NotesTMPro.text = value;
-            _currentPlaceholder = value;
-            notes[currentPage] = "";
-        }
-
+        _currentPlaceholder.text = value;
     }
 
     public void SaveNotes()
@@ -62,7 +61,7 @@ public class Cellphone_NotesApp : MonoBehaviour
         StorePageInArray();
         for(int i=0; i<10; i++){
             PlayerPrefs.SetString("_NotesAppPage" + i.ToString(), notes[i]); //Stores all the notes. The PlayerPref name is "_NotesAppPageXX", where the XX is the number of the page.
-            
+        
         }
         
         PlayerPrefs.Save();
@@ -70,8 +69,6 @@ public class Cellphone_NotesApp : MonoBehaviour
 
     public void NextPage()
     {
-        _NotesTMPro.DeactivateInputField(true); //Deactivates text field so it deselects the text automatically for the player
-        _NotesTMPro.ActivateInputField();
         if(currentPage == 9){ //Can't go past the tenth page
             Debug.Log("Already at the end.");
             return;
@@ -79,14 +76,13 @@ public class Cellphone_NotesApp : MonoBehaviour
         StorePageInArray(); //stores the current page before moving to the next
         
         currentPage++; //increases current page
+        PlaySFXPageFlipping(1.2f, 1.5f);
         _PageIndicatorTMPro.text = (currentPage+1).ToString() + "/10"; //Updates page indicator
         
         ReloadStoredPageToTextField();
     }
     public void PreviousPage()
     {
-        _NotesTMPro.DeactivateInputField(true);
-        _NotesTMPro.ActivateInputField();
         if(currentPage == 0){
             Debug.Log("Already at the start.");
             return;
@@ -94,26 +90,23 @@ public class Cellphone_NotesApp : MonoBehaviour
         StorePageInArray();
 
         currentPage--;
+        PlaySFXPageFlipping(1.0f, 1.3f);
         _PageIndicatorTMPro.text = (currentPage+1).ToString() + "/10";
         ReloadStoredPageToTextField();
     }
 
     private void StorePageInArray(){
-        if(!_NotesTMPro.text.Equals("") && !_NotesTMPro.text.Equals(localizedString.GetLocalizedString())){
-            notes[currentPage] = _NotesTMPro.text;
-        }
-        else{
-            notes[currentPage] = "";
-        }
+        notes[currentPage] = _NotesTMPro.text; //Stores in array the input text
     }
 
     private void ReloadStoredPageToTextField(){
-        if(notes[currentPage].Equals("")){
-            _NotesTMPro.text = localizedString.GetLocalizedString();   
-        }
-        else{
-            _NotesTMPro.text = notes[currentPage]; //Updates content for current page
-        }
+        _NotesTMPro.text = notes[currentPage]; //Updates content for current page
+    }
+
+    private void PlaySFXPageFlipping(float _lowerPitch, float _higherPitch){
+        _audioSource.volume = 0.5f;
+        _audioSource.pitch = Random.Range(_lowerPitch, _higherPitch); //Randomizes the pitch of the audio to create variability
+        _audioSource.PlayOneShot(_SFXPageFlipping);
     }
 
     public void StopPlayerMovement()

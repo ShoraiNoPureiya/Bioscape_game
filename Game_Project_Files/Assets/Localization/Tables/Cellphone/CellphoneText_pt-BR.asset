@@ -39,7 +39,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 196124544147456
-    m_Localized: "Digite uma anota\xE7\xE3o..."
+    m_Localized: Digite alguma coisa...
     m_Metadata:
       m_Items:
       - rid: 4914958096470900743
