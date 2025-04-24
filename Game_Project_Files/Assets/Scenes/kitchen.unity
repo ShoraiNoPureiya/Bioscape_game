@@ -2916,6 +2916,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1481536917}
     m_Modifications:
+    - target: {fileID: 450408569755124232, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: localizedStringDef.m_TableEntryReference.m_KeyId
+      value: 16061231104
+      objectReference: {fileID: 0}
+    - target: {fileID: 450408569755124232, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: localizedStringBath.m_TableEntryReference.m_KeyId
+      value: 12427308756992
+      objectReference: {fileID: 0}
+    - target: {fileID: 450408569755124232, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: localizedStringGarden.m_TableEntryReference.m_KeyId
+      value: 17906856554496
+      objectReference: {fileID: 0}
+    - target: {fileID: 450408569755124232, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: localizedStringKitchen.m_TableEntryReference.m_KeyId
+      value: 17304600637440
+      objectReference: {fileID: 0}
+    - target: {fileID: 450408569755124232, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: localizedStringDef.m_TableReference.m_TableCollectionName
+      value: GUID:32d5da7f158a1d7439d01243c44094e2
+      objectReference: {fileID: 0}
+    - target: {fileID: 450408569755124232, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: localizedStringBath.m_TableReference.m_TableCollectionName
+      value: GUID:32d5da7f158a1d7439d01243c44094e2
+      objectReference: {fileID: 0}
+    - target: {fileID: 450408569755124232, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: localizedStringGarden.m_TableReference.m_TableCollectionName
+      value: GUID:32d5da7f158a1d7439d01243c44094e2
+      objectReference: {fileID: 0}
+    - target: {fileID: 450408569755124232, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: localizedStringKitchen.m_TableReference.m_TableCollectionName
+      value: GUID:32d5da7f158a1d7439d01243c44094e2
+      objectReference: {fileID: 0}
     - target: {fileID: 1100455064466967801, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
       propertyPath: m_Text
       value: 
@@ -4379,7 +4411,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.0367484, y: 5.038156}
+  m_Offset: {x: -1.0367484, y: 5.119944}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4390,7 +4422,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.214416, y: 0.12004566}
+  m_Size: {x: 9.214416, y: 0.2836218}
   m_EdgeRadius: 0
 --- !u!1001 &6279416072994753272
 PrefabInstance:

@@ -27,11 +27,6 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: df1683391ce529647b970260552936fd
-    m_Address: Assets/TutorialMissionTexts Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 357c08b7546eb4d42829d3e607e64172
     m_Address: Assets/Localization/Tables/Mission 1/Mission1TextBox Shared Data.asset
     m_ReadOnly: 1

@@ -16,19 +16,19 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 32d5da7f158a1d7439d01243c44094e2
   m_Entries:
   - m_Id: 16061231104
-    m_Key: FirstInstruction
+    m_Key: MissionBedroom
     m_Metadata:
       m_Items: []
   - m_Id: 12427308756992
-    m_Key: SecondInstruction
+    m_Key: MissionBathroom
     m_Metadata:
       m_Items: []
   - m_Id: 17304600637440
-    m_Key: ThirdInstruction
+    m_Key: MissionKitchen
     m_Metadata:
       m_Items: []
   - m_Id: 17906856554496
-    m_Key: FourthInstruction
+    m_Key: MissionGarden
     m_Metadata:
       m_Items: []
   - m_Id: 19534431055872
