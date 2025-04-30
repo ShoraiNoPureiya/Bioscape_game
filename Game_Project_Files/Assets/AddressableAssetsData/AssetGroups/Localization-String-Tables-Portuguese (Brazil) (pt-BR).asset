@@ -31,12 +31,6 @@ MonoBehaviour:
     - Locale-pt-BR
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b398b27bc1c60ed4e927d71d4f689360
-    m_Address: TutorialMissionTexts_pt-BR
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-pt-BR
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d3e383ddc0b4efa43b5be5c156800b80
     m_Address: Mission1TextBox_pt-BR
     m_ReadOnly: 1
@@ -51,6 +45,42 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5b5c0cd73ac393a4e82cb20a3db677d0
     m_Address: Mission1Options_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b0710aadb3dabce4b840d12628edb8e6
+    m_Address: Mission1Instructions_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0dcea315bc8445d46a62fbbc72dfee8a
+    m_Address: Misson2Instructions_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 113cf9e00e0835348bcabef5d1339f65
+    m_Address: Mission2TextBox_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b60669eda9ea8a4aba600954faaa27f
+    m_Address: Mission2Places_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7980a3173ff53d4418ea993b354f6f7c
+    m_Address: Mission2DialogueOptions_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 082a22da2b98e914fb9a509a505931f0
+    m_Address: CellphoneText_pt-BR
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-pt-BR

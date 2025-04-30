@@ -27,11 +27,6 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: df1683391ce529647b970260552936fd
-    m_Address: Assets/TutorialMissionTexts Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 357c08b7546eb4d42829d3e607e64172
     m_Address: Assets/Localization/Tables/Mission 1/Mission1TextBox Shared Data.asset
     m_ReadOnly: 1
@@ -44,6 +39,36 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: eae335ba96c183c42a93f2db0831dacf
     m_Address: Assets/Localization/Tables/Mission 1/Mission1Optiona Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c8f1547cc486b4240b2db38ecfd74236
+    m_Address: Assets/Localization/Tables/Mission 1/Mission1Intrusctions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 562725d71d7fd154bb9176670493305b
+    m_Address: Assets/Localization/Tables/Mission 2/Misson2Instructions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e7887c5772c296c4a94f19fe39de8f4e
+    m_Address: Assets/Localization/Tables/Mission 2/Mission2TextBox Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1d14d8702d3c052458684e516388b05b
+    m_Address: Assets/Localization/Tables/Mission 2/Mission2Places Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed9e825a76343634a9d3ba2ed0e0faa9
+    m_Address: Assets/Localization/Tables/Mission 2/Mission2Choices Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2cdff82d501a7664ebf91164c4ebab75
+    m_Address: Assets/Localization/Tables/Cellphone/CellphoneText Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

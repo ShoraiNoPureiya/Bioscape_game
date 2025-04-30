@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
-  m_Name: TutorialMissionTexts
+  m_Name: Mission2DialogueOptions
   m_EditorClassIdentifier: 
-  m_SharedTableData: {fileID: 11400000, guid: df1683391ce529647b970260552936fd, type: 2}
+  m_SharedTableData: {fileID: 11400000, guid: ed9e825a76343634a9d3ba2ed0e0faa9, type: 2}
   m_Tables:
-  - {fileID: 11400000, guid: c7aa8e6c937762b41b7462619c600178, type: 2}
-  - {fileID: 11400000, guid: b398b27bc1c60ed4e927d71d4f689360, type: 2}
+  - {fileID: 11400000, guid: 97de418f2773c614eaf77f5a62cd5261, type: 2}
+  - {fileID: 11400000, guid: 7980a3173ff53d4418ea993b354f6f7c, type: 2}
   m_Extensions: []
   m_Group: String Table
   references:

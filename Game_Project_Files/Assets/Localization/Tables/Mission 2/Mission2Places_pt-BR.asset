@@ -10,28 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: TutorialMissionTexts_en
+  m_Name: Mission2Places_pt-BR
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: en
-  m_SharedData: {fileID: 11400000, guid: df1683391ce529647b970260552936fd, type: 2}
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: 1d14d8702d3c052458684e516388b05b, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 22388715520
-    m_Localized: Check if the key is on the laboratory shelf.
+  - m_Id: 4799524864
+    m_Localized: "Origem do aqu\xEDfero"
     m_Metadata:
       m_Items: []
-  - m_Id: 2015865909248
-    m_Localized: Check if the key is in the bathroom.
+  - m_Id: 323843452928
+    m_Localized: "Vegeta\xE7\xE3o esparsa"
     m_Metadata:
       m_Items: []
-  - m_Id: 2181595443200
-    m_Localized: Check if the key is in the living room/kitchen (inside the diary).
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2369294741504
-    m_Localized: Check where that sound is coming from.
+  - m_Id: 510976520192
+    m_Localized: "Bifurca\xE7\xF5es"
     m_Metadata:
       m_Items: []
   references:

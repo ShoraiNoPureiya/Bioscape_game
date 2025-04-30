@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 16061231104
-    m_Localized: "Verifique se a chave est\xE1 na estante do laborat\xF3rio"
+    m_Localized: "Verifique se a chave est\xE1 na estante do quarto."
     m_Metadata:
       m_Items: []
   - m_Id: 12427308756992

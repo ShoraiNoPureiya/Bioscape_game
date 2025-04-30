@@ -21,8 +21,8 @@ public class PlayerController : MonoBehaviour
     private float _InteractionCooldown = 2.0f; //Cooldown of 2 seconds to repeat the interaction
     private bool _isMoving; //Detects if the player is moving
     public bool _InDialog = true; //Detects if the player is in a dialog
-    public Transform _Player;
-    public int spawnID ;
+    public Transform _Player;// Player transform
+    public int spawnID ;// Spawn ID
     [SerializeField] private GameObject pauseMenu;
     
 
@@ -32,13 +32,13 @@ public class PlayerController : MonoBehaviour
     {
         spawnar();
         
-        _playerRigidBody2d = GetComponent<Rigidbody2D>();
-        _playerAnimator = GetComponent<Animator>();
+        _playerRigidBody2d = GetComponent<Rigidbody2D>();// Gets the player rigidbody
+        _playerAnimator = GetComponent<Animator>();// Gets the player animator
        
 
        
-        playercontroller = this;
-        StartCoroutine(PlayFootstepSound());
+        playercontroller = this;// Sets the player controller to this
+        StartCoroutine(PlayFootstepSound());// Starts the footstep sound coroutine
         
 
 
@@ -49,13 +49,13 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.F))
         {
-            PlayerPrefs.SetInt("_Key", 1);
-            PlayerPrefs.SetInt("MissionCompleted", 1);
-            PlayerPrefs.SetInt("_DidHeGo", 1);
+            PlayerPrefs.SetInt("_Key", 1);// if the player press F the key is set to 1
+            PlayerPrefs.SetInt("MissionCompleted", 1);// if the player press F the mission is set to 1
+            PlayerPrefs.SetInt("_DidHeGo", 1);// if the player press F the mission is set to 1
         }
 
         if (_InDialog) {
-        _playerSpeed = 5;
+        _playerSpeed = 5; //Sets the player speed to 5
         _playerDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); //Gets the player vertical and horizontal components
         _playerAnimator.SetFloat("Horizontal_walk", _playerDirection.x); //If the player walks horizontally the horizontal walk animation starts playing
         _playerAnimator.SetFloat("Vertical_walk", _playerDirection.y); //If the player walks vertically the vertical walk animation starts playing
@@ -68,7 +68,8 @@ public class PlayerController : MonoBehaviour
             _playerAnimator.SetFloat("Vertical_Idle", _playerDirection.y); // If the player is still vertically the vertical idle animation starts playing
             _playerAnimator.SetFloat("Movement", _playerDirection.sqrMagnitude);
         }
-        _isMoving = _playerDirection != Vector2.zero;
+        _isMoving = (_playerDirection != Vector2.zero); //Checks if the player is moving
+        
 
         if (_isMoving)  //Player is moving reset the timer
         {
@@ -87,78 +88,83 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.E) && _CanInteract)// If player press E the interaction animation starts playing
         {
-            _playerAnimator.SetBool("Interaction", true);
-            _CanInteract = false;
-            StartCoroutine(InteractionCooldown());
+            _playerAnimator.SetBool("Interaction", true); // Starts the interaction animation
+            _CanInteract = false; // Sets the player to not be able to interact
+            StartCoroutine(InteractionCooldown()); // Starts the interaction cooldown
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape)) // If player press escape the pause menu is activated
+        
         {
-            pauseGame();
+            pauseGame(); // Pauses the game
         }
     }
-    void FixedUpdate()
+    void FixedUpdate() // FixedUpdate is called every fixed framerate frame
+   
     {  
-        _playerDirection.Normalize();
-        _playerRigidBody2d.MovePosition(_playerRigidBody2d.position + _playerDirection * _playerSpeed * Time.fixedDeltaTime);     
+        _playerDirection.Normalize(); // Normalizes the player direction
+        _playerRigidBody2d.MovePosition(_playerRigidBody2d.position + _playerDirection * _playerSpeed * Time.fixedDeltaTime);  // Moves the player   
     }
 
     public void IncreaseSpeed(float Speed) // increases character speed
     {
         _playerSpeed = _playerSpeed * Speed; // increases character speed
-        StartCoroutine(Sleep());
+        StartCoroutine(Sleep());// Starts the sleep coroutine
     }
     IEnumerator Sleep()
     {
         yield return new WaitForSeconds(3); // 3 sec cooldown
         _playerSpeed = 5; // speed return to normal
     }
-    IEnumerator PlayFootstepSound()
+    IEnumerator PlayFootstepSound() // 
     {
         while (true)
         {
-            if ( _playerSpeed != 0 && _playerDirection != Vector2.zero)
+            if ( _playerSpeed != 0 && _playerDirection != Vector2.zero) // check is moving player
             {
-                SongPlayer.songplayer._AudioSource.PlayOneShot(SongPlayer.songplayer._Walk);
+                SongPlayer.songplayer._AudioSource.PlayOneShot(SongPlayer.songplayer._Walk); // 
             }
             yield return new WaitForSeconds(0.5f); // Adjust delay between sounds
         }
     }
     IEnumerator PlayWaitingAnimation() //Coroutine that controls the player waiting animation
     {
-        _playerAnimator.SetBool("Waiting", true);
-        yield return new WaitForSeconds(3.4f);
-        _playerAnimator.SetBool("Waiting", false);
+        _playerAnimator.SetBool("Waiting", true); // Starts the waiting animation
+        yield return new WaitForSeconds(3.4f); // wait 3.4 seconds to the animation to play fully
+        _playerAnimator.SetBool("Waiting", false); // Stops the waiting animation
 
         bool _StopAnimation = false;
 
-        while (!_StopAnimation && Time.deltaTime > 0f) 
+        while (!_StopAnimation && Time.deltaTime > 0f) //
         {
-           
-            if (_playerDirection != Vector2.zero)
+           // If the player is not moving and the waiting animation is playing
+            if (_playerDirection != Vector2.zero) 
             {
-                _StopAnimation = true;
-                _playerAnimator.SetBool("Waiting", false);
+                _StopAnimation = true; // 
+                _playerAnimator.SetBool("Waiting", false); // Stops the waiting animation
             }
-
-            yield return new WaitForEndOfFrame(); 
+            
+            yield return new WaitForEndOfFrame(); //  
         }           
     }
     IEnumerator InteractionCooldown() //Coroutine that controls the interaction animation
     {
-        _playerAnimator.SetBool("Interaction", true);
+        _playerAnimator.SetBool("Interaction", true); // Starts the interaction animation
         _CanInteract = false;
         yield return new WaitForSeconds(1.1f); //wait 1.1 seconds to the animation to play fully
         _playerAnimator.SetBool("Interaction", false);
         yield return new WaitForSeconds(_InteractionCooldown);
         _CanInteract = true;
     }
+    //
     public void GetValues(int id)
     {
-        PlayerPrefs.SetInt("id", id);
+        
+        PlayerPrefs.SetInt("id", id); // 
 
     }
     private void OnApplicationQuit()
     {
+        // Sets the player key to 0
         PlayerPrefs.SetInt("id", 0);
         PlayerPrefs.SetInt("DestroyLetter", 0);
     }
@@ -166,13 +172,13 @@ public class PlayerController : MonoBehaviour
     {
         //spawnID = PlayerPrefs.GetInt("id");
         spawnID = Doors.GetSpawnID();
-        Debug.Log("Spawn--------------- "+ spawnID);
+        Debug.Log("Spawn--------------- "+ spawnID); // 
 
         if(spawnID ==0)
         {
             spawnID = PlayerPrefs.GetInt("id");
         }
-        
+        //
         switch (spawnID)
         {
             case 1:
