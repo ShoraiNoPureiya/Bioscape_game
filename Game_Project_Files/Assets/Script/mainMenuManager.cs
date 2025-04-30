@@ -62,8 +62,6 @@ public class mainMenuManager : MonoBehaviour
     {
         _optionMenu.SetActive(false); 
         _soundMenu.SetActive(false);
-        _ambientSoundMenu.SetActive(false);
-        _musicMenu.SetActive(false);
     
     }
 
