@@ -4204,11 +4204,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5023358769468370839, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: localizedString.m_TableEntryReference.m_KeyId
-      value: 2972803665539072
+      value: 3245857350344704
       objectReference: {fileID: 0}
     - target: {fileID: 5023358769468370839, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: localizedString.m_TableReference.m_TableCollectionName
-      value: GUID:32d5da7f158a1d7439d01243c44094e2
+      value: GUID:35116a5e002bbed459939d98f7088e46
       objectReference: {fileID: 0}
     - target: {fileID: 6579493748752033329, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: _Order
@@ -4252,7 +4252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: localizedString.m_TableEntryReference.m_KeyId
-      value: 17906856554496
+      value: 4006806860587008
       objectReference: {fileID: 0}
     - target: {fileID: 8450512880341357182, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: localizedString.m_TableReference.m_TableCollectionName

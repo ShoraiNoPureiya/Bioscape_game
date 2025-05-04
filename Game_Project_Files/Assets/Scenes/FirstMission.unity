@@ -173,18 +173,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e34c1756ee5286a4e84d1eaeff1aef0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Phrases:
-  - "Ser\xE1 que mais cercas poderiam ser \xFAteis? J\xE1 tem at\xE9 o material."
-  _Phrase: 
-  _NewPhrase: 
   _Text: {fileID: 24888415}
-  _Count: 0
-  _Count2: 0
   _CanPlay: 0
   _StopPlaying: 0
   _IsPlaying: 1
   _Name: 
   _characterVoice: {fileID: 1710743731}
+  localizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:357c08b7546eb4d42829d3e607e64172
+    m_TableEntryReference:
+      m_KeyId: 375064529924096
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &24888415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +224,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: aaaaaaaaaaaaa
+  m_Text: 
 --- !u!222 &24888416
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1338,18 +1344,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e34c1756ee5286a4e84d1eaeff1aef0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Phrases:
-  - Nossa que boi musculoso, eu tenho medo de chegar perto
-  _Phrase: 
-  _NewPhrase: 
   _Text: {fileID: 635943293}
-  _Count: 0
-  _Count2: 0
   _CanPlay: 0
   _StopPlaying: 0
   _IsPlaying: 1
   _Name: 
   _characterVoice: {fileID: 1710743731}
+  localizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:357c08b7546eb4d42829d3e607e64172
+    m_TableEntryReference:
+      m_KeyId: 374052133990400
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &635943293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1383,7 +1395,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: aaaaaaaaaaaaa
+  m_Text: 
 --- !u!222 &635943294
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1518,18 +1530,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e34c1756ee5286a4e84d1eaeff1aef0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Phrases:
-  - "O gado est\xE1 t\xE3o disperso, que desperd\xEDcio de espa\xE7o"
-  _Phrase: 
-  _NewPhrase: 
   _Text: {fileID: 662397170}
-  _Count: 0
-  _Count2: 0
   _CanPlay: 0
   _StopPlaying: 0
   _IsPlaying: 1
   _Name: 
   _characterVoice: {fileID: 1710743731}
+  localizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:357c08b7546eb4d42829d3e607e64172
+    m_TableEntryReference:
+      m_KeyId: 373189357268992
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &662397170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1563,7 +1581,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: aaaaaaaaaaaaa
+  m_Text: 
 --- !u!222 &662397171
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2162,18 +2180,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e34c1756ee5286a4e84d1eaeff1aef0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Phrases:
-  - "Nossa, o que ser\xE1 que aconteceu com essa vaca, como ela morreu ?"
-  _Phrase: 
-  _NewPhrase: 
   _Text: {fileID: 796491616}
-  _Count: 0
-  _Count2: 0
   _CanPlay: 0
   _StopPlaying: 0
   _IsPlaying: 1
   _Name: 
   _characterVoice: {fileID: 1710743731}
+  localizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:357c08b7546eb4d42829d3e607e64172
+    m_TableEntryReference:
+      m_KeyId: 376166629437440
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &796491616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2207,7 +2231,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: aaaaaaaaaaaaa
+  m_Text: 
 --- !u!222 &796491617
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2304,6 +2328,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 450408569755124232, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: localizedStringDef.m_TableEntryReference.m_KeyId
+      value: 16061231104
+      objectReference: {fileID: 0}
+    - target: {fileID: 450408569755124232, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: localizedStringBath.m_TableEntryReference.m_KeyId
+      value: 12427308756992
+      objectReference: {fileID: 0}
+    - target: {fileID: 450408569755124232, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: localizedStringGarden.m_TableEntryReference.m_KeyId
+      value: 17906856554496
+      objectReference: {fileID: 0}
+    - target: {fileID: 450408569755124232, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: localizedStringKitchen.m_TableEntryReference.m_KeyId
+      value: 17304600637440
+      objectReference: {fileID: 0}
+    - target: {fileID: 450408569755124232, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: localizedStringDef.m_TableReference.m_TableCollectionName
+      value: GUID:32d5da7f158a1d7439d01243c44094e2
+      objectReference: {fileID: 0}
+    - target: {fileID: 450408569755124232, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: localizedStringBath.m_TableReference.m_TableCollectionName
+      value: GUID:32d5da7f158a1d7439d01243c44094e2
+      objectReference: {fileID: 0}
+    - target: {fileID: 450408569755124232, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: localizedStringGarden.m_TableReference.m_TableCollectionName
+      value: GUID:32d5da7f158a1d7439d01243c44094e2
+      objectReference: {fileID: 0}
+    - target: {fileID: 450408569755124232, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
+      propertyPath: localizedStringKitchen.m_TableReference.m_TableCollectionName
+      value: GUID:32d5da7f158a1d7439d01243c44094e2
+      objectReference: {fileID: 0}
     - target: {fileID: 3434926974872052033, guid: f74e9e757234b834ab5f5520de959fe3, type: 3}
       propertyPath: m_Name
       value: Hud
@@ -2757,18 +2813,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e34c1756ee5286a4e84d1eaeff1aef0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Phrases:
-  - Nossa, que riacho sujo! Como ele ficou dessa cor?
-  _Phrase: 
-  _NewPhrase: 
   _Text: {fileID: 1313872544}
-  _Count: 0
-  _Count2: 0
   _CanPlay: 0
   _StopPlaying: 0
   _IsPlaying: 1
   _Name: 
   _characterVoice: {fileID: 1710743731}
+  localizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:357c08b7546eb4d42829d3e607e64172
+    m_TableEntryReference:
+      m_KeyId: 372483053252608
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &1313872544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2802,7 +2864,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: aaaaaaaaaaaaa
+  m_Text: 
 --- !u!222 &1313872545
 CanvasRenderer:
   m_ObjectHideFlags: 0
