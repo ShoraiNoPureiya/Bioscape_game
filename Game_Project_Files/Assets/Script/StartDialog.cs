@@ -76,7 +76,7 @@ public class StartDialog : MonoBehaviour
 
             if (DialogBox.dialogbox != null)
             {
-                DialogBox.dialogbox.CanPlay();
+                PlayerPrefs.SetInt("_CanPlay", 1);
             }
         }
     }

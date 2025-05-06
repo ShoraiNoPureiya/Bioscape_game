@@ -56,7 +56,7 @@ public class CatchMissions : MonoBehaviour
     {
         if (_IsHeInDialog)
         {
-            DialogBox.dialogbox.CanPlay(); // CanPlay comes true for when the player come back nearly play again the dialog
+            PlayerPrefs.SetInt("_CanPlay", 1); // CanPlay comes true for when the player come back nearly play again the dialog
         }
         _TextAlertMission.SetActive(false);// disappear the quest alert
         _TextCatchMission.SetActive(false); // disappear the quest text

@@ -195,11 +195,11 @@ public class PlayerController : MonoBehaviour
                 break;
             case 4:
             //SampleScene to Hallway
-                _Player.position = new Vector3(2.21f, -2.54f, 0);
+                _Player.position = new Vector3(2.36f, -2.54f, 0);
                 break;
             case 5:
             //Kitchen to Hallway
-                _Player.position = new Vector3(-3.98f, -3.53f, 0);
+                _Player.position = new Vector3(-3.99f, -4.36f, 0);
                 break;
             case 6:
             //kitche to Outside
@@ -211,7 +211,7 @@ public class PlayerController : MonoBehaviour
                 break;
             case 8:
             //Bathroom to Hallway
-                _Player.position = new Vector3(-3.38f, -2.57f, 0);
+                _Player.position = new Vector3(-3.21f, -1.92f, 0);
                 break;
             case 9:
             //Garden to Kitchen
