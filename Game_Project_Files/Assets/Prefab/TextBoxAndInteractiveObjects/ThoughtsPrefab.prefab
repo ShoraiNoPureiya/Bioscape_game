@@ -339,8 +339,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextBoxA: {fileID: 1434826795275113344}
   TextBoxB: {fileID: 2529133758981385833}
-  _CanRun: 0
   _HasRunned: 0
+  _Order: 0
 --- !u!1001 &5787902707729148618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -440,11 +440,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5337425759441772593, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 956
+      value: 927
       objectReference: {fileID: 0}
     - target: {fileID: 5337425759441772593, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 366
+      value: 314
       objectReference: {fileID: 0}
     - target: {fileID: 5337425759441772593, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -504,6 +504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Text: "Verifique se a chave est\xE1 no banheiro"
+  _Texts: 
 --- !u!224 &1891681906454186747 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5337425759441772593, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
@@ -607,11 +608,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5337425759441772593, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 877
+      value: 927
       objectReference: {fileID: 0}
     - target: {fileID: 5337425759441772593, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 373
+      value: 314
       objectReference: {fileID: 0}
     - target: {fileID: 5337425759441772593, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

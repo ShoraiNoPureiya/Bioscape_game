@@ -10,8 +10,15 @@ public class Thoughts : MonoBehaviour
     public bool _HasRunned = false;
     Transform _Child;
     public int _Order;
+    private void Start()
+    {
+
+    }
     void Update()
     {
+        PlayerPrefs.SetInt("_CanRun", 1);
+        Debug.Log(PlayerPrefs.GetInt("Order"));
+
         thoughts = this;
         // Se o TextBoxA estiver desativado, liga o TextBoxB
         if (PlayerPrefs.GetInt("_CanRun") == 1 && PlayerPrefs.GetInt("Order") == _Order)

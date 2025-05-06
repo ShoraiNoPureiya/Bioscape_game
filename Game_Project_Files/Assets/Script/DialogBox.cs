@@ -31,7 +31,7 @@ public class DialogBox : MonoBehaviour
     public void Start()
     {
 
-        _CanPlay = false;
+        PlayerPrefs.SetInt("_CanPlay", 0);
         dialogbox = this;
         StartCoroutine(Dialog());
     }
@@ -39,10 +39,10 @@ public class DialogBox : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log(PlayerPrefs.GetInt("_CanPlay"));
         if (_IsPlaying)
         {
-            if (_CanPlay) { StartCoroutine(Dialog()); _CanPlay = false; } // when the player come back again , the dialog plays again
+            if (PlayerPrefs.GetInt("_CanPlay")==1) { StartCoroutine(Dialog()); PlayerPrefs.SetInt("_CanPlay",0); } // when the player come back again , the dialog plays again
         }
         if (Input.GetKeyDown(KeyCode.Space)) { _StopPlaying = true; } // if he press space skip the dialog
         if (Input.GetKeyDown(KeyCode.Space)) { ConcludeDialog(); } // if he press space skip the dialog
@@ -95,10 +95,7 @@ public class DialogBox : MonoBehaviour
     }
 
 
-    public void CanPlay()
-    {
-        _CanPlay = true;
-    }
+
     public bool HeIsInDialog()
     {
         return _IsPlaying;
