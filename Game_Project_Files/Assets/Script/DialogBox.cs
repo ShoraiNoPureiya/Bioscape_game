@@ -39,7 +39,6 @@ public class DialogBox : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(PlayerPrefs.GetInt("_CanPlay"));
         if (_IsPlaying)
         {
             if (PlayerPrefs.GetInt("_CanPlay")==1) { StartCoroutine(Dialog()); PlayerPrefs.SetInt("_CanPlay",0); } // when the player come back again , the dialog plays again
