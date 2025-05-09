@@ -215,7 +215,7 @@ public class PlayerController : MonoBehaviour
                 break;
             case 9:
             //Garden to Kitchen
-                _Player.position = new Vector3(-5.51f, -7.95f, 0);
+                _Player.position = new Vector3(9.21f, -5.94f, 0);
                 break;
             case 10:
                 //void
