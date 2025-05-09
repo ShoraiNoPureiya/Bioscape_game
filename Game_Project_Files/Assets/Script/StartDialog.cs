@@ -42,7 +42,7 @@ public class StartDialog : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E)) // "e" to interact
             {
-
+                PlayerPrefs.SetInt("_CanPlay", 1);
                 Check2(transform);
             }
         }
@@ -72,12 +72,7 @@ public class StartDialog : MonoBehaviour
             }
 
             // Recursion to process the child's children
-            Check2(child);
-
-            if (DialogBox.dialogbox != null)
-            {
-                PlayerPrefs.SetInt("_CanPlay", 1);
-            }
+            Check2(child);         
         }
     }
 
