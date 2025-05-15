@@ -11,7 +11,6 @@ public class Doors : MonoBehaviour
     public static Doors doors;
     [SerializeField] private string _level;
     private string _HeIsIn;
-    private int _DidHeGo = 0;
     private int _spawnID;
     private void OnTriggerEnter2D(Collider2D collision)
     {

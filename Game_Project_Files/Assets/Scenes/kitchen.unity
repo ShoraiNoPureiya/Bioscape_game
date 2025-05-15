@@ -390,7 +390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1468049088074904520, guid: 2afafd71f3c14a5409375fba2694083a, type: 3}
       propertyPath: orthographic size
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1892519284942352990, guid: 2afafd71f3c14a5409375fba2694083a, type: 3}
       propertyPath: m_LocalScale.x
@@ -1347,10 +1347,6 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1991611953}
-    - target: {fileID: 4236161480655574917, guid: d933147ef6aaaed4095e14c7566f4b98, type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 4430310794305939877, guid: d933147ef6aaaed4095e14c7566f4b98, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.33
@@ -4124,11 +4120,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1891681906454186747, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.7088425
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1891681906454186747, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.6348386
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1891681906454186747, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: m_LocalScale.z
@@ -4164,11 +4160,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3076051133800724242, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.8262713
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3076051133800724242, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.5418954
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3076051133800724242, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: m_LocalScale.z

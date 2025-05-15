@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Animations;
+using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
@@ -30,6 +31,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+
         spawnar();
         
         _playerRigidBody2d = GetComponent<Rigidbody2D>();// Gets the player rigidbody
@@ -43,7 +45,6 @@ public class PlayerController : MonoBehaviour
 
 
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -215,7 +216,7 @@ public class PlayerController : MonoBehaviour
                 break;
             case 9:
             //Garden to Kitchen
-                _Player.position = new Vector3(-5.51f, -7.95f, 0);
+                _Player.position = new Vector3(9.21f, -5.94f, 0);
                 break;
             case 10:
                 //void
