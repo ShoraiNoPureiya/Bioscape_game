@@ -42,12 +42,9 @@ public class StartDialog : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E)) // "e" to interact
             {
-                PlayerPrefs.SetInt("_CanPlay", 1);
                 Check2(transform);
             }
         }
-
-
     }
     void Check2(Transform parent)
     {
@@ -65,6 +62,7 @@ public class StartDialog : MonoBehaviour
             if (child.name == "Thoughts")
             {
                 StartCoroutine(ActivateWithDelay(child.gameObject, 0.2f));
+
             }
             else
             {
@@ -72,7 +70,7 @@ public class StartDialog : MonoBehaviour
             }
 
             // Recursion to process the child's children
-            Check2(child);         
+            Check2(child);
         }
     }
 

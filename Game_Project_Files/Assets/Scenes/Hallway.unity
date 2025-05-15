@@ -632,10 +632,6 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1991611953}
-    - target: {fileID: 4236161480655574917, guid: d933147ef6aaaed4095e14c7566f4b98, type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: 4430310794305939877, guid: d933147ef6aaaed4095e14c7566f4b98, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.33
@@ -1874,7 +1870,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1468049088074904520, guid: 2afafd71f3c14a5409375fba2694083a, type: 3}
       propertyPath: orthographic size
-      value: 12
+      value: 3.9626577
       objectReference: {fileID: 0}
     - target: {fileID: 2143672204570933717, guid: 2afafd71f3c14a5409375fba2694083a, type: 3}
       propertyPath: m_Name

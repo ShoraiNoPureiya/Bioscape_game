@@ -1594,9 +1594,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _level: corredor
-  _HeIsIn: 
-  _DidHeGo: 0
-  _HasHeTheKey: 0
 --- !u!61 &1567903813
 BoxCollider2D:
   m_ObjectHideFlags: 0
