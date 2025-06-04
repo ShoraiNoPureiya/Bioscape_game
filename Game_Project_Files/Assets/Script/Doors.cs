@@ -195,7 +195,13 @@ public class Doors : MonoBehaviour
     {
         SceneManager.LoadScene(_level);
         if (_level == "SampleScene")
-        { PlayerController.playercontroller.GetValues(1); }
+        { 
+            PlayerController.playercontroller.GetValues(1);
+            PlayerPrefs.SetString("__Level", _level);
+            PlayerPrefs.SetInt("_spawnID", 1);
+            PlayerPrefs.Save();
+        }
+
 
     }
     public void SaveLevel(){
