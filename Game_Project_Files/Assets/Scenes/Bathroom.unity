@@ -228,6 +228,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThoughtsPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 1706061058851060717, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9133301
+      objectReference: {fileID: 0}
+    - target: {fileID: 1706061058851060717, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
+      propertyPath: m_Offset.x
+      value: -1316.9957
+      objectReference: {fileID: 0}
     - target: {fileID: 1890106357509358257, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -347,11 +355,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7671656195243224257, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -957.97
+      value: -964.91
       objectReference: {fileID: 0}
     - target: {fileID: 7671656195243224257, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -545.32
+      value: -545.29
       objectReference: {fileID: 0}
     - target: {fileID: 7916881279233541459, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: m_AnchoredPosition.x
