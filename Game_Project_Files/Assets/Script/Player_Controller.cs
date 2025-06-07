@@ -31,11 +31,11 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-
+        _playerAnimator = GetComponent<Animator>();// Gets the player animator
         spawnar();
         
         _playerRigidBody2d = GetComponent<Rigidbody2D>();// Gets the player rigidbody
-        _playerAnimator = GetComponent<Animator>();// Gets the player animator
+       
        
 
        
@@ -185,6 +185,7 @@ public class PlayerController : MonoBehaviour
             case 1:
             //hallway to SampleScene
                 _Player.position = new Vector3(-0.14f, -4.78f, 0);
+                ForceIdleAnimation(0f, 1f);
                 break;
             case 2:
             //Hallway to Kitchen
@@ -267,5 +268,27 @@ public class PlayerController : MonoBehaviour
     {
         _playerSpeed = 5;
         _InDialog = true;
+    }
+
+
+    // Method to force the idle animation with specific horizontal and vertical directions
+    private void ForceIdleAnimation(float horizontalDirection, float verticalDirection)
+    {
+        // Defines the horizontal and vertical idle parameters
+        _playerAnimator.SetFloat("Horizontal_Idle", horizontalDirection);
+        _playerAnimator.SetFloat("Vertical_Idle", verticalDirection);
+
+        // Make sure the player is not moving
+        _playerAnimator.SetFloat("Movement", 0f);
+        _playerAnimator.SetFloat("Horizontal_walk", 0f);
+        _playerAnimator.SetFloat("Vertical_walk", 0f);
+
+        // Forces the animator to update immediately
+        StartCoroutine(UpdateAnimatorNextFrame());
+    }
+    private IEnumerator UpdateAnimatorNextFrame()
+    {
+        yield return new WaitForEndOfFrame();
+        _playerAnimator.Update(0f);
     }
 }
