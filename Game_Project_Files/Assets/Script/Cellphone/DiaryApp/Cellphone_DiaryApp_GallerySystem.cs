@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Cellphone_DiaryApp_GallerySystem : MonoBehaviour
+public class Cellphone_DiaryApp_GallerySystem : MonoBehaviour, IDataPersistence
 {
     [SerializeField] private Cellphone_DiaryApp_GalleryUI _galleryUI; //Reference to the UI component that displays the gallery page
     [SerializeField] private List<Cellphone_CameraApp_PhotoEntry> _galleryPhotoEntries; //List of gallery pages to be displayed
@@ -12,6 +12,8 @@ public class Cellphone_DiaryApp_GallerySystem : MonoBehaviour
     [SerializeField] private AudioSource _audioSource; //Audio source for playing sounds
     [SerializeField] private AudioClip _flipPageSound; //Sound to play when navigating pages
     private int _currentPageIndex = 0; //Index of the current page being displayed
+
+    private HashSet<string> _unlockedPhotos = new HashSet<string>();
     private Cellphone_CameraApp_PhotoEntry _currentEntry;
     private void Start()
     {
@@ -25,11 +27,11 @@ public class Cellphone_DiaryApp_GallerySystem : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P)) //Debug key to unlock photo
         {
-            GameProgress.Instance.CapturePhoto("03");
+            UnlockPhoto("03");
         }
         if(Input.GetKeyDown(KeyCode.O)) //Debug key to unlock photo
         {
-            GameProgress.Instance.CapturePhoto("02");
+            UnlockPhoto("02");
         }
     }
 
@@ -64,4 +66,60 @@ public class Cellphone_DiaryApp_GallerySystem : MonoBehaviour
     }
 
 
+    public void UnlockPhoto(string photoId)
+    {
+        Debug.Log("Unlocking photo with ID: " + photoId);
+        foreach (var photo in _galleryPhotoEntries)
+        {
+            Debug.Log("Checking photo ID: " + photo._photoId);
+            if (photo._photoId == photoId)
+            {
+                _unlockedPhotos.Add(photoId);
+                return;
+            }
+        }
+        
+        Debug.LogWarning("Photo ID not found in gallery entries: " + photoId);
+    }
+    
+    public bool HasUnlockedPhoto(string photoId)
+    {
+        return _unlockedPhotos.Contains(photoId);
+    }
+    
+    public void LoadData(GameData data)
+    {
+        bool isUnlocked;
+        foreach (var photo in _galleryPhotoEntries)
+        {
+            data._allPhotos.TryGetValue(photo._photoId, out isUnlocked);
+            if (isUnlocked)
+            {
+                _unlockedPhotos.Add(photo._photoId);
+                
+            }
+        }
+    }
+
+    public void SaveData(GameData data) 
+    {
+        foreach (var photo in _galleryPhotoEntries)
+        {
+            Debug.Log("TEST PHOTO: " + photo._photoId);
+            if (data._allPhotos.ContainsKey(photo._photoId))
+            {
+                data._allPhotos.Remove(photo._photoId);
+            }
+            
+            if (_unlockedPhotos.Contains(photo._photoId))
+            {
+                data._allPhotos.Add(photo._photoId, true);
+            }
+            else
+            {
+                data._allPhotos.Add(photo._photoId, false);
+            }
+            
+        }
+    }
 }

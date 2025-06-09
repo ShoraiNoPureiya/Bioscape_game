@@ -20,7 +20,12 @@ public class Cellphone_NotesApp_MissionEntryUI : MonoBehaviour
         _wordMission.StringChanged += OnLanguageChanged;
         _wordMission.RefreshString();
 
-        GetComponent<Button>().onClick.AddListener(() => onClick(page));
+        // if (isUnlocked)
+            GetComponent<Button>().onClick.AddListener(() => onClick(page));
+        // else
+        // {
+        //     GetComponent<Button>().interactable = false;
+        // }
     }
 
     private void OnLanguageChanged(string newText) => _missionName.text = newText + " " + page._missionIndex;
