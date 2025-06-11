@@ -13,5 +13,4 @@ public class Cellphone_ContactsApp_Contact : ScriptableObject
     public int _unlockAfterDialog;
     public Contacts_DialogChoiceNode _startingDialogNode;
 
-    public bool _isUnlocked = false;
 }

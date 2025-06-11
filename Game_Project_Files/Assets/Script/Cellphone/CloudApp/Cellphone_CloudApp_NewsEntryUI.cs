@@ -30,14 +30,14 @@ public class Cellphone_CloudApp_NewsEntryUI : MonoBehaviour
         _readKey = $"NewsEntry_{_report._id}"; // Unique key based on the title
 
         // Load read status
-        if (PlayerPrefs.GetInt(_readKey, 0) == 1)
-        {
-            _titleText.color = new Color(0.75f, 0.3f, 1f, 1f);
-        }
-        else
-        {
-            _titleText.color = new Color(0f, 0f, 1f, 1f);
-        }
+        // if (PlayerPrefs.GetInt(_readKey, 0) == 1)
+        // {
+        //     _titleText.color = new Color(0.75f, 0.3f, 1f, 1f);
+        // }
+        // else
+        // {
+        //     _titleText.color = new Color(0f, 0f, 1f, 1f);
+        // }
     }
 
     private void OnClick()

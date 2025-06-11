@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Cellphone_ContactsAppSystem : MonoBehaviour
+public class Cellphone_ContactsAppSystem : MonoBehaviour, IDataPersistence
 {
     [Header("Data & Prefabs")]
     [Tooltip("All available news contacts (ScriptableObjects)")]
@@ -23,6 +23,7 @@ public class Cellphone_ContactsAppSystem : MonoBehaviour
     [SerializeField] private Button _callContactButton;
     private Contacts_DialogChoiceManager _dialogChoiceManager;
     public GameObject _dialogUI;
+    private HashSet<string> _unlockedDialogs = new HashSet<string>();
 
     private int currentMissionIndex => GameProgress.Instance.CurrentNewsIndex;
     private Cellphone_ContactsApp_Contact _currentContact;
@@ -40,13 +41,15 @@ public class Cellphone_ContactsAppSystem : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.H)) //Debug key to unlock Miltinho
         {
-            GameProgress.Instance.TriggerDialog("Miltinho");
-            GameProgress.Instance.TriggerDialog("Fazendeiro");
+            // GameProgress.Instance.TriggerDialog("Miltinho");
+            // GameProgress.Instance.TriggerDialog("Fazendeiro");
+            // UnlockContactDialog("Miltinho");
+            UnlockContactDialog("Fazendeiro");
 
             RefreshList();
 
-            Debug.Log("Unlocked Miltinho? " + GameProgress.Instance.HasTriggeredDialog("Miltinho"));
-            Debug.Log("Unlocked Fazendeiro? " + GameProgress.Instance.HasTriggeredDialog("Fazendeiro"));
+            // Debug.Log("Unlocked Miltinho? " + GameProgress.Instance.HasTriggeredDialog("Miltinho"));
+            Debug.Log("Unlocked Fazendeiro? ");
         }
     }
 
@@ -66,7 +69,9 @@ public class Cellphone_ContactsAppSystem : MonoBehaviour
             Destroy(child.gameObject);
 
         // Filter unlocked
-        var unlockedContacts = _allContacts.Where(c => GameProgress.Instance.HasTriggeredDialog(c._dialogNpcId)).ToList();
+        // var unlockedContacts = _allContacts.Where(c => GameProgress.Instance.HasTriggeredDialog(c._dialogNpcId)).ToList();
+        // var unlockedContacts = _allContacts.Where(c => c._isUnlocked == true).ToList();
+        var unlockedContacts = _allContacts.Where(c => _unlockedDialogs.Contains(c._dialogNpcId)).ToList();
 
         // If no unlocked contacts, show the no contacts panel
         if (unlockedContacts.Count == 0)
@@ -126,6 +131,55 @@ public class Cellphone_ContactsAppSystem : MonoBehaviour
         _dialogUI.SetActive(true);
         _dialogChoiceManager.BeginConversation(contact._startingDialogNode);
 
+    }
+    
+    public void UnlockContactDialog(string dialogNpcId)
+    {
+        foreach (var contactId in _allContacts.Select(c => c._dialogNpcId)) {
+            if (contactId == dialogNpcId)
+            {
+                _unlockedDialogs.Add(dialogNpcId);
+                return;
+            }
+        }
+        Debug.LogWarning($"Dialog NPC ID {dialogNpcId} not found in contacts.");
+    }
+
+    public void LoadData(GameData data)
+    {
+        Debug.Log("Loading Contacts Data");
+        bool isUnlocked;
+        foreach (var contact in _allContacts)
+        {
+            data._allDialogs.TryGetValue(contact._dialogNpcId, out isUnlocked);
+            if (isUnlocked)
+            {
+                _unlockedDialogs.Add(contact._dialogNpcId);
+            }
+        }
+    }
+
+    public void SaveData(GameData data) 
+    {
+        Debug.Log("Saving Contacts Data");
+        foreach (var contact in _allContacts)
+        {
+            Debug.Log("TEST CONTACT: " + contact._dialogNpcId);
+            if (data._allDialogs.ContainsKey(contact._dialogNpcId))
+            {
+                data._allDialogs.Remove(contact._dialogNpcId);
+            }
+            
+            if (_unlockedDialogs.Contains(contact._dialogNpcId))
+            {
+                data._allDialogs.Add(contact._dialogNpcId, true);
+            }
+            else
+            {
+                data._allDialogs.Add(contact._dialogNpcId, false);
+            }
+            
+        }
     }
     
 }

@@ -14,12 +14,14 @@ public class Cellphone_CameraAppSystem : MonoBehaviour
     [SerializeField] private Sprite _placeholderImage;
     [SerializeField] private UnityEngine.UI.Image _flashImage;
     private string _currentPhotoId;
-
+    private Cellphone_DiaryApp_GallerySystem _diaryAppSystem;
     private void Awake()
     {
         if (string.IsNullOrEmpty(_currentPhotoId))
             _photoImage.sprite = _placeholderImage;
         _takeButton.onClick.AddListener(OnTakeClicked);
+        
+        _diaryAppSystem = Cellphone.Instance.GetComponentInChildren<Cellphone_DiaryApp_GallerySystem>(true);
     }
 
     public void SetPhoto(Sprite photoSprite, string photoId){
@@ -67,7 +69,7 @@ public class Cellphone_CameraAppSystem : MonoBehaviour
         }
         _flashImage.gameObject.SetActive(false);
 
-        GameProgress.Instance.CapturePhoto(_currentPhotoId);
+        _diaryAppSystem.UnlockPhoto(_currentPhotoId);
 
         // _rootPanel.SetActive(false);
         PlayerController.playercontroller.SetCanMove(true);
