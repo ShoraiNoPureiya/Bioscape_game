@@ -31,11 +31,12 @@ public class PlayerController : MonoBehaviour, IDataPersistence
 
     void Start()
     {
-
-        // spawnar();
-
-        _playerRigidBody2d = GetComponent<Rigidbody2D>();// Gets the player rigidbody
         _playerAnimator = GetComponent<Animator>();// Gets the player animator
+        spawnar();
+        
+        _playerRigidBody2d = GetComponent<Rigidbody2D>();// Gets the player rigidbody
+       
+       
 
 
 
@@ -187,6 +188,7 @@ public class PlayerController : MonoBehaviour, IDataPersistence
             case 1:
                 //hallway to SampleScene
                 _Player.position = new Vector3(-0.14f, -4.78f, 0);
+                ForceIdleAnimation(0f, 1f);
                 break;
             case 2:
                 //Hallway to Kitchen
@@ -280,5 +282,27 @@ public class PlayerController : MonoBehaviour, IDataPersistence
     {
         data._playerPosition = this.transform.position;
         data._currentScene = SceneManager.GetActiveScene().name; // Save the current scene name
+    }
+
+
+    // Method to force the idle animation with specific horizontal and vertical directions
+    private void ForceIdleAnimation(float horizontalDirection, float verticalDirection)
+    {
+        // Defines the horizontal and vertical idle parameters
+        _playerAnimator.SetFloat("Horizontal_Idle", horizontalDirection);
+        _playerAnimator.SetFloat("Vertical_Idle", verticalDirection);
+
+        // Make sure the player is not moving
+        _playerAnimator.SetFloat("Movement", 0f);
+        _playerAnimator.SetFloat("Horizontal_walk", 0f);
+        _playerAnimator.SetFloat("Vertical_walk", 0f);
+
+        // Forces the animator to update immediately
+        StartCoroutine(UpdateAnimatorNextFrame());
+    }
+    private IEnumerator UpdateAnimatorNextFrame()
+    {
+        yield return new WaitForEndOfFrame();
+        _playerAnimator.Update(0f);
     }
 }
