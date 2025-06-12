@@ -6,7 +6,7 @@ using UnityEngine.Animations;
 using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IDataPersistence
 
 
 {
@@ -23,9 +23,9 @@ public class PlayerController : MonoBehaviour
     private bool _isMoving; //Detects if the player is moving
     public bool _InDialog = true; //Detects if the player is in a dialog
     public Transform _Player;// Player transform
-    public int spawnID ;// Spawn ID
+    public int spawnID;// Spawn ID
     [SerializeField] private GameObject pauseMenu;
-    
+
 
 
 
@@ -38,10 +38,11 @@ public class PlayerController : MonoBehaviour
        
        
 
-       
+
+
         playercontroller = this;// Sets the player controller to this
         StartCoroutine(PlayFootstepSound());// Starts the footstep sound coroutine
-        
+
 
 
     }
@@ -55,13 +56,15 @@ public class PlayerController : MonoBehaviour
             PlayerPrefs.SetInt("_DidHeGo", 1);// if the player press F the mission is set to 1
         }
 
-        if (_InDialog) {
-        _playerSpeed = 5; //Sets the player speed to 5
-        _playerDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); //Gets the player vertical and horizontal components
-        _playerAnimator.SetFloat("Horizontal_walk", _playerDirection.x); //If the player walks horizontally the horizontal walk animation starts playing
-        _playerAnimator.SetFloat("Vertical_walk", _playerDirection.y); //If the player walks vertically the vertical walk animation starts playing
-        _playerAnimator.SetFloat("Movement", _playerDirection.sqrMagnitude); //Gets the player movement
-        } else { _playerSpeed = 0; }
+        if (_InDialog)
+        {
+            _playerSpeed = 5; //Sets the player speed to 5
+            _playerDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); //Gets the player vertical and horizontal components
+            _playerAnimator.SetFloat("Horizontal_walk", _playerDirection.x); //If the player walks horizontally the horizontal walk animation starts playing
+            _playerAnimator.SetFloat("Vertical_walk", _playerDirection.y); //If the player walks vertically the vertical walk animation starts playing
+            _playerAnimator.SetFloat("Movement", _playerDirection.sqrMagnitude); //Gets the player movement
+        }
+        else { _playerSpeed = 0; }
 
         if (_playerDirection != Vector2.zero) //Checks if the player is still
         {
@@ -70,7 +73,7 @@ public class PlayerController : MonoBehaviour
             _playerAnimator.SetFloat("Movement", _playerDirection.sqrMagnitude);
         }
         _isMoving = (_playerDirection != Vector2.zero); //Checks if the player is moving
-        
+
 
         if (_isMoving)  //Player is moving reset the timer
         {
@@ -94,14 +97,14 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(InteractionCooldown()); // Starts the interaction cooldown
         }
         if (Input.GetKeyDown(KeyCode.Escape)) // If player press escape the pause menu is activated
-        
+
         {
             pauseGame(); // Pauses the game
         }
     }
     void FixedUpdate() // FixedUpdate is called every fixed framerate frame
-   
-    {  
+
+    {
         _playerDirection.Normalize(); // Normalizes the player direction
         _playerRigidBody2d.MovePosition(_playerRigidBody2d.position + _playerDirection * _playerSpeed * Time.fixedDeltaTime);  // Moves the player   
     }
@@ -120,7 +123,7 @@ public class PlayerController : MonoBehaviour
     {
         while (true)
         {
-            if ( _playerSpeed != 0 && _playerDirection != Vector2.zero) // check is moving player
+            if (_playerSpeed != 0 && _playerDirection != Vector2.zero) // check is moving player
             {
                 SongPlayer.songplayer._AudioSource.PlayOneShot(SongPlayer.songplayer._Walk); // 
             }
@@ -137,15 +140,15 @@ public class PlayerController : MonoBehaviour
 
         while (!_StopAnimation && Time.deltaTime > 0f) //
         {
-           // If the player is not moving and the waiting animation is playing
-            if (_playerDirection != Vector2.zero) 
+            // If the player is not moving and the waiting animation is playing
+            if (_playerDirection != Vector2.zero)
             {
                 _StopAnimation = true; // 
                 _playerAnimator.SetBool("Waiting", false); // Stops the waiting animation
             }
-            
+
             yield return new WaitForEndOfFrame(); //  
-        }           
+        }
     }
     IEnumerator InteractionCooldown() //Coroutine that controls the interaction animation
     {
@@ -159,7 +162,7 @@ public class PlayerController : MonoBehaviour
     //
     public void GetValues(int id)
     {
-        
+
         PlayerPrefs.SetInt("id", id); // 
 
     }
@@ -173,9 +176,9 @@ public class PlayerController : MonoBehaviour
     {
         //spawnID = PlayerPrefs.GetInt("id");
         spawnID = Doors.GetSpawnID();
-        Debug.Log("Spawn--------------- "+ spawnID); // 
+        Debug.Log("Spawn--------------- " + spawnID); // 
 
-        if(spawnID ==0)
+        if (spawnID == 0)
         {
             spawnID = PlayerPrefs.GetInt("id");
         }
@@ -183,40 +186,40 @@ public class PlayerController : MonoBehaviour
         switch (spawnID)
         {
             case 1:
-            //hallway to SampleScene
+                //hallway to SampleScene
                 _Player.position = new Vector3(-0.14f, -4.78f, 0);
                 ForceIdleAnimation(0f, 1f);
                 break;
             case 2:
-            //Hallway to Kitchen
+                //Hallway to Kitchen
                 _Player.position = new Vector3(9.301f, -14.85f, 0);
                 break;
             case 3:
-            //Hallway to Bathroom
+                //Hallway to Bathroom
                 _Player.position = new Vector3(-3.64f, -7.43f, 0);
                 break;
             case 4:
-            //SampleScene to Hallway
+                //SampleScene to Hallway
                 _Player.position = new Vector3(2.36f, -2.54f, 0);
                 break;
             case 5:
-            //Kitchen to Hallway
+                //Kitchen to Hallway
                 _Player.position = new Vector3(-3.99f, -4.36f, 0);
                 break;
             case 6:
-            //kitche to Outside
+                //kitche to Outside
                 _Player.position = new Vector3(-4.25f, -4.78f, 0);
                 break;
             case 7:
-            //Kitchen to garden
+                //Kitchen to garden
                 _Player.position = new Vector3(-1.75f, -8.24f, 0);
                 break;
             case 8:
-            //Bathroom to Hallway
+                //Bathroom to Hallway
                 _Player.position = new Vector3(-3.21f, -1.92f, 0);
                 break;
             case 9:
-            //Garden to Kitchen
+                //Garden to Kitchen
                 _Player.position = new Vector3(9.21f, -5.94f, 0);
                 break;
             case 10:
@@ -232,8 +235,8 @@ public class PlayerController : MonoBehaviour
                 break;
         }
     }
-    
-    
+
+
     public void SetCanMove(bool value)
     {
         _InDialog = value;
@@ -248,16 +251,16 @@ public class PlayerController : MonoBehaviour
 
     public void resumeGame()
     {
-        pauseMenu.SetActive(false);    
+        pauseMenu.SetActive(false);
         Time.timeScale = 1;
     }
 
-    public void quitToMenu() 
+    public void quitToMenu()
     {
         SceneManager.LoadScene("Menu");
-    
+
     }
-    
+
     public void StopMovement() //puts the player's speed to zero
     {
         _playerSpeed = 0;
@@ -268,6 +271,17 @@ public class PlayerController : MonoBehaviour
     {
         _playerSpeed = 5;
         _InDialog = true;
+    }
+    
+    public void LoadData(GameData data) 
+    {
+        this.transform.position = data._playerPosition;
+    }
+
+    public void SaveData(GameData data)
+    {
+        data._playerPosition = this.transform.position;
+        data._currentScene = SceneManager.GetActiveScene().name; // Save the current scene name
     }
 
 

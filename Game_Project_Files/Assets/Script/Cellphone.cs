@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Cellphone : MonoBehaviour
 {
+    public static Cellphone Instance { get; private set; }
     public GameObject _CellContent;
     public GameObject _ApksChild;
 
@@ -13,7 +14,16 @@ public class Cellphone : MonoBehaviour
 
     // Start is called before the first frame update
 
-    
+    void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
     void Start()
     {
         _CellContent.SetActive(false);
