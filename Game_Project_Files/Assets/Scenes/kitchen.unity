@@ -4750,7 +4750,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2887013837097519405, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
       propertyPath: _level
-      value: Outside
+      value: FirstMission
       objectReference: {fileID: 0}
     - target: {fileID: 2887013837097519405, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
       propertyPath: _HeIsIn

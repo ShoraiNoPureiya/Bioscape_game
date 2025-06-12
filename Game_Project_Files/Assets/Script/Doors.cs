@@ -218,4 +218,7 @@ public class Doors : MonoBehaviour
         int resultado = PlayerPrefs.GetInt("_spawnID");
         return resultado;
     }
+
+    
+
 }
