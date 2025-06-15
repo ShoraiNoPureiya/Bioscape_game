@@ -6,7 +6,7 @@ using UnityEngine.Animations;
 using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 
-public class PlayerController : MonoBehaviour, IDataPersistence
+public class PlayerController : MonoBehaviour//, IDataPersistence
 
 
 {
@@ -27,12 +27,21 @@ public class PlayerController : MonoBehaviour, IDataPersistence
     [SerializeField] private GameObject pauseMenu;
 
 
-
+    void Awake()
+    {
+        if (playercontroller != null && playercontroller != this)
+        {
+            Debug.LogWarning("Multiple PlayerControllers detected! Destroying this one.");
+            Destroy(this.gameObject);
+            return;
+        }
+        playercontroller = this;
+    }
 
     void Start()
     {
         _playerAnimator = GetComponent<Animator>();// Gets the player animator
-        spawnar();
+        // spawnar();
         
         _playerRigidBody2d = GetComponent<Rigidbody2D>();// Gets the player rigidbody
        
@@ -272,17 +281,24 @@ public class PlayerController : MonoBehaviour, IDataPersistence
         _playerSpeed = 5;
         _InDialog = true;
     }
-    
-    public void LoadData(GameData data) 
-    {
-        this.transform.position = data._playerPosition;
-    }
 
-    public void SaveData(GameData data)
-    {
-        data._playerPosition = this.transform.position;
-        data._currentScene = SceneManager.GetActiveScene().name; // Save the current scene name
-    }
+    // public void LoadData(GameData data)
+    // {
+    //     if (data._isBeingLoadedFromMainMenu)
+    //     {
+    //         Debug.Log("Loading player position from GameData: " + data._playerPosition);
+    //         this.transform.position = data._playerPosition;
+    //         data._isBeingLoadedFromMainMenu = false;
+    //     }          
+        
+    // }
+
+    // public void SaveData(GameData data)
+    // {
+    //     data._playerPosition = this.transform.position;
+    //     Debug.Log("Saving player position to GameData: " + data._playerPosition);
+    //     data._currentScene = SceneManager.GetActiveScene().name; // Save the current scene name
+    // }
 
 
     // Method to force the idle animation with specific horizontal and vertical directions

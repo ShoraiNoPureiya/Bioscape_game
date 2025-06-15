@@ -76,9 +76,6 @@ public class GameData
         _allPhotos[photoId] = true;
     }
 
-    public void CompleteTask(string taskId)
-    {
-        // _allTasks[taskId] = true;
-    }
+    
 
 }
