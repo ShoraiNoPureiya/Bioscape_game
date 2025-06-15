@@ -48,7 +48,7 @@ public class SaveSlotsMenu : Menu
 
                     DataPersistenceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileId());
                     DataPersistenceManager.instance.NewGame();
-                    Debug.Log("TEST Should definetly be here");
+                    SceneSwapManager.instance._updatedCoords = DataPersistenceManager.instance.GetPlayerPosition();
                     SaveGameAndLoadScene();
                 },
                 // function to execute if we select 'cancel'
@@ -63,6 +63,7 @@ public class SaveSlotsMenu : Menu
             Debug.Log("TEST New Game clicked on empty save slot: " + saveSlot.GetProfileId());
             DataPersistenceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileId());
             DataPersistenceManager.instance.NewGame();
+            
             SaveGameAndLoadScene();
         }
     }
@@ -70,10 +71,14 @@ public class SaveSlotsMenu : Menu
     private void SaveGameAndLoadScene() 
     {
         // save the game anytime before loading a new scene
+        
         DataPersistenceManager.instance.SaveGame();
+
         // load the scene
         // SceneManager.LoadSceneAsync("SampleScene");
         string sceneToLoad = DataPersistenceManager.instance.GetDataSceneName();
+
+        SceneSwapManager.SwapSceneFromDoorUse(sceneToLoad, DataPersistenceManager.instance.GetPlayerPosition());
         SceneManager.LoadSceneAsync(sceneToLoad);
     }
 
@@ -97,7 +102,8 @@ public class SaveSlotsMenu : Menu
 
     public void OnBackClicked() 
     {
-        mainMenu.ActivateMenu();
+        // mainMenu.ActivateMenu();
+        mainMenu.EnableMenuButtons();
         this.DeactivateMenu();
     }
 

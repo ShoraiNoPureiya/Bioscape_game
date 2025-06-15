@@ -53,16 +53,22 @@ public class DataPersistenceManager : MonoBehaviour
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.sceneUnloaded += OnSceneUnloaded;
     }
 
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
+        SceneManager.sceneUnloaded -= OnSceneUnloaded;
     }
 
+    private void OnSceneUnloaded(Scene scene)
+    {
+        SaveGame();
+    }
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (gameData != null) 
+        if (gameData != null)
             gameData._currentScene = scene.name;
 
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
@@ -201,9 +207,13 @@ public class DataPersistenceManager : MonoBehaviour
             Debug.Log("Auto Saved Game");
         }
     }
-    
+
     public string GetDataSceneName()
     {
         return gameData._currentScene;
+    }
+    public Vector3 GetPlayerPosition()
+    {
+        return gameData._playerPosition;
     }
 }
