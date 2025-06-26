@@ -7,11 +7,12 @@ public class TextBoxOrderMission1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(PlayerPrefs.GetInt("Order"));
-        PlayerPrefs.SetInt("Order", PlayerPrefs.GetInt("Order", 1) + 1);
+        Debug.Log(DataPersistenceManager.instance.CurrentOrder);
+        DataPersistenceManager.instance.CurrentOrder += 1;
+
         if (gameObject.name.Equals("TextBoxEnd"))
         {
-            PlayerPrefs.SetInt("Order", 1);
+            DataPersistenceManager.instance.CurrentOrder = 1;
         }
 
     }

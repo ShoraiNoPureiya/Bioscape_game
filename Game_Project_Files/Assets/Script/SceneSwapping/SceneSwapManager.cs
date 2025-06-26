@@ -63,8 +63,9 @@ public class SceneSwapManager : MonoBehaviour, IDataPersistence
         }
         else
         {
-            Debug.Log("PlayerController found, updating position to: " + _updatedCoords);
+            // Debug.Log("PlayerController found, updating position to: " + _updatedCoords);
             _playerController.transform.position = _updatedCoords;
+            _playerController.SetCanMove(true);
         }
 
 
@@ -74,7 +75,7 @@ public class SceneSwapManager : MonoBehaviour, IDataPersistence
     public void LoadData(GameData data)
     {
         
-        Debug.Log("Loading player position from GameData: " + data._playerPosition);
+        // Debug.Log("Loading player position from GameData: " + data._playerPosition);
         _updatedCoords = data._playerPosition;
         
         
@@ -84,7 +85,7 @@ public class SceneSwapManager : MonoBehaviour, IDataPersistence
     public void SaveData(GameData data)
     {
         data._playerPosition = _updatedCoords;
-        Debug.Log("Saving player position to GameData: " + data._playerPosition);
+        // Debug.Log("Saving player position to GameData: " + data._playerPosition);
         if (SceneManager.GetActiveScene().name != "Menu")
             data._currentScene = SceneManager.GetActiveScene().name; // Save the current scene name
         

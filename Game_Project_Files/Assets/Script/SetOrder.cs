@@ -16,11 +16,11 @@ public class SetOrder : MonoBehaviour
     public IEnumerator Order()
     {
         yield return new WaitForSeconds(0.2f);
-        PlayerPrefs.SetInt("Order", _Order);
+        DataPersistenceManager.instance.CurrentOrder = _Order;
     }
     public void SetOrdercs(int i)
     {
-        PlayerPrefs.SetInt("Order", i);
+        DataPersistenceManager.instance.CurrentOrder = i;
     }
 
     // Update is called once per frame

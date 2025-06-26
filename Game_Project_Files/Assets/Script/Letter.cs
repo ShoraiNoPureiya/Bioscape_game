@@ -78,10 +78,10 @@ public class Carta : MonoBehaviour
         //mission 1 starts
 
         PlayerPrefs.SetInt("int", 0);
-        PlayerPrefs.SetInt("MissionCompleted", 0);
-        PlayerPrefs.SetString("text", "Verifique se a chave está na estante do laboratório");
+        DataPersistenceManager.instance.MissionCompleted = 0;
+        PlayerPrefs.SetString("text", "Verifique se a chave estï¿½ na estante do laboratï¿½rio");
         PlayerPrefs.SetInt("_CanRun", 1);
-            PlayerPrefs.SetInt("Order", 1);
+            DataPersistenceManager.instance.CurrentOrder = 1;
 
 
 

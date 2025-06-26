@@ -6,7 +6,7 @@ public class Doors_v2 : MonoBehaviour
 {
     [SerializeField] private string _levelToLoad;
     [SerializeField] private Vector3 _spawnPointCoords;
-    
+    private PlayerController _playerController;
 
     // private void Awake()
     // {
@@ -21,8 +21,9 @@ public class Doors_v2 : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            _playerController = FindObjectOfType<PlayerController>();
+            _playerController.SetCanMove(false);
             SceneSwapManager.SwapSceneFromDoorUse(_levelToLoad, _spawnPointCoords);
-
         }
     }
 }

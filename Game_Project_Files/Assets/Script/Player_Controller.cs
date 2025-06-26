@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour//, IDataPersistence
         if (Input.GetKey(KeyCode.F))
         {
             PlayerPrefs.SetInt("_Key", 1);// if the player press F the key is set to 1
-            PlayerPrefs.SetInt("MissionCompleted", 1);// if the player press F the mission is set to 1
+            DataPersistenceManager.instance.MissionCompleted = 1;// if the player press F the mission is set to 1
             PlayerPrefs.SetInt("_DidHeGo", 1);// if the player press F the mission is set to 1
         }
 
