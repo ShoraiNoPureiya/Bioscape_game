@@ -63,6 +63,7 @@ public class SaveSlotsMenu : Menu
             Debug.Log("TEST New Game clicked on empty save slot: " + saveSlot.GetProfileId());
             DataPersistenceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileId());
             DataPersistenceManager.instance.NewGame();
+            SceneSwapManager.instance._updatedCoords = DataPersistenceManager.instance.GetPlayerPosition();
             
             SaveGameAndLoadScene();
         }

@@ -216,4 +216,25 @@ public class DataPersistenceManager : MonoBehaviour
     {
         return gameData._playerPosition;
     }
+
+    public int CurrentOrder
+    {
+        get => gameData._currentOrder;
+        set
+        {
+            gameData._currentOrder = value;
+            SaveGame();
+        }
+    }
+    
+    public int MissionCompleted
+    {
+        get => gameData._missionCompleted;
+        set
+        {
+            gameData._missionCompleted = value;
+            SaveGame();
+        }
+    }
+
 }

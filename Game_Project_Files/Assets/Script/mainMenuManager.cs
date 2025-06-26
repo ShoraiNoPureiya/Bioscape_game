@@ -17,7 +17,7 @@ public class mainMenuManager : MonoBehaviour
          _level = "SampleScene";
 
         SceneManager.LoadScene(_level);
-        PlayerPrefs.SetInt("MissionCompleted", 1);
+        DataPersistenceManager.instance.MissionCompleted = 1;
         PlayerPrefs.SetString("heisin", "SampleScene");
         
 
@@ -38,7 +38,7 @@ public class mainMenuManager : MonoBehaviour
             SceneManager.LoadScene(_level);
 
         }
-        PlayerPrefs.SetInt("MissionCompleted", 1);
+        DataPersistenceManager.instance.MissionCompleted = 1;
         PlayerPrefs.SetString("heisin", _level);
 
 
