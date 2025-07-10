@@ -16,7 +16,10 @@ public class SetOrder : MonoBehaviour
     public IEnumerator Order()
     {
         yield return new WaitForSeconds(0.2f);
+        if (DataPersistenceManager.instance != null) 
+        { 
         DataPersistenceManager.instance.CurrentOrder = _Order;
+        }
     }
     public void SetOrdercs(int i)
     {
