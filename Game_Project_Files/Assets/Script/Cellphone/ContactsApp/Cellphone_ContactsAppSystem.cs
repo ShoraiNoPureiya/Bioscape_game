@@ -147,7 +147,6 @@ public class Cellphone_ContactsAppSystem : MonoBehaviour, IDataPersistence
 
     public void LoadData(GameData data)
     {
-        Debug.Log("Loading Contacts Data");
         bool isUnlocked;
         foreach (var contact in _allContacts)
         {
@@ -161,10 +160,8 @@ public class Cellphone_ContactsAppSystem : MonoBehaviour, IDataPersistence
 
     public void SaveData(GameData data) 
     {
-        Debug.Log("Saving Contacts Data");
         foreach (var contact in _allContacts)
         {
-            Debug.Log("TEST CONTACT: " + contact._dialogNpcId);
             if (data._allDialogs.ContainsKey(contact._dialogNpcId))
             {
                 data._allDialogs.Remove(contact._dialogNpcId);
