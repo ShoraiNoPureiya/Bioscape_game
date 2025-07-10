@@ -214,7 +214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 489189451996270289, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1434826795275113344, guid: 40127bfa9703f2d469c71c97a7170099, type: 3}
       propertyPath: m_IsActive
@@ -488,7 +488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8690866a6f046a44aa647b3b6d977fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Text: "Verifique se a chave est\xE1 na sala/cozinha (dentro do di\xE1rio)"
+  _Text: Verifique se a chave esta na sala/cozinha (dentro do diario)
   _Texts: 
 --- !u!4 &93244104 stripped
 Transform:
@@ -2170,7 +2170,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.38, y: -6.94, z: 0.05173826}
-  m_LocalScale: {x: 6.6392, y: 6.6392, z: 6.6392}
+  m_LocalScale: {x: 1, y: 1, z: 6.6392}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 93244104}
@@ -2217,12 +2217,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6e38addb671449d4f93106d8841fd8e1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: df78c41ce0d52bb4da6f8cdd65af2eb5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
