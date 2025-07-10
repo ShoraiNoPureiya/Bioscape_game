@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,13 +33,15 @@ public class MainMenu : Menu
     public void OnNewGameClicked() 
     {
         saveSlotsMenu.ActivateMenu(false);
-        this.DeactivateMenu();
+        // this.DeactivateMenu();
+        this.DisableMenuButtons();
     }
 
     public void OnLoadGameClicked() 
     {
         saveSlotsMenu.ActivateMenu(true);
-        this.DeactivateMenu();
+        // this.DeactivateMenu();
+        this.DisableMenuButtons();
     }
 
     public void OnContinueGameClicked() 
@@ -55,6 +58,7 @@ public class MainMenu : Menu
     private void DisableMenuButtons() 
     {
         newGameButton.interactable = false;
+        loadGameButton.interactable = false;
         continueGameButton.interactable = false;
     }
 
@@ -68,4 +72,12 @@ public class MainMenu : Menu
     {
         this.gameObject.SetActive(false);
     }
+
+    internal void EnableMenuButtons()
+    {
+        newGameButton.interactable = true;
+        loadGameButton.interactable = true;
+        continueGameButton.interactable = true;
+    }
+
 }

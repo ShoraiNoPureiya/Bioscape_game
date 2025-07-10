@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 using System;
 using UnityEngine.SceneManagement;
+using UnityEngine.Localization;
 
 public class SaveSlot : MonoBehaviour
 {
@@ -16,6 +17,11 @@ public class SaveSlot : MonoBehaviour
     [SerializeField] private GameObject hasDataContent;
     [SerializeField] private TextMeshProUGUI percentageCompleteText;
     [SerializeField] private TextMeshProUGUI deathCountText;
+
+
+    [Header("Localized Strings for Scenes")]
+    [SerializeField] private LocalizedString _SampleSceneName;
+    [SerializeField] private LocalizedString _HallwayName;
 
     // [Header("Clear Data Button")]
     // [SerializeField] private Button clearButton;

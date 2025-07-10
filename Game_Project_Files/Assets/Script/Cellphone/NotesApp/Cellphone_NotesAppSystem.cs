@@ -55,6 +55,8 @@ public class Cellphone_NotesAppSystem : MonoBehaviour, IDataPersistence
             var go = Instantiate(_missionButtonPrefab, _missionListContent);
             var missionUI = go.GetComponent<Cellphone_NotesApp_MissionEntryUI>();
             missionUI.Initialize(page, OnMissionSelected);
+
+            PopulateTasks(page);
         }
     }
 
@@ -99,10 +101,12 @@ public class Cellphone_NotesAppSystem : MonoBehaviour, IDataPersistence
                 if (task._taskId == taskId)
                 {
                     _completedTasks.Add(taskId);
+
+
                     return;
                 }
             }
-            
+
         }
     }
 

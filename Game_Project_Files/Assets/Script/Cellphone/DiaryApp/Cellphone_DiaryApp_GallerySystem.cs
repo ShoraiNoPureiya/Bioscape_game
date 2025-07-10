@@ -29,10 +29,11 @@ public class Cellphone_DiaryApp_GallerySystem : MonoBehaviour, IDataPersistence
         {
             UnlockPhoto("03");
         }
-        if(Input.GetKeyDown(KeyCode.O)) //Debug key to unlock photo
+        if (Input.GetKeyDown(KeyCode.O)) //Debug key to unlock photo
         {
             UnlockPhoto("02");
         }
+        
     }
 
     public void NextPage()
@@ -75,6 +76,7 @@ public class Cellphone_DiaryApp_GallerySystem : MonoBehaviour, IDataPersistence
             if (photo._photoId == photoId)
             {
                 _unlockedPhotos.Add(photoId);
+                _galleryUI.UpdateGalleryUI(photo); // Update the UI with the newly unlocked photo
                 return;
             }
         }

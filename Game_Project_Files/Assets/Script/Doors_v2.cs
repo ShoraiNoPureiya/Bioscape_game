@@ -5,18 +5,25 @@ using UnityEngine;
 public class Doors_v2 : MonoBehaviour
 {
     [SerializeField] private string _levelToLoad;
-    [SerializeField] private Vector3 _spawnPointID;
+    [SerializeField] private Vector3 _spawnPointCoords;
+    private PlayerController _playerController;
+
+    // private void Awake()
+    // {
+    //     // _sceneSwapManager = SceneSwapManager.instance;
+    //     // if (_sceneSwapManager == null)
+    //     // {
+    //     //     Debug.LogError("SceneSwapManager instance is not found.");
+    //     // }
+    // }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            // Load the specified level
-            UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(_levelToLoad);
-            
-            // Set the player's position to the specified spawn point
-            PlayerController.playercontroller._Player.position = _spawnPointID;
-            
+            _playerController = FindObjectOfType<PlayerController>();
+            _playerController.SetCanMove(false);
+            SceneSwapManager.SwapSceneFromDoorUse(_levelToLoad, _spawnPointCoords);
         }
     }
 }
