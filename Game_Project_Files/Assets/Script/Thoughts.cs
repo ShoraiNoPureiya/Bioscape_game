@@ -13,11 +13,11 @@ public class Thoughts : MonoBehaviour
     private void Start()
     {
         thoughts = this;
-        DataPersistenceManager.instance.CurrentOrder = 1;
+        
     }
     void Update()
     {
-        Debug.Log(PlayerPrefs.GetInt("_CanRun"));
+        Debug.Log(DataPersistenceManager.instance.CurrentOrder);
         // Se o TextBoxA estiver desativado, liga o TextBoxB
         if (PlayerPrefs.GetInt("_CanRun") == 1 && DataPersistenceManager.instance.CurrentOrder == _Order)
         {

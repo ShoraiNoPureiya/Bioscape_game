@@ -2577,7 +2577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8690866a6f046a44aa647b3b6d977fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Text: "Verifique se a chave est\xE1 no banheiro"
+  _Text: Verifique se a chave esta no banheiro
   _Texts: 
 --- !u!114 &1060594981
 MonoBehaviour:

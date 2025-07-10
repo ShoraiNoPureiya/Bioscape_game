@@ -488,7 +488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8690866a6f046a44aa647b3b6d977fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Text: "Verifique se a chave est\xE1 na sala/cozinha (dentro do di\xE1rio)"
+  _Text: Verifique se a chave esta na sala/cozinha (dentro do diario)
   _Texts: 
 --- !u!4 &93244104 stripped
 Transform:
