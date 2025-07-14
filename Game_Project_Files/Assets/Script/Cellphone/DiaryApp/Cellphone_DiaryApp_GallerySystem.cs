@@ -107,7 +107,6 @@ public class Cellphone_DiaryApp_GallerySystem : MonoBehaviour, IDataPersistence
     {
         foreach (var photo in _galleryPhotoEntries)
         {
-            Debug.Log("TEST PHOTO: " + photo._photoId);
             if (data._allPhotos.ContainsKey(photo._photoId))
             {
                 data._allPhotos.Remove(photo._photoId);

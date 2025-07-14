@@ -154,7 +154,6 @@ public class Cellphone_CloudApp_NewsAppSystem : MonoBehaviour, IDataPersistence
     {
         foreach (var report in _allReports)
         {
-            Debug.Log("TEST REPORT: " + report._id);
             if (data._allReports.ContainsKey(report._id))
             {
                 data._allReports.Remove(report._id);
