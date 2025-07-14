@@ -139,6 +139,18 @@ MonoBehaviour:
     m_Localized: "Entrega o Cambar\xE1 mastigado"
     m_Metadata:
       m_Items: []
+  - m_Id: 35916236201050112
+    m_Localized: 'Leva 1: Cerca '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35916297651798016
+    m_Localized: 'Leva 2: Riacho'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35916312919064576
+    m_Localized: 'Leva 3: Pasto'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

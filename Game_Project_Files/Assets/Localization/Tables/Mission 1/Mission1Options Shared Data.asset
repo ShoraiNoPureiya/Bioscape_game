@@ -133,6 +133,18 @@ MonoBehaviour:
     m_Key: Ask5
     m_Metadata:
       m_Items: []
+  - m_Id: 35916236201050112
+    m_Key: Leva 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35916297651798016
+    m_Key: Leva 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35916312919064576
+    m_Key: Leva 3
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
