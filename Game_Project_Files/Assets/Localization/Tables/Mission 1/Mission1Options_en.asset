@@ -118,6 +118,26 @@ MonoBehaviour:
       costs an amount of money and brings a percentage of success or failure."
     m_Metadata:
       m_Items: []
+  - m_Id: 35899859998261248
+    m_Localized: Deliver water sample
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35899885042450432
+    m_Localized: Midfield
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35899898933985280
+    m_Localized: Fence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35899930743586816
+    m_Localized: Deliver the photo of the bull
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35899951887073280
+    m_Localized: "Deliver the chewed Cambar\xE1"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
