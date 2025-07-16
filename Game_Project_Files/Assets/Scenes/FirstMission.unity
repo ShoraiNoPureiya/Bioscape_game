@@ -589,12 +589,14 @@ MonoBehaviour:
   Op4: {fileID: 0}
   Op5: {fileID: 0}
   Op6: {fileID: 0}
+  Op7: {fileID: 0}
   Dialog1: {fileID: 0}
   Dialog2: {fileID: 0}
   Dialog3: {fileID: 0}
   Dialog4: {fileID: 0}
   Dialog5: {fileID: 0}
   Dialog6: {fileID: 0}
+  Dialog7: {fileID: 0}
   _Pressed: 0
   _TurnedOn: 0
 --- !u!1 &39966720
@@ -726,7 +728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c4f8e3ff83633540ace71c91ca8f8e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Order: 2
+  _Order: 1
 --- !u!114 &44872626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -925,7 +927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c4f8e3ff83633540ace71c91ca8f8e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Order: 2
+  _Order: 1
 --- !u!114 &62156963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1980,7 +1982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c4f8e3ff83633540ace71c91ca8f8e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Order: 2
+  _Order: 1
 --- !u!114 &211409520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2037,12 +2039,14 @@ MonoBehaviour:
   Op4: {fileID: 6300946}
   Op5: {fileID: 1114168739}
   Op6: {fileID: 412986669}
+  Op7: {fileID: 412986671}
   Dialog1: {fileID: 2529133758798051189}
   Dialog2: {fileID: 868128290}
   Dialog3: {fileID: 62156960}
   Dialog4: {fileID: 1283263768}
   Dialog5: {fileID: 44872623}
-  Dialog6: {fileID: 1335895506}
+  Dialog6: {fileID: 807535016}
+  Dialog7: {fileID: 1335895506}
   _Pressed: 0
   _TurnedOn: 0
 --- !u!1 &224944657
@@ -2663,8 +2667,8 @@ RectTransform:
   m_LocalScale: {x: 2.473755, y: 4.626169, z: 2.473755}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1335895507}
   - {fileID: 1014386428}
+  - {fileID: 807535017}
   m_Father: {fileID: 211409518}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2716,7 +2720,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1335895506}
+      - m_Target: {fileID: 211409522}
+        m_TargetAssemblyTypeName: StartDialog2, Assembly-CSharp
+        m_MethodName: PressButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 412986669}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 807535016}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -2730,11 +2746,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 211409522}
         m_TargetAssemblyTypeName: StartDialog2, Assembly-CSharp
-        m_MethodName: PressButton
-        m_Mode: 2
+        m_MethodName: TalkLater
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 412986669}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3443,12 +3459,14 @@ MonoBehaviour:
   Op4: {fileID: 1160587671}
   Op5: {fileID: 0}
   Op6: {fileID: 0}
+  Op7: {fileID: 0}
   Dialog1: {fileID: 0}
   Dialog2: {fileID: 0}
   Dialog3: {fileID: 0}
   Dialog4: {fileID: 0}
   Dialog5: {fileID: 0}
   Dialog6: {fileID: 0}
+  Dialog7: {fileID: 0}
   _Pressed: 0
   _TurnedOn: 0
 --- !u!1 &599829583
@@ -5515,6 +5533,55 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!1 &807535016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 807535017}
+  - component: {fileID: 807535019}
+  m_Layer: 0
+  m_Name: Thoughts
+  m_TagString: TextBox
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &807535017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807535016}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -411.3497, y: -70.193405, z: 0.024171138}
+  m_LocalScale: {x: 0.16879682, y: 0.09279608, z: 0.28394872}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1335895507}
+  m_Father: {fileID: 412986670}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &807535019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807535016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87e6cf35949042b4aa0522ea3e8789a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextBoxA: {fileID: 32415628}
+  TextBoxB: {fileID: 1335895506}
+  _HasRunned: 0
+  _Order: 1
 --- !u!1 &816783423 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 438661902648507586, guid: 769f46155c54de9488e72a3e3be08987, type: 3}
@@ -5717,7 +5784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c4f8e3ff83633540ace71c91ca8f8e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Order: 2
+  _Order: 1
 --- !u!114 &868128293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7771,12 +7838,14 @@ MonoBehaviour:
   Op4: {fileID: 1962345910}
   Op5: {fileID: 0}
   Op6: {fileID: 0}
+  Op7: {fileID: 0}
   Dialog1: {fileID: 0}
   Dialog2: {fileID: 0}
   Dialog3: {fileID: 0}
   Dialog4: {fileID: 0}
   Dialog5: {fileID: 0}
   Dialog6: {fileID: 0}
+  Dialog7: {fileID: 0}
   _Pressed: 0
   _TurnedOn: 0
 --- !u!1001 &1188060058
@@ -8331,7 +8400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c4f8e3ff83633540ace71c91ca8f8e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Order: 2
+  _Order: 1
 --- !u!114 &1283263771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8669,18 +8738,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335895506}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4042439, y: 0.21616158, z: 0.40424383}
+  m_LocalPosition: {x: 0, y: 0, z: -0.085125014}
+  m_LocalScale: {x: 2.3948545, y: 2.3294256, z: 1.4236506}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 782129503}
   - {fileID: 1037536813}
   - {fileID: 107190750}
-  m_Father: {fileID: 412986670}
+  m_Father: {fileID: 807535017}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13, y: 38}
+  m_AnchoredPosition: {x: 2513.9678, y: 1165.9265}
   m_SizeDelta: {x: 1600, y: 712}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1335895508
@@ -11300,7 +11369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c4f8e3ff83633540ace71c91ca8f8e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Order: 2
+  _Order: 1
 --- !u!1 &1779615382
 GameObject:
   m_ObjectHideFlags: 0
