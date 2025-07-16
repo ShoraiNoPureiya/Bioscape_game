@@ -150,6 +150,11 @@ MonoBehaviour:
     m_Localized: 'Route 1: Fence'
     m_Metadata:
       m_Items: []
+  - m_Id: 36329808211132416
+    m_Localized: Wait! ;If you need help with anything else; you can call me at this
+      number from your cell phone; See you later!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

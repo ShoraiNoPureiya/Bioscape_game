@@ -30,7 +30,6 @@ public class TutorialMissions2 : MonoBehaviour
             {
                 PlayerPrefs.SetString("textIf", "Verifique se a chave esta no banheiro");
                 DataPersistenceManager.instance.CurrentOrder = 2;
-                Debug.Log("abc");
             }
         if (PlayerPrefs.GetString("textIf").Equals("Verifique se a chave esta no banheiro") && _Text.Equals("Verifique se a chave esta na sala/cozinha (dentro do diario)")) // if the player interacts with the CORRECT object, changes the text
             {
