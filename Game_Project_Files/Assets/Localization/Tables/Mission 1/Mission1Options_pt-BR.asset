@@ -151,6 +151,11 @@ MonoBehaviour:
     m_Localized: 'Leva 3: Pasto'
     m_Metadata:
       m_Items: []
+  - m_Id: 36329808211132416
+    m_Localized: "Espere! ;Se precisar de ajuda com mais alguma coisa;voc\xEA pode
+      me ligar neste n\xFAmero pelo seu celular;At\xE9 depois!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
