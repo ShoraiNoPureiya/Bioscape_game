@@ -1,5 +1,9 @@
+using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StartDialog2 : MonoBehaviour
 {
@@ -11,6 +15,7 @@ public class StartDialog2 : MonoBehaviour
     public GameObject Op4;
     public GameObject Op5;
     public GameObject Op6;
+    public Button Op7;
 
     //public GameObject TextBox;
     public GameObject Dialog1;
@@ -19,15 +24,18 @@ public class StartDialog2 : MonoBehaviour
     public GameObject Dialog4;
     public GameObject Dialog5;
     public GameObject Dialog6;
+    public GameObject Dialog7;
 
     private List<GameObject> _dialogs;
     private List<GameObject> _buttons;
 
     public bool _Pressed;
+    public bool _TurnedOn;
 
 
     void Start()
     {
+        _TurnedOn = false;
         startdialog2 = this;
         // Adiciona os botões à lista para facilitar o gerenciamento
         _buttons = new List<GameObject> { Op1, Op2, Op3, Op4, Op5, Op6 };
@@ -36,7 +44,20 @@ public class StartDialog2 : MonoBehaviour
     }
     private void Update()
     {
+        if (Dialog6 != null)
+        {
+            if (Dialog6.gameObject.activeSelf)
+            {
+                Op7.interactable = false;
+                _TurnedOn = true;
 
+            }
+        }
+        if (Dialog7 != null) 
+        {
+            if (!Dialog7.activeSelf)
+            { Op7.interactable = true; }
+        }
     }
     // Este método deve ser chamado ao clicar em um botão, com ele como parâmetro
     public void PressButton(GameObject clickedButton)
@@ -83,5 +104,13 @@ public class StartDialog2 : MonoBehaviour
     private void OnDisable()
     {
 
+    }
+
+   public void TalkLater()
+    {
+        if (_TurnedOn) 
+        { 
+        gameObject.SetActive(false);
+        }
     }
 }

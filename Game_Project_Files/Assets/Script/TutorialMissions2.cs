@@ -22,18 +22,18 @@ public class TutorialMissions2 : MonoBehaviour
     {
             if (PlayerPrefs.GetString("textIf") == "") // // if there's no text, uses the one in the scene
             {
-                PlayerPrefs.SetString("textIf", _Text);
+                PlayerPrefs.SetString("textIf", "Verifique se a chave esta na estante do laboratorio");
                 DataPersistenceManager.instance.CurrentOrder = 1;
             }
 
-            if (PlayerPrefs.GetString("textIf").Equals("Verifique se a chave est� na estante do laborat�rio") && _Text.Equals("Verifique se a chave est� no banheiro")) // if the player interacts with the CORRECT object, changes the text
+        if (PlayerPrefs.GetString("textIf").Equals("Verifique se a chave esta na estante do laboratorio") && _Text.Equals("Verifique se a chave esta no banheiro")) // if the player interacts with the CORRECT object, changes the text
             {
-                PlayerPrefs.SetString("textIf", "Verifique se a chave est� no banheiro");
+                PlayerPrefs.SetString("textIf", "Verifique se a chave esta no banheiro");
                 DataPersistenceManager.instance.CurrentOrder = 2;
             }
-            if (PlayerPrefs.GetString("textIf").Equals("Verifique se a chave est� no banheiro") && _Text.Equals("Verifique se a chave est� na sala/cozinha (dentro do di�rio)")) // if the player interacts with the CORRECT object, changes the text
+        if (PlayerPrefs.GetString("textIf").Equals("Verifique se a chave esta no banheiro") && _Text.Equals("Verifique se a chave esta na sala/cozinha (dentro do diario)")) // if the player interacts with the CORRECT object, changes the text
             {
-                PlayerPrefs.SetString("textIf", "Verifique se a chave est� na sala/cozinha (dentro do di�rio)");
+                PlayerPrefs.SetString("textIf", "Verifique se a chave esta na sala/cozinha (dentro do diario)");
                 DataPersistenceManager.instance.CurrentOrder = 3;
             }
             if (PlayerPrefs.GetString("textIf").Equals("Verifique se a chave est� na sala/cozinha (dentro do di�rio)") && _Text.Equals("Verifique da onde veio esse som.")) // if the player interacts with the CORRECT object, changes the text
