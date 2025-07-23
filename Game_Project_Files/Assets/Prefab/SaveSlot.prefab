@@ -284,8 +284,70 @@ MonoBehaviour:
   profileId: 
   noDataContent: {fileID: 9170440341627803198}
   hasDataContent: {fileID: 7448939266818774854}
-  percentageCompleteText: {fileID: 8053668819080560071}
-  deathCountText: {fileID: 8854187052915329580}
+  lastLocationTMPUGUI: {fileID: 8053668819080560071}
+  location_WordLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:08bd45ec6b27bdd49a2d94281c0dd62b
+    m_TableEntryReference:
+      m_KeyId: 14143521886208
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  lastPlayedTMPUGUI: {fileID: 8854187052915329580}
+  lastPlayed_WordLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:08bd45ec6b27bdd49a2d94281c0dd62b
+    m_TableEntryReference:
+      m_KeyId: 14261776093184
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _InGameSceneNames:
+  - m_TableReference:
+      m_TableCollectionName: GUID:4067f20f09127ba4e81c56232910bf2e
+    m_TableEntryReference:
+      m_KeyId: 6788026368
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:4067f20f09127ba4e81c56232910bf2e
+    m_TableEntryReference:
+      m_KeyId: 49452486656
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:4067f20f09127ba4e81c56232910bf2e
+    m_TableEntryReference:
+      m_KeyId: 233003618304
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:4067f20f09127ba4e81c56232910bf2e
+    m_TableEntryReference:
+      m_KeyId: 110286671872
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:4067f20f09127ba4e81c56232910bf2e
+    m_TableEntryReference:
+      m_KeyId: 159502635008
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &5977678189101534363
 GameObject:
   m_ObjectHideFlags: 0
