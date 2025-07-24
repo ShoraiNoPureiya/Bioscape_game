@@ -17,7 +17,7 @@ public class Thoughts : MonoBehaviour
     }
     void Update()
     {
-        PlayerPrefs.SetInt("_CanRun", 1);
+        PlayerPrefs.SetInt("_CanRun",1);
         // Se o TextBoxA estiver desativado, liga o TextBoxB
         if (PlayerPrefs.GetInt("_CanRun") == 1 && DataPersistenceManager.instance.CurrentOrder == _Order)
         {
