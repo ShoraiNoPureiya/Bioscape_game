@@ -16,15 +16,15 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: e7887c5772c296c4a94f19fe39de8f4e
   m_Entries:
   - m_Id: 17441157120
-    m_Key: FirstTextBoxCousin
+    m_Key: FirstTextBoxCousinS
     m_Metadata:
       m_Items: []
   - m_Id: 1046979211264
-    m_Key: FirstTextBoxScientist
+    m_Key: FirstTextBoxScientistS
     m_Metadata:
       m_Items: []
   - m_Id: 1683884273664
-    m_Key: SecondTextBoxCousin
+    m_Key: SecondTextBoxCousinS
     m_Metadata:
       m_Items: []
   - m_Id: 1968996282368
@@ -40,15 +40,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4344037699584
-    m_Key: SecondTextBoxScientist
+    m_Key: SecondTextBoxScientistS
     m_Metadata:
       m_Items: []
   - m_Id: 4766567690240
-    m_Key: ThirdTextBoxCousin
+    m_Key: ThirdTextBoxCousinS
     m_Metadata:
       m_Items: []
   - m_Id: 5128901029888
-    m_Key: ThirdTextBoxScientist
+    m_Key: ThirdTextBoxScientistS
     m_Metadata:
       m_Items: []
   - m_Id: 5383616917504
