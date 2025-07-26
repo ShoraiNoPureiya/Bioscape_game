@@ -33,6 +33,12 @@ public class StartDialog : MonoBehaviour
             // Deactivates the child object if it was found
             child.SetActive(false);
         }
+        child = transform.Find("AlertBox/Square/ThoughtsSecondMission")?.gameObject;
+        if (child != null)
+        {
+            // Deactivates the child object if it was found
+            child.SetActive(false);
+        }
     }
 
     // Update is called once per frame
