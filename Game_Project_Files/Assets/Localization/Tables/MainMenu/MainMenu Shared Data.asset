@@ -32,15 +32,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1105087500288
-    m_Key: ConfirmText
+    m_Key: ConfirmOption
     m_Metadata:
       m_Items: []
   - m_Id: 1148288831488
-    m_Key: CancelText
+    m_Key: CancelOption
     m_Metadata:
       m_Items: []
   - m_Id: 3465738260480
     m_Key: ChooseSave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14143521886208
+    m_Key: Location
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14261776093184
+    m_Key: LastPlayed
     m_Metadata:
       m_Items: []
   m_Metadata:

@@ -39,6 +39,11 @@ public class Cellphone_ContactsAppSystem : MonoBehaviour, IDataPersistence
 
     private void Update()
     {
+        /*
+        --------------------
+            DEBUG KEYS
+        --------------------
+
         if (Input.GetKeyDown(KeyCode.H)) //Debug key to unlock Miltinho
         {
             // GameProgress.Instance.TriggerDialog("Miltinho");
@@ -51,6 +56,7 @@ public class Cellphone_ContactsAppSystem : MonoBehaviour, IDataPersistence
             // Debug.Log("Unlocked Miltinho? " + GameProgress.Instance.HasTriggeredDialog("Miltinho"));
             Debug.Log("Unlocked Fazendeiro? ");
         }
+        */
     }
 
     private void OnEnable()

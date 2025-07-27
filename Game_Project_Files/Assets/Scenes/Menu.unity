@@ -6313,6 +6313,18 @@ MonoBehaviour:
   mainMenu: {fileID: 762817940}
   backButton: {fileID: 2132234482}
   confirmationPopupMenu: {fileID: 564998862}
+  confirmationText:
+    m_TableReference:
+      m_TableCollectionName: GUID:08bd45ec6b27bdd49a2d94281c0dd62b
+    m_TableEntryReference:
+      m_KeyId: 294068490240
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!222 &1660593332
 CanvasRenderer:
   m_ObjectHideFlags: 0

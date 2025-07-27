@@ -25,25 +25,29 @@ public class TutorialMission : MonoBehaviour
             case 1:
                 localizedStringDef.GetLocalizedStringAsync().Completed += handle =>
                 {
-                    _Text.text = handle.Result;
+                    if (_Text != null)
+                        _Text.text = handle.Result;
                 };
                 break;
             case 2:
                 localizedStringBath.GetLocalizedStringAsync().Completed += handle =>
                 {
-                    _Text.text = handle.Result;
+                    if (_Text != null)
+                        _Text.text = handle.Result;
                 };
                 break;
             case 3:
                 localizedStringKitchen.GetLocalizedStringAsync().Completed += handle =>
                 {
-                    _Text.text = handle.Result;
+                    if (_Text != null)
+                        _Text.text = handle.Result;
                 };
                 break;
             case 4:
                 localizedStringGarden.GetLocalizedStringAsync().Completed += handle =>
                 {
-                    _Text.text = handle.Result;
+                    if (_Text != null)
+                        _Text.text = handle.Result;
                 };
                 break;
             default:

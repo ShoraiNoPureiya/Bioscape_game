@@ -29,6 +29,11 @@ public class Cellphone_CloudApp_NewsAppSystem : MonoBehaviour, IDataPersistence
 
     private void Update()
     {
+        /*
+        --------------------
+            DEBUG KEYS
+        --------------------
+
         if (Input.GetKeyDown(KeyCode.J))
         {
             // GameProgress.Instance.IncrementMission();
@@ -38,6 +43,7 @@ public class Cellphone_CloudApp_NewsAppSystem : MonoBehaviour, IDataPersistence
             // Debug.Log("Mission Index: " );
             Debug.Log("Mission Index: " + _currentMissionIndex);
         }
+        */
     }
 
     private void OnEnable()
