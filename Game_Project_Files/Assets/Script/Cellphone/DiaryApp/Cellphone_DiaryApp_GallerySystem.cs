@@ -25,6 +25,11 @@ public class Cellphone_DiaryApp_GallerySystem : MonoBehaviour, IDataPersistence
 
     private void Update()
     {
+        /*
+        --------------------
+            DEBUG KEYS
+        --------------------
+
         if (Input.GetKeyDown(KeyCode.P)) //Debug key to unlock photo
         {
             UnlockPhoto("03");
@@ -33,6 +38,7 @@ public class Cellphone_DiaryApp_GallerySystem : MonoBehaviour, IDataPersistence
         {
             UnlockPhoto("02");
         }
+        */
         
     }
 
