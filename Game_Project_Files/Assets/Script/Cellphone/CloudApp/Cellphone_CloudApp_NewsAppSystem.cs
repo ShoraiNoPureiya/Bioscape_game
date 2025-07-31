@@ -29,6 +29,11 @@ public class Cellphone_CloudApp_NewsAppSystem : MonoBehaviour, IDataPersistence
 
     private void Update()
     {
+        /*
+        --------------------
+            DEBUG KEYS
+        --------------------
+
         if (Input.GetKeyDown(KeyCode.J))
         {
             // GameProgress.Instance.IncrementMission();
@@ -38,6 +43,7 @@ public class Cellphone_CloudApp_NewsAppSystem : MonoBehaviour, IDataPersistence
             // Debug.Log("Mission Index: " );
             Debug.Log("Mission Index: " + _currentMissionIndex);
         }
+        */
     }
 
     private void OnEnable()
@@ -154,7 +160,6 @@ public class Cellphone_CloudApp_NewsAppSystem : MonoBehaviour, IDataPersistence
     {
         foreach (var report in _allReports)
         {
-            Debug.Log("TEST REPORT: " + report._id);
             if (data._allReports.ContainsKey(report._id))
             {
                 data._allReports.Remove(report._id);

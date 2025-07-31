@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Localization.Plugins.XLIFF.V20;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -15,6 +16,7 @@ public class SaveSlotsMenu : Menu
 
     [Header("Confirmation Popup")]
     [SerializeField] private ConfirmationPopupMenu confirmationPopupMenu;
+    [SerializeField] private LocalizedString confirmationText;
 
     private SaveSlot[] saveSlots;
 
@@ -42,7 +44,7 @@ public class SaveSlotsMenu : Menu
         {
             
             confirmationPopupMenu.ActivateMenu(
-                "Starting a New Game with this slot will override the currently saved data. Are you sure?",
+                confirmationText,
                 // function to execute if we select 'yes'
                 () => {
 
@@ -83,23 +85,23 @@ public class SaveSlotsMenu : Menu
         SceneManager.LoadSceneAsync(sceneToLoad);
     }
 
-    public void OnClearClicked(SaveSlot saveSlot) 
-    {
-        DisableMenuButtons();
+    // public void OnClearClicked(SaveSlot saveSlot) 
+    // {
+    //     DisableMenuButtons();
 
-        confirmationPopupMenu.ActivateMenu(
-            "Are you sure you want to delete this saved data?",
-            // function to execute if we select 'yes'
-            () => {
-                DataPersistenceManager.instance.DeleteProfileData(saveSlot.GetProfileId());
-                ActivateMenu(isLoadingGame);
-            },
-            // function to execute if we select 'cancel'
-            () => {
-                ActivateMenu(isLoadingGame);
-            }
-        );
-    }
+    //     confirmationPopupMenu.ActivateMenu(
+    //         "Are you sure you want to delete this saved data?",
+    //         // function to execute if we select 'yes'
+    //         () => {
+    //             DataPersistenceManager.instance.DeleteProfileData(saveSlot.GetProfileId());
+    //             ActivateMenu(isLoadingGame);
+    //         },
+    //         // function to execute if we select 'cancel'
+    //         () => {
+    //             ActivateMenu(isLoadingGame);
+    //         }
+    //     );
+    // }
 
     public void OnBackClicked() 
     {

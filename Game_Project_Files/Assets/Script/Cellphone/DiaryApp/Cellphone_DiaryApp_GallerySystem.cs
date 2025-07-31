@@ -25,6 +25,11 @@ public class Cellphone_DiaryApp_GallerySystem : MonoBehaviour, IDataPersistence
 
     private void Update()
     {
+        /*
+        --------------------
+            DEBUG KEYS
+        --------------------
+
         if (Input.GetKeyDown(KeyCode.P)) //Debug key to unlock photo
         {
             UnlockPhoto("03");
@@ -33,6 +38,7 @@ public class Cellphone_DiaryApp_GallerySystem : MonoBehaviour, IDataPersistence
         {
             UnlockPhoto("02");
         }
+        */
         
     }
 
@@ -107,7 +113,6 @@ public class Cellphone_DiaryApp_GallerySystem : MonoBehaviour, IDataPersistence
     {
         foreach (var photo in _galleryPhotoEntries)
         {
-            Debug.Log("TEST PHOTO: " + photo._photoId);
             if (data._allPhotos.ContainsKey(photo._photoId))
             {
                 data._allPhotos.Remove(photo._photoId);

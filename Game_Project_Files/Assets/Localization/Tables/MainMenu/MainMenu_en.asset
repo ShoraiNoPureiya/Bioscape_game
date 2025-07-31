@@ -47,6 +47,14 @@ MonoBehaviour:
     m_Localized: Select the save you want to play
     m_Metadata:
       m_Items: []
+  - m_Id: 14143521886208
+    m_Localized: 'Location: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14261776093184
+    m_Localized: 'Last Played: '
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

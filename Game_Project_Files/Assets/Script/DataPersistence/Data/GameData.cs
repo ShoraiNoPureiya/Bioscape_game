@@ -43,26 +43,7 @@ public class GameData
         _currentOrder = 0;
         _missionCompleted = 0;
 
-
     }
 
-    
-
-    public void IncrementMission()
-    {
-        _currentNewsIndex++;
-    }
-
-    public void TriggerDialog(string dialogId)
-    {
-        _allDialogs[dialogId] = true;
-    }
-
-    public void CapturePhoto(string photoId)
-    {
-        _allPhotos[photoId] = true;
-    }
-
-    
 
 }
