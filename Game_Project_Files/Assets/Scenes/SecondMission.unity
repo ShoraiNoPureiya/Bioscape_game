@@ -5756,7 +5756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3653149407233170516, guid: b78a814c4a945ae44989c4290696dec0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4086153362696541937, guid: b78a814c4a945ae44989c4290696dec0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5825,6 +5825,14 @@ PrefabInstance:
     - target: {fileID: 7168793876414877585, guid: b78a814c4a945ae44989c4290696dec0, type: 3}
       propertyPath: TextBoxA
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552571851733605521, guid: b78a814c4a945ae44989c4290696dec0, type: 3}
+      propertyPath: m_Size.y
+      value: 0.4678955
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552571851733605521, guid: b78a814c4a945ae44989c4290696dec0, type: 3}
+      propertyPath: m_Offset.y
+      value: -158.26764
       objectReference: {fileID: 0}
     - target: {fileID: 9009105405926092727, guid: b78a814c4a945ae44989c4290696dec0, type: 3}
       propertyPath: TextBoxA
