@@ -74,7 +74,6 @@ public class StartDialog : MonoBehaviour
             {
                 child.gameObject.SetActive(true); // Activates normally
             }
-
             // Recursion to process the child's children
             Check2(child);
         }
