@@ -30,7 +30,7 @@ public class StartDialog2 : MonoBehaviour
     private List<GameObject> _buttons;
 
     public bool _Pressed;
-    public bool _TurnedOn;
+    public static bool _TurnedOn;
 
 
     void Start()
