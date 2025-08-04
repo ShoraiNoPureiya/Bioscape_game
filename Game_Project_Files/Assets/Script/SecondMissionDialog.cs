@@ -26,6 +26,7 @@ public class SecondMissionDialog : MonoBehaviour
         {
             Debug.Log("a");
             DataPersistenceManager.instance.CurrentOrder = 4;
+            Cellphone.Instance.ShowNotification();
         }
     }
 }
