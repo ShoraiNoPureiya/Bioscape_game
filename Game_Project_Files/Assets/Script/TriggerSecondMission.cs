@@ -2,21 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FirstMissionsScript : MonoBehaviour
+public class TriggerSecondMission : MonoBehaviour
 {
-    public GameObject _Dialog;
     // Start is called before the first frame update
+    public GameObject _Door;
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (FarmMission._I == 5)
+        if (Task1.Result == "Red")
         {
-            _Dialog.tag = "Untagged";
+            _Door.SetActive(false);
+        }
+        else
+        {
+            _Door.SetActive(true);
         }
     }
 }

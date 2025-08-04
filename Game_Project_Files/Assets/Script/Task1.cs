@@ -7,7 +7,7 @@ public class Task1 : MonoBehaviour
     public int Choice1;
     public int Choice2;
     public int Choice3;
-    public string Result;
+    public static string Result;
     GameObject[] Yellow;
     GameObject[] Red;
     GameObject[] Green;
@@ -16,7 +16,7 @@ public class Task1 : MonoBehaviour
     void Start()
     {
 
-
+        Result = "Red";
 
 
 
