@@ -6,7 +6,7 @@ public class FarmMission : MonoBehaviour
 {
     public static int _I;
     public bool _Interact;
-    public GameObject _Button;
+    public GameObject _Doors;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,8 @@ public class FarmMission : MonoBehaviour
     {
         if (_I == 5)
         {
-            _Button.SetActive(true);
-        }
+            _Doors.SetActive(true);
+            DataPersistenceManager.instance.CurrentOrder = 2;
+        } 
     }
 }

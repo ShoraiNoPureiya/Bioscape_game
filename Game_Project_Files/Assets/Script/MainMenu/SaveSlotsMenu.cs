@@ -31,7 +31,6 @@ public class SaveSlotsMenu : Menu
     {
         // disable all buttons
         DisableMenuButtons();
-        Debug.Log("TEST Should be here");
         // case - loading game
         if (isLoadingGame) 
         {
@@ -52,6 +51,7 @@ public class SaveSlotsMenu : Menu
                     DataPersistenceManager.instance.NewGame();
                     SceneSwapManager.instance._updatedCoords = DataPersistenceManager.instance.GetPlayerPosition();
                     SaveGameAndLoadScene();
+                    PlayerPrefs.DeleteAll();
                 },
                 // function to execute if we select 'cancel'
                 () => {
