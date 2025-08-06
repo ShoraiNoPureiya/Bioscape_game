@@ -21,7 +21,6 @@ public class Thoughts : MonoBehaviour
         // Se o TextBoxA estiver desativado, liga o TextBoxB
         if (PlayerPrefs.GetInt("_CanRun") == 1 && DataPersistenceManager.instance.CurrentOrder == _Order)
         {
-            Debug.Log(DataPersistenceManager.instance.CurrentOrder);
             if (TextBoxA != null && TextBoxB != null)
             {
                 if (!_HasRunned && !TextBoxA.activeSelf)

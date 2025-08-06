@@ -21,7 +21,15 @@ public class Task2 : MonoBehaviour
         Choices2();
         if (Result != null)
         {
-            Debug.Log(Result);
+            if (Result == "Y")
+            {
+                DataPersistenceManager.instance.CurrentOrder = 20;
+            }
+            else
+            {
+                DataPersistenceManager.instance.CurrentOrder = 30;
+            }
+
         }
     }
 
