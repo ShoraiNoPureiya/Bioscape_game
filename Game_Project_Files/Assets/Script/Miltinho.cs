@@ -13,7 +13,6 @@ public class Miltinho : MonoBehaviour
     void Start()
     {
         _MiltinhoAnimator = GetComponent<Animator>();
-        DataPersistenceManager.instance.CurrentOrder = 2;
     }
 
     
