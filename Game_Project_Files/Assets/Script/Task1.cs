@@ -393,6 +393,7 @@ public class Task1 : MonoBehaviour
                 }
                 break;
             default:
+                Result = "Nothing";
                 break;
 
 
