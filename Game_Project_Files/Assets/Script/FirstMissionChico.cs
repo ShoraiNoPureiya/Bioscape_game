@@ -18,7 +18,7 @@ public class FirstMissionChico : MonoBehaviour
                 gameObject.SetActive(false);
             }
         }
-        if (gameObject.name == "Chico")
+        if (gameObject.name == "Pecuarista")
         { 
             if (!StartDialog2._TurnedOn)
             {
