@@ -14,7 +14,7 @@ public class TriggerSecondMission : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Task1.Result == "Green")
+        if (Task1.Result == "Green" || Task1.Result == "Yellow" )
         {
             _Door.SetActive(true);
         }
