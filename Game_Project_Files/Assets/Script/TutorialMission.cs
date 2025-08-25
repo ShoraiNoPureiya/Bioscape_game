@@ -51,7 +51,6 @@ public class TutorialMission : MonoBehaviour
                 };
                 break;
             default:
-                DataPersistenceManager.instance.CurrentOrder = 1;
                 break;
         }
         if (DataPersistenceManager.instance.MissionCompleted == 1)
