@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8197615215865298833}
   - component: {fileID: 1311062912453854125}
+  - component: {fileID: 7054318102222779191}
   - component: {fileID: 2887013837097519405}
   m_Layer: 0
   m_Name: DoorTrigger
@@ -78,6 +79,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.1494713, y: 1.1883049}
   m_EdgeRadius: 0
+--- !u!114 &7054318102222779191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5525804974877612495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec5b35600fb43f04f87a888526344cdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelToLoad: SampleScene
+  _spawnPointCoords: {x: -0.14, y: -4.6, z: 0}
 --- !u!114 &2887013837097519405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,4 +106,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _level: Banheiro
-  _Player: {fileID: 0}

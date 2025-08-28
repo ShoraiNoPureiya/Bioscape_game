@@ -133,14 +133,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 11025656246272
     m_Localized: "Estamos reunidos aqui hoje para discutir o futuro do aqu\xEDfero
-      X, que \r\natualmente est\xE1 enfrentando baixa vaz\xE3o e pouca vegeta\xE7\xE3o
-      ciliar. Venho aqui apresentar algumas op\xE7\xF5es que podem ajudar a melhorar
+      X;que \r\natualmente est\xE1 enfrentando baixa vaz\xE3o e pouca vegeta\xE7\xE3o
+      ciliar;Venho aqui apresentar algumas op\xE7\xF5es que podem ajudar a melhorar
       esse problema.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 11306800443392
-    m_Localized: "Ah, \xE9 interessante isso de reflorestar. Mas e a quest\xE3o econ\xF4mica,
-      como ficam os propriet\xE1rios da regi\xE3o? Eles precisam produzir.\r\n"
+    m_Localized: "Ah, \xE9 interessante isso de reflorestar;Mas e a quest\xE3o econ\xF4mica,
+      como ficam os propriet\xE1rios da regi\xE3o?;Eles precisam produzir.\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 11546462973952
@@ -148,13 +148,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 15448650477568
-    m_Localized: "Muito obrigado pelo seu tempo, n\xF3s do comit\xEA apoiamos as
-      iniciativas e vamos atr\xE1s de implementar suas ideias e solu\xE7\xF5es."
+    m_Localized: "Muito obrigado pelo seu tempo;n\xF3s do comit\xEA apoiamos as iniciativas
+      e vamos atr\xE1s de implementar suas ideias e solu\xE7\xF5es."
     m_Metadata:
       m_Items: []
   - m_Id: 15619320901632
-    m_Localized: "Muito obrigado pelo seu tempo, mas vemos que as alternativas n\xE3o
-      s\xE3o vi\xE1veis, seja economicamente ou ecologicamente."
+    m_Localized: "Muito obrigado pelo seu tempo;mas vemos que as alternativas n\xE3o
+      s\xE3o vi\xE1veis;seja economicamente ou ecologicamente."
     m_Metadata:
       m_Items: []
   references:
