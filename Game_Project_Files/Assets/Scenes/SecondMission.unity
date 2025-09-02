@@ -2356,6 +2356,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 923378729}
   m_CullTransparentMesh: 1
+--- !u!1 &980584041 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5525804974877612495, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
+  m_PrefabInstance: {fileID: 1881726146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &980584045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980584041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec5b35600fb43f04f87a888526344cdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelToLoad: SampleScene
+  _spawnPointCoords: {x: 0, y: 0, z: 0}
 --- !u!1 &1002372969
 GameObject:
   m_ObjectHideFlags: 0
@@ -3134,6 +3153,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4880571065667057994, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1683124654}
+    - targetCorrespondingSourceObject: {fileID: 4880571065667057994, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1683124660}
   m_SourcePrefab: {fileID: 100100000, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
 --- !u!1 &1186175871
 GameObject:
@@ -3900,6 +3922,19 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5337425759441772593, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
   m_PrefabInstance: {fileID: 1152428875}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1683124660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683124652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0cb3c54a84f56941bdbf76587db445c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Object: {fileID: 980584041}
 --- !u!1 &1737061312
 GameObject:
   m_ObjectHideFlags: 0
@@ -4096,6 +4131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 5525804974877612495, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8197615215865298833, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.79
@@ -4138,9 +4177,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2887013837097519405, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
+    - {fileID: 7054318102222779191, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5525804974877612495, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 980584045}
   m_SourcePrefab: {fileID: 100100000, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
 --- !u!1 &1891239487
 GameObject:
