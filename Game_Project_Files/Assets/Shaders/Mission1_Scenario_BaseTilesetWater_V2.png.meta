@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: def407341b16c424d89562ce7c0fe64e
+guid: 780551eee2d3f9740bd7f78ac4fd0b25
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -97,91 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mission1_Scenario_TilesetWater_V2_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f91fed86cc6a2d649a88d52e5914dfd9
-      internalID: -619479513
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mission1_Scenario_TilesetWater_V2_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3583a84fe2cec4d4e8aa796ef42009bf
-      internalID: -656852096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mission1_Scenario_TilesetWater_V2_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f074d21426d710541bacd03e8087fcec
-      internalID: 557663716
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mission1_Scenario_TilesetWater_V2_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 365695d5a0cea4946b0262018c9f78a0
-      internalID: 133304795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mission1_Scenario_TilesetWater_V2_4
+      name: Mission1_Scenario_BaseTilesetWater_V2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -195,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c346343638330cf4fb80c9832d32ffda
-      internalID: -1687924578
+      spriteID: b0e13d982a69cc343a37c20d5c787723
+      internalID: 1134349095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mission1_Scenario_TilesetWater_V2_5
+      name: Mission1_Scenario_BaseTilesetWater_V2_1
       rect:
         serializedVersion: 2
         x: 16
@@ -216,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 000c796b170db02428c30e62e72a1fab
-      internalID: -1753961139
+      spriteID: 460739c639506b244824cace32d81e55
+      internalID: 1536825328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mission1_Scenario_TilesetWater_V2_6
+      name: Mission1_Scenario_BaseTilesetWater_V2_2
       rect:
         serializedVersion: 2
         x: 32
@@ -237,35 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6c8ded98b807a74598a5e6c0c0a84e5
-      internalID: 1589793965
+      spriteID: 46b50549072001545a4933abe23bc569
+      internalID: 1020100179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mission1_Scenario_TilesetWater_V2_7
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 998a3f2e87a698b48b2d82661fe2a750
-      internalID: -1209281316
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mission1_Scenario_TilesetWater_V2_8
+      name: Mission1_Scenario_BaseTilesetWater_V2_3
       rect:
         serializedVersion: 2
         x: 0
@@ -279,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76b978187f168f94299656a8f6afeaf6
-      internalID: -55894119
+      spriteID: 0117719160e29604f9733636c57b778c
+      internalID: 989153937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mission1_Scenario_TilesetWater_V2_9
+      name: Mission1_Scenario_BaseTilesetWater_V2_4
       rect:
         serializedVersion: 2
         x: 16
@@ -300,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5a36cbe006a75e48aa0e655fa135df9
-      internalID: -1166505355
+      spriteID: 1aa6bff83269c514799f39892121d439
+      internalID: 72488895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mission1_Scenario_TilesetWater_V2_10
+      name: Mission1_Scenario_BaseTilesetWater_V2_5
       rect:
         serializedVersion: 2
         x: 32
@@ -321,35 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3b791e5a64a2cf4fb5675302410e198
-      internalID: 1600288778
+      spriteID: 3e9f4c2a5c7da874a91101dd24dd260f
+      internalID: 222405378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mission1_Scenario_TilesetWater_V2_11
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8876cc3760f0f2e4598d1aae54b5e1ff
-      internalID: -1844356766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mission1_Scenario_TilesetWater_V2_12
+      name: Mission1_Scenario_BaseTilesetWater_V2_6
       rect:
         serializedVersion: 2
         x: 0
@@ -363,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81f72a1783c356a4ca02df613e60fe01
-      internalID: -835688353
+      spriteID: a14efd358ad970c43897a9d35f3a58ac
+      internalID: -2016369912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mission1_Scenario_TilesetWater_V2_13
+      name: Mission1_Scenario_BaseTilesetWater_V2_7
       rect:
         serializedVersion: 2
         x: 16
@@ -384,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92af8c0232f3f54459acc593a24eb7f5
-      internalID: -1889566971
+      spriteID: 634960629ee4f7b45938854d19fc15c0
+      internalID: 1780262135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mission1_Scenario_TilesetWater_V2_14
+      name: Mission1_Scenario_BaseTilesetWater_V2_8
       rect:
         serializedVersion: 2
         x: 32
@@ -405,29 +279,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6ce3e35e3d59ca43857cfd1f7289d09
-      internalID: 196103536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mission1_Scenario_TilesetWater_V2_15
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0cf2ae6b4acd23046be619cfc6c75456
-      internalID: -978943914
+      spriteID: 8237c199535226d4298646f63eae2614
+      internalID: -738388500
       vertices: []
       indices: 
       edges: []
@@ -443,22 +296,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Mission1_Scenario_TilesetWater_V2_0: -619479513
-      Mission1_Scenario_TilesetWater_V2_1: -656852096
-      Mission1_Scenario_TilesetWater_V2_10: 1600288778
-      Mission1_Scenario_TilesetWater_V2_11: -1844356766
-      Mission1_Scenario_TilesetWater_V2_12: -835688353
-      Mission1_Scenario_TilesetWater_V2_13: -1889566971
-      Mission1_Scenario_TilesetWater_V2_14: 196103536
-      Mission1_Scenario_TilesetWater_V2_15: -978943914
-      Mission1_Scenario_TilesetWater_V2_2: 557663716
-      Mission1_Scenario_TilesetWater_V2_3: 133304795
-      Mission1_Scenario_TilesetWater_V2_4: -1687924578
-      Mission1_Scenario_TilesetWater_V2_5: -1753961139
-      Mission1_Scenario_TilesetWater_V2_6: 1589793965
-      Mission1_Scenario_TilesetWater_V2_7: -1209281316
-      Mission1_Scenario_TilesetWater_V2_8: -55894119
-      Mission1_Scenario_TilesetWater_V2_9: -1166505355
+      Mission1_Scenario_BaseTilesetWater_V2_0: 1134349095
+      Mission1_Scenario_BaseTilesetWater_V2_1: 1536825328
+      Mission1_Scenario_BaseTilesetWater_V2_2: 1020100179
+      Mission1_Scenario_BaseTilesetWater_V2_3: 989153937
+      Mission1_Scenario_BaseTilesetWater_V2_4: 72488895
+      Mission1_Scenario_BaseTilesetWater_V2_5: 222405378
+      Mission1_Scenario_BaseTilesetWater_V2_6: -2016369912
+      Mission1_Scenario_BaseTilesetWater_V2_7: 1780262135
+      Mission1_Scenario_BaseTilesetWater_V2_8: -738388500
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
