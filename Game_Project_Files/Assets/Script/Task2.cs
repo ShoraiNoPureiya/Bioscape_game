@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static Contacts_DialogChoiceNode;
+//using static Contacts_DialogChoiceNode;
 
 public class Task2 : MonoBehaviour
 {
