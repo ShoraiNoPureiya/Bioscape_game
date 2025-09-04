@@ -38,6 +38,10 @@ MonoBehaviour:
     m_Localized: 'Mission '
     m_Metadata:
       m_Items: []
+  - m_Id: 43096627261390848
+    m_Localized: Remember to do the missions
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
