@@ -1,40 +1,74 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Cellphone : MonoBehaviour
 {
-    public GameObject _Cell;
+    public static Cellphone Instance { get; private set; }
+    public GameObject _CellContent;
     public GameObject _ApksChild;
-    // Start is called before the first frame update
-    void Start()
+    public GameObject _NotificationUI;
+    public PlayerController _Player;
+
+    void Awake()
     {
-        _Cell.SetActive(false);
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
-    // Update is called once per frame
+    void Start()
+    {
+        _CellContent.SetActive(false);
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.K) && _Player._InDialog)
         {
-            if (_Cell.activeSelf)
-            {
-                _Cell.SetActive(false);
-            }
+            if (_CellContent.activeSelf)
+                HideCell();
             else
-            {
-                _Cell.SetActive(true);
-            }
+                ShowCell();
         }
-
     }
 
     public void DisableAllChildren()
     {
         foreach (Transform child in _ApksChild.transform)
-        {
             child.gameObject.SetActive(false);
-        }
+    }
+
+    public void ShowCell()
+    {
+        _CellContent.SetActive(true);
+    }
+
+    public void HideCell()
+    {
+        _CellContent.SetActive(false);
+    }
+
+    public void ShowNotification()
+    {
+        StopAllCoroutines();
+        StartCoroutine(ShowNotificationWhenCellOpen());
+    }
+
+    private IEnumerator ShowNotificationWhenCellOpen()
+    {
+        // Espera até o celular estar aberto
+        yield return new WaitUntil(() => _CellContent.activeSelf);
+
+        _NotificationUI.SetActive(true);
+
+        yield return new WaitForSeconds(3f);
+
+        if (_CellContent.activeSelf)
+            _NotificationUI.SetActive(false);
     }
 }
-

@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: MainMenu Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: MainMenu
+  m_TableCollectionNameGuidString: 08bd45ec6b27bdd49a2d94281c0dd62b
+  m_Entries:
+  - m_Id: 5961748480
+    m_Key: ContinueGame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73783644160
+    m_Key: LoadGame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 153420894208
+    m_Key: NewGame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 294068490240
+    m_Key: ConfirmationMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1105087500288
+    m_Key: ConfirmOption
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1148288831488
+    m_Key: CancelOption
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3465738260480
+    m_Key: ChooseSave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14143521886208
+    m_Key: Location
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14261776093184
+    m_Key: LastPlayed
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5562705892944904194
+  references:
+    version: 2
+    RefIds:
+    - rid: 5562705892944904194
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1750955332735

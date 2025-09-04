@@ -7,7 +7,7 @@ public class Task1 : MonoBehaviour
     public int Choice1;
     public int Choice2;
     public int Choice3;
-    public string Result;
+    public static string Result;
     GameObject[] Yellow;
     GameObject[] Red;
     GameObject[] Green;
@@ -15,26 +15,8 @@ public class Task1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Choices();
-        if (Result.Equals("Green"))     {  }
-        if (Result.Equals("Yellow"))
-        {
-            Red = GameObject.FindGameObjectsWithTag("Red");
-            foreach (GameObject go in Red)
-            {
-                go.SetActive(false);
-            }
-       
-        }
-        if (Result.Equals("Red"))
-        {
-                Yellow = GameObject.FindGameObjectsWithTag("Yellow");
-                foreach (GameObject go in Yellow) { go.SetActive(false); }
 
-                Red = GameObject.FindGameObjectsWithTag("Red");
-                foreach (GameObject go in Red) { go.SetActive(false); }
-        }
-
+        Result = "Red";
 
 
 
@@ -45,6 +27,19 @@ public class Task1 : MonoBehaviour
     void Update()
     {
         
+                Choices();
+        if (Result.Equals("Green"))    
+        {
+            Debug.Log("Green");
+        }
+        if (Result.Equals("Yellow"))
+        {
+            Debug.Log("Yellow");
+        }
+        if (Result.Equals("Red"))
+        {
+            Debug.Log("Red");
+        }
     }
     public void Choices()
     {
@@ -398,6 +393,7 @@ public class Task1 : MonoBehaviour
                 }
                 break;
             default:
+                Result = "Nothing";
                 break;
 
 
@@ -407,17 +403,20 @@ public class Task1 : MonoBehaviour
     }
 
     public void choice1(int i)
-    {      
-        Choice1 = i;
+    {
+        PlayerPrefs.SetInt("Choice1", i);
+        Choice1 = PlayerPrefs.GetInt("Choice1");
     }
 
-        public void choice2(int i)
-        {
-        Choice2 = i;
+    public void choice2(int i)
+    {
+        PlayerPrefs.SetInt("Choice2", i);
+        Choice2 = PlayerPrefs.GetInt("Choice2");
     }
 
     public void choice3(int i)
     {
-        Choice3 = i;    
+        PlayerPrefs.SetInt("Choice3", i);
+        Choice3 = PlayerPrefs.GetInt("Choice3");
     }
 }

@@ -35,7 +35,7 @@ public class CatchObjects : MonoBehaviour
             if (collision.name == "Key")
             {
                 PlayerPrefs.SetInt("_Key", 1);
-                PlayerPrefs.SetInt("MissionCompleted", 1);
+                DataPersistenceManager.instance.MissionCompleted = 1;
             }
             collision.gameObject.SetActive(false);
         }
@@ -55,6 +55,6 @@ public class CatchObjects : MonoBehaviour
     public void GetKey()
     {
         PlayerPrefs.SetInt("_Key",1);
-        PlayerPrefs.SetInt("MissionCompleted", 1);
+        DataPersistenceManager.instance.MissionCompleted = 1;
     }
 }

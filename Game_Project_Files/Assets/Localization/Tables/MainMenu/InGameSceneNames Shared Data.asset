@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: InGameSceneNames Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: InGameSceneNames
+  m_TableCollectionNameGuidString: 4067f20f09127ba4e81c56232910bf2e
+  m_Entries:
+  - m_Id: 6788026368
+    m_Key: SampleScene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49452486656
+    m_Key: Hallway
+    m_Metadata:
+      m_Items: []
+  - m_Id: 233003618304
+    m_Key: Bathroom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 110286671872
+    m_Key: kitchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 159502635008
+    m_Key: Garden
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5562705907621298178
+  references:
+    version: 2
+    RefIds:
+    - rid: 5562705907621298178
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1750959830083

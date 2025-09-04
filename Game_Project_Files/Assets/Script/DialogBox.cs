@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Localization.Settings;
 using UnityEngine.Localization;
-using UnityEditor.Localization.Editor;
+//using UnityEditor.Localization.Editor;
 using System.Threading.Tasks;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
@@ -24,41 +24,46 @@ public class DialogBox : MonoBehaviour
     public bool _CanPlay; // Helps to play the dialog only a once
     public bool _StopPlaying; // skips the dialog
     public bool _IsPlaying = true;
+    private Coroutine _dialogCoroutine;
     public string _Name;
     public AudioSource _characterVoice;
     public LocalizedString localizedString;
     // Start is called before the first frame update
     public void Start()
     {
-
-        _CanPlay = false;
         dialogbox = this;
-        StartCoroutine(Dialog());
+        _CanPlay = true;
     }
+
 
     // Update is called once per frame
     void Update()
     {
-
-        if (_IsPlaying)
+        if (Input.GetKey(KeyCode.E)) { _CanPlay = true; }
+        if (_IsPlaying && _CanPlay && _dialogCoroutine == null)
         {
-            if (_CanPlay) { StartCoroutine(Dialog()); _CanPlay = false; } // when the player come back again , the dialog plays again
+            _dialogCoroutine = StartCoroutine(Dialog());
+            
         }
+
         if (Input.GetKeyDown(KeyCode.Space)) { _StopPlaying = true; } // if he press space skip the dialog
         if (Input.GetKeyDown(KeyCode.Space)) { ConcludeDialog(); } // if he press space skip the dialog
     }
 
     public IEnumerator Dialog() // synchronize the phrase with the audio , foreach letter the audio plays once
-    {
+    {        
         _Phrases.Clear();
-        localizedString.GetLocalizedStringAsync().Completed += handle =>
-        {
-            string[] textos = handle.Result.Split(';'); // Divide pelo delimitador ";"
-            _Phrases.AddRange(textos);
-
-        };
-        StringForName();
         _IsPlaying = false;
+        // Espera a LocalizedString carregar
+        var op = localizedString.GetLocalizedStringAsync();
+        yield return op;
+
+        if (op.Status == AsyncOperationStatus.Succeeded)
+        {
+            string[] textos = op.Result.Split(';');
+            _Phrases.AddRange(textos);
+        }
+        StringForName();
         yield return new WaitForSeconds(0.08f);
         PlayerController.playercontroller.SetCanMove(false);
         _Count2 = 0; // clean the variable  
@@ -88,17 +93,14 @@ public class DialogBox : MonoBehaviour
             _Phrase = "";  // clean the variable 
 
         }
-
         _StopPlaying = false; // reset the variable 
         _IsPlaying = true;
-
+        _CanPlay = false;
+        _dialogCoroutine = null;
     }
 
 
-    public void CanPlay()
-    {
-        _CanPlay = true;
-    }
+
     public bool HeIsInDialog()
     {
         return _IsPlaying;
@@ -128,13 +130,18 @@ public class DialogBox : MonoBehaviour
             }
             if (transform.parent != null)
             {
-                _CanPlay = true;
                 transform.parent.gameObject.SetActive(false);
             }
         }
 
     }
-
-   
+    public void CanPlay()
+    {
+        _CanPlay = true;
+    }
+    private void OnDisable()
+    {
+        _CanPlay = true;
+    }
 
 }

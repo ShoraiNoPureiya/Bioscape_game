@@ -94,7 +94,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8118659641344
-    m_Localized: 'Ipe blossom stew recipe: restores +16 life'
+    m_Localized: Yeah! I already texted you the recipe.
     m_Metadata:
       m_Items: []
   - m_Id: 8354727653376
@@ -130,14 +130,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11025656246272
-    m_Localized: "We are meeting here today to discuss the future of the X aquifer,
-      which \r\nis currently facing low flow rates and little riparian vegetation.
-      I'm here to present some options that could help improve this problem."
+    m_Localized: "We are meeting here today to discuss the future of the X aquifer;which
+      \r\nis currently facing low flow rates and little riparian vegetation;I'm here
+      to present some options that could help improve this problem."
     m_Metadata:
       m_Items: []
   - m_Id: 11306800443392
-    m_Localized: Oh, that's interesting about reforestation. But what about the economic
-      issue, what about the landowners in the region? They need to produce.
+    m_Localized: Oh, that's interesting about reforestation;But what about the economic
+      issue;what about the landowners in the region?;They need to produce.
     m_Metadata:
       m_Items: []
   - m_Id: 11546462973952
@@ -145,13 +145,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 15448650477568
-    m_Localized: Thank you very much for your time, we on the committee support your
+    m_Localized: Thank you very much for your time;we on the committee support your
       initiatives and will work to implement your ideas and solutions.
     m_Metadata:
       m_Items: []
   - m_Id: 15619320901632
-    m_Localized: Thank you very much for your time, but we see that the alternatives
-      are not viable, either economically or ecologically.
+    m_Localized: Thank you very much for your time;but we see that the alternatives
+      are not viable;either economically or ecologically.
     m_Metadata:
       m_Items: []
   references:

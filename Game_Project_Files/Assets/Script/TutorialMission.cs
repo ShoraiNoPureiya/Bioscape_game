@@ -20,37 +20,40 @@ public class TutorialMission : MonoBehaviour
 
     private void Update()
     {
-        switch (PlayerPrefs.GetInt("Order"))
+        switch (DataPersistenceManager.instance.CurrentOrder)
         {
             case 1:
                 localizedStringDef.GetLocalizedStringAsync().Completed += handle =>
                 {
-                    _Text.text = handle.Result;
+                    if (_Text != null)
+                        _Text.text = handle.Result;
                 };
                 break;
             case 2:
                 localizedStringBath.GetLocalizedStringAsync().Completed += handle =>
                 {
-                    _Text.text = handle.Result;
+                    if (_Text != null)
+                        _Text.text = handle.Result;
                 };
                 break;
             case 3:
                 localizedStringKitchen.GetLocalizedStringAsync().Completed += handle =>
                 {
-                    _Text.text = handle.Result;
+                    if (_Text != null)
+                        _Text.text = handle.Result;
                 };
                 break;
             case 4:
                 localizedStringGarden.GetLocalizedStringAsync().Completed += handle =>
                 {
-                    _Text.text = handle.Result;
+                    if (_Text != null)
+                        _Text.text = handle.Result;
                 };
                 break;
             default:
-                PlayerPrefs.SetInt("Order", 1);
                 break;
         }
-        if (PlayerPrefs.GetInt("MissionCompleted") == 1)
+        if (DataPersistenceManager.instance.MissionCompleted == 1)
         {
             _Child.gameObject.SetActive(false);
         }
@@ -64,7 +67,7 @@ public class TutorialMission : MonoBehaviour
     }
     private void OnApplicationQuit()
     {
-        PlayerPrefs.SetInt("MissionCompleted", 1);
+        DataPersistenceManager.instance.MissionCompleted = 1;
     }
 
 }

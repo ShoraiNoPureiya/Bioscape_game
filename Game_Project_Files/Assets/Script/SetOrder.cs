@@ -9,14 +9,27 @@ public class SetOrder : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         setorder = this;
-        
+        StartCoroutine("Order");
+    }
+    public IEnumerator Order()
+    {
+        yield return new WaitForSeconds(0.2f);
+        if (DataPersistenceManager.instance != null) 
+        { 
+        DataPersistenceManager.instance.CurrentOrder = _Order;
+        }
+    }
+    public void SetOrdercs(int i)
+    {
+        DataPersistenceManager.instance.CurrentOrder = i;
     }
 
     // Update is called once per frame
     void Update()
     {
-        PlayerPrefs.SetInt("Order", _Order);
+        
     }
 
 }

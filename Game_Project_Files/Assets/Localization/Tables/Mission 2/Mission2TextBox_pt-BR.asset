@@ -40,20 +40,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4095248363520
-    m_Localized: "Nossa, quantas bifurca\xE7\xF5es, esse aqu\xEDfero deve abastecer
-      v\xE1rias cidades, com v\xE1rios governantes diferentes, ser\xE1 que todos
-      v\xE3o concordar?"
+    m_Localized: "Nossa, quantas bifurca\xE7\xF5es;esse aqu\xEDfero deve abastecer
+      v\xE1rias cidades;com v\xE1rios governantes diferentes, ser\xE1 que todos v\xE3o
+      concordar?"
     m_Metadata:
       m_Items: []
   - m_Id: 4344037699584
-    m_Localized: "Eu percebi que a vegeta\xE7\xE3o aqui foi recentemente derrubada,
-      voc\xEA saberia o porqu\xEA?"
+    m_Localized: "Eu percebi que a vegeta\xE7\xE3o aqui foi recentemente derrubada;voc\xEA
+      saberia o porqu\xEA?"
     m_Metadata:
       m_Items: []
   - m_Id: 4766567690240
-    m_Localized: "Recentemente passaram uma lei que diminui a porcentagem de vegeta\xE7\xE3o 
-      nativa m\xEDnima de cada propriedade, e a maioria acabou cedendo e desmatando.
-      Um absurdo, se quer saber minha opini\xE3o."
+    m_Localized: "Recentemente passaram uma lei;que diminui a porcentagem de vegeta\xE7\xE3o 
+      nativa m\xEDnima de cada propriedade;e a maioria acabou cedendo e desmatando;Um
+      absurdo, se quer saber minha opini\xE3o."
     m_Metadata:
       m_Items: []
   - m_Id: 5128901029888
@@ -82,12 +82,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7090916749312
-    m_Localized: "Nossa, fiquei sabendo de uma coisa triste, at\xE9 ia pedir sua
-      opini\xE3o de como prosseguir\u2026falando nisso, que cheiro bom \xE9 esse?\r"
+    m_Localized: "Nossa, fiquei sabendo de uma coisa triste;at\xE9 ia pedir sua opini\xE3o
+      de como prosseguir\u2026;falando nisso, que cheiro bom \xE9 esse?\r"
     m_Metadata:
       m_Items: []
   - m_Id: 7400422830080
-    m_Localized: "Uma nova receita que estou testando: flor de ip\xEA refogada. Quer
+    m_Localized: "Uma nova receita que estou testando;flor de ip\xEA refogada;Quer
       um pouco?\r\n"
     m_Metadata:
       m_Items: []
@@ -96,13 +96,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8118659641344
-    m_Localized: "Receita de flor de ip\xEA refogada: recupera +16 vida"
+    m_Localized: "\xC9 sim! Inclusive mandei a receita no seu celular."
     m_Metadata:
       m_Items: []
   - m_Id: 8354727653376
-    m_Localized: "Ent\xE3o, hoje visitei um aqu\xEDfero com baixa vaz\xE3o, e descobri
-      que recentemente passaram uma lei que altera a porcentagem de vegeta\xE7\xE3o
-      m\xEDnima nas propriedades. Voc\xEA acha que isso est\xE1 relacionado?\r\n"
+    m_Localized: "Ent\xE3o, hoje visitei um aqu\xEDfero com baixa vaz\xE3o;e descobri
+      que recentemente passaram uma lei;que altera a porcentagem de vegeta\xE7\xE3o
+      m\xEDnima nas propriedades;Voc\xEA acha que isso est\xE1 relacionado?\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 8657610928128
@@ -116,7 +116,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 9673215504384
     m_Localized: "Talvez se voc\xEA conseguir provar e convencer o Comit\xEA das
-      Bacias, eles possam pressionar os governantes locais e voltar ao que era antes."
+      Bacias;eles possam pressionar os governantes locais e voltar ao que era antes."
     m_Metadata:
       m_Items: []
   - m_Id: 10003554693120
@@ -133,14 +133,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 11025656246272
     m_Localized: "Estamos reunidos aqui hoje para discutir o futuro do aqu\xEDfero
-      X, que \r\natualmente est\xE1 enfrentando baixa vaz\xE3o e pouca vegeta\xE7\xE3o
-      ciliar. Venho aqui apresentar algumas op\xE7\xF5es que podem ajudar a melhorar
+      X;que \r\natualmente est\xE1 enfrentando baixa vaz\xE3o e pouca vegeta\xE7\xE3o
+      ciliar;Venho aqui apresentar algumas op\xE7\xF5es que podem ajudar a melhorar
       esse problema.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 11306800443392
-    m_Localized: "Ah, \xE9 interessante isso de reflorestar. Mas e a quest\xE3o econ\xF4mica,
-      como ficam os propriet\xE1rios da regi\xE3o? Eles precisam produzir.\r\n"
+    m_Localized: "Ah, \xE9 interessante isso de reflorestar;Mas e a quest\xE3o econ\xF4mica,
+      como ficam os propriet\xE1rios da regi\xE3o?;Eles precisam produzir.\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 11546462973952
@@ -148,13 +148,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 15448650477568
-    m_Localized: "Muito obrigado pelo seu tempo, n\xF3s do comit\xEA apoiamos as
-      iniciativas e vamos atr\xE1s de implementar suas ideias e solu\xE7\xF5es."
+    m_Localized: "Muito obrigado pelo seu tempo;n\xF3s do comit\xEA apoiamos as iniciativas
+      e vamos atr\xE1s de implementar suas ideias e solu\xE7\xF5es."
     m_Metadata:
       m_Items: []
   - m_Id: 15619320901632
-    m_Localized: "Muito obrigado pelo seu tempo, mas vemos que as alternativas n\xE3o
-      s\xE3o vi\xE1veis, seja economicamente ou ecologicamente."
+    m_Localized: "Muito obrigado pelo seu tempo;mas vemos que as alternativas n\xE3o
+      s\xE3o vi\xE1veis;seja economicamente ou ecologicamente."
     m_Metadata:
       m_Items: []
   references:

@@ -33,6 +33,18 @@ public class StartDialog : MonoBehaviour
             // Deactivates the child object if it was found
             child.SetActive(false);
         }
+        child = transform.Find("AlertBox/Square/ThoughtsSecondMission")?.gameObject;
+        if (child != null)
+        {
+            // Deactivates the child object if it was found
+            child.SetActive(false);
+        }
+        child = transform.Find("AlertBox/Square/Task2/ThoughtsSecondMission")?.gameObject;
+        if (child != null)
+        {
+            // Deactivates the child object if it was found
+            child.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -42,12 +54,9 @@ public class StartDialog : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E)) // "e" to interact
             {
-
                 Check2(transform);
             }
         }
-
-
     }
     void Check2(Transform parent)
     {
@@ -65,19 +74,14 @@ public class StartDialog : MonoBehaviour
             if (child.name == "Thoughts")
             {
                 StartCoroutine(ActivateWithDelay(child.gameObject, 0.2f));
+
             }
             else
             {
                 child.gameObject.SetActive(true); // Activates normally
             }
-
             // Recursion to process the child's children
             Check2(child);
-
-            if (DialogBox.dialogbox != null)
-            {
-                DialogBox.dialogbox.CanPlay();
-            }
         }
     }
 

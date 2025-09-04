@@ -22,25 +22,25 @@ public class TutorialMissions2 : MonoBehaviour
     {
             if (PlayerPrefs.GetString("textIf") == "") // // if there's no text, uses the one in the scene
             {
-                PlayerPrefs.SetString("textIf", _Text);
-                PlayerPrefs.SetInt("Order", 1);
+                PlayerPrefs.SetString("textIf", "Verifique se a chave esta na estante do laboratorio");
+                DataPersistenceManager.instance.CurrentOrder = 1;
             }
 
-            if (PlayerPrefs.GetString("textIf").Equals("Verifique se a chave está na estante do laboratório") && _Text.Equals("Verifique se a chave está no banheiro")) // if the player interacts with the CORRECT object, changes the text
+        if (PlayerPrefs.GetString("textIf").Equals("Verifique se a chave esta na estante do laboratorio") && _Text.Equals("Verifique se a chave esta no banheiro")) // if the player interacts with the CORRECT object, changes the text
             {
-                PlayerPrefs.SetString("textIf", "Verifique se a chave está no banheiro");
-                PlayerPrefs.SetInt("Order", 2);
+                PlayerPrefs.SetString("textIf", "Verifique se a chave esta no banheiro");
+                DataPersistenceManager.instance.CurrentOrder = 2;
             }
-            if (PlayerPrefs.GetString("textIf").Equals("Verifique se a chave está no banheiro") && _Text.Equals("Verifique se a chave está na sala/cozinha (dentro do diário)")) // if the player interacts with the CORRECT object, changes the text
+        if (PlayerPrefs.GetString("textIf").Equals("Verifique se a chave esta no banheiro") && _Text.Equals("Verifique se a chave esta na sala/cozinha (dentro do diario)")) // if the player interacts with the CORRECT object, changes the text
             {
-                PlayerPrefs.SetString("textIf", "Verifique se a chave está na sala/cozinha (dentro do diário)");
-                PlayerPrefs.SetInt("Order", 3);
+                PlayerPrefs.SetString("textIf", "Verifique se a chave esta na sala/cozinha (dentro do diario)");
+                DataPersistenceManager.instance.CurrentOrder = 3;
             }
-            if (PlayerPrefs.GetString("textIf").Equals("Verifique se a chave está na sala/cozinha (dentro do diário)") && _Text.Equals("Verifique da onde veio esse som.")) // if the player interacts with the CORRECT object, changes the text
+            if (PlayerPrefs.GetString("textIf").Equals("Verifique se a chave estï¿½ na sala/cozinha (dentro do diï¿½rio)") && _Text.Equals("Verifique da onde veio esse som.")) // if the player interacts with the CORRECT object, changes the text
             {
                 PlayerPrefs.SetString("textIf", "Verifique da onde veio esse som.");
                 PlayerPrefs.SetInt("tutorialmission", 1);
-                PlayerPrefs.SetInt("Order", 4);
+                DataPersistenceManager.instance.CurrentOrder = 4;
             }
         
     }

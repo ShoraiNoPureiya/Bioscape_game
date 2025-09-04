@@ -31,12 +31,6 @@ MonoBehaviour:
     - Locale-pt-BR
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b398b27bc1c60ed4e927d71d4f689360
-    m_Address: TutorialMissionTexts_pt-BR
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-pt-BR
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d3e383ddc0b4efa43b5be5c156800b80
     m_Address: Mission1TextBox_pt-BR
     m_ReadOnly: 1
@@ -81,6 +75,42 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7980a3173ff53d4418ea993b354f6f7c
     m_Address: Mission2DialogueOptions_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8c9bba25c9ed54d4b89cca9fe2e496ca
+    m_Address: PhotoEntries_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 82bd0df6f68f05e40812abf2b80cab69
+    m_Address: Cellphone_ContacstApp_NPCDialogs_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 082a22da2b98e914fb9a509a505931f0
+    m_Address: CellphoneText_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0cd101e564c0f0f4dac672e16e1445ac
+    m_Address: Tasks_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 85b017a61867d3848842fab1ca9218da
+    m_Address: MainMenu_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 000d10b138bccb74cae44725dff085e4
+    m_Address: InGameSceneNames_pt-BR
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-pt-BR

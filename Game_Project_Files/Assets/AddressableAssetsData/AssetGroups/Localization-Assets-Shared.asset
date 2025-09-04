@@ -27,11 +27,6 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: df1683391ce529647b970260552936fd
-    m_Address: Assets/TutorialMissionTexts Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 357c08b7546eb4d42829d3e607e64172
     m_Address: Assets/Localization/Tables/Mission 1/Mission1TextBox Shared Data.asset
     m_ReadOnly: 1
@@ -69,6 +64,38 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ed9e825a76343634a9d3ba2ed0e0faa9
     m_Address: Assets/Localization/Tables/Mission 2/Mission2Choices Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7afcaaf5f63db5c4da82ac0b4ad66dee
+    m_Address: Assets/Localization/Tables/Cellphone/CameraApp_Photos/PhotoEntries
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 04cb07f420cae2c4db3a90e3a936d45f
+    m_Address: Assets/Localization/Tables/Cellphone/ContactsApp/NpcDialogs/Cellphone_ContacstApp_NPCDialogs
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2cdff82d501a7664ebf91164c4ebab75
+    m_Address: Assets/Localization/Tables/Cellphone/CellphoneText Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3ad6ba5e9bd5543438539b248affd07e
+    m_Address: Assets/Localization/Tables/Cellphone/NotesApp/Tasks/Tasks Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 08bd45ec6b27bdd49a2d94281c0dd62b
+    m_Address: Assets/Localization/Tables/MainMenu/MainMenu Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4067f20f09127ba4e81c56232910bf2e
+    m_Address: Assets/Localization/Tables/MainMenu/InGameSceneNames Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

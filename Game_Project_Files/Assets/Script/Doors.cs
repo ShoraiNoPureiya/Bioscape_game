@@ -11,7 +11,6 @@ public class Doors : MonoBehaviour
     public static Doors doors;
     [SerializeField] private string _level;
     private string _HeIsIn;
-    private int _DidHeGo = 0;
     private int _spawnID;
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -194,7 +193,16 @@ public class Doors : MonoBehaviour
 
     public void NewScene(string _Level) //scene loader
     {
-        SceneManager.LoadScene(_Level);
+        SceneManager.LoadScene(_level);
+        if (_level == "SampleScene")
+        { 
+            PlayerController.playercontroller.GetValues(1);
+            PlayerPrefs.SetString("__Level", _level);
+            PlayerPrefs.SetInt("_spawnID", 1);
+            PlayerPrefs.Save();
+        }
+
+
     }
     public void SaveLevel(){
          PlayerPrefs.SetString("__Level",_level);
@@ -210,4 +218,7 @@ public class Doors : MonoBehaviour
         int resultado = PlayerPrefs.GetInt("_spawnID");
         return resultado;
     }
+
+    
+
 }
