@@ -7,7 +7,7 @@ using System;
 using UnityEngine.SceneManagement;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
-using UnityEditor.Localization;
+//using UnityEditor.Localization;
 
 public class SaveSlot : MonoBehaviour
 {
@@ -41,56 +41,56 @@ public class SaveSlot : MonoBehaviour
     {
         saveSlotButton = this.GetComponent<Button>();
     }
-    
+
     public void SetData(GameData data)
     {
-        // there's no data for this profileId
+        // Se não há dados para este profileId
         if (data == null)
         {
             hasData = false;
             noDataContent.SetActive(true);
             hasDataContent.SetActive(false);
         }
-        // there is data for this profileId
         else
         {
             hasData = true;
             noDataContent.SetActive(false);
             hasDataContent.SetActive(true);
 
-
+            // Encontrar a LocalizedString correspondente à cena atual
             currentSceneLocalizedString = null;
+            currentSceneString = data._currentScene; // fallback caso não encontre
             foreach (var ls in _InGameSceneNames)
             {
-                var collection = LocalizationEditorSettings.GetStringTableCollection(ls.TableReference);
-                var entry = collection.SharedData.GetEntryFromReference(ls.TableEntryReference);
-                if (entry.Key == data._currentScene)
+                if (ls.TableEntryReference.Key == data._currentScene)
                 {
                     currentSceneLocalizedString = ls;
-                    currentSceneString = ls.GetLocalizedString();
                     break;
                 }
-
             }
-            if (currentSceneLocalizedString == null)
+
+            // Registrar evento para atualizar a UI quando a string mudar
+            if (currentSceneLocalizedString != null)
             {
-                Debug.LogWarning($"No localized string found for scene: {data._currentScene}");
-                currentSceneString = data._currentScene;
+                currentSceneLocalizedString.StringChanged += OnLastSceneChanged;
+                // Forçar atualização inicial
+                currentSceneLocalizedString.RefreshString();
             }
 
-            // Update the UI with the data
-            location_WordValue = location_WordLocalizedString.GetLocalizedString();
-            lastLocationTMPUGUI.text = location_WordValue + currentSceneString;
+            // Atualizar a localização
+            location_WordLocalizedString.StringChanged += OnWordLocationChanged;
+            location_WordValue = location_WordLocalizedString.GetLocalizedString(); // inicializa
+            UpdateLocation();
 
+            // Atualizar último jogado
+            lastPlayed_WordLocalizedString.StringChanged += UpdateLastPlayed;
             long ticks = data.lastUpdated;
             DateTime dt = DateTime.FromBinary(ticks);
-            // lastPlayedTMPUGUI.text = "LAST PLAYED: " + dt.ToLocalTime().ToString();
             lastPlayedValue = dt.ToLocalTime().ToString();
-
             lastPlayedTMPUGUI.text = lastPlayed_WordLocalizedString.GetLocalizedString() + lastPlayedValue;
-            
         }
     }
+
 
     public string GetProfileId()
     {

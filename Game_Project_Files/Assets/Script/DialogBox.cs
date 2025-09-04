@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Localization.Settings;
 using UnityEngine.Localization;
-using UnityEditor.Localization.Editor;
+//using UnityEditor.Localization.Editor;
 using System.Threading.Tasks;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
