@@ -34,7 +34,18 @@ public class Doors_v2 : MonoBehaviour
                 if (_Garden)
                 {
                     SceneSwapManager.SwapSceneFromDoorUse(_levelToLoad, _spawnPointCoords);
-                } else
+                }
+                else
+                {
+                    _playerController.SetCanMove(true);
+                }
+            }
+            if (_levelToLoad == "FirstMission") { 
+                if (GetKey._Key)
+                {
+                    SceneSwapManager.SwapSceneFromDoorUse(_levelToLoad, _spawnPointCoords);
+                }
+                else
                 {
                     _playerController.SetCanMove(true);
                 }
