@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class GetKey : MonoBehaviour
 {
+    public static bool _Key = false;
     // Start is called before the first frame update
     void Start()
     {
-        CatchObjects.catchobjects.GetKey();
+        _Key = true;
     }
 
     // Update is called once per frame

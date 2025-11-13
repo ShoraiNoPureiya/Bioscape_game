@@ -4,30 +4,21 @@ using UnityEngine;
 
 public class FirstMissionChico : MonoBehaviour
 {
+    public GameObject _Chico;
+    public GameObject _Pecuarista;
     // Start is called before the first frame update
     void Start()
     {
-        if (gameObject.name == "Chico1")
+
+        if (StartDialog2._TurnedOn)
         {
-            if (StartDialog2._TurnedOn)
-            {
-                gameObject.SetActive(true);
-            }
-            else
-            {
-                gameObject.SetActive(false);
-            }
+            _Chico.SetActive(true);
+            _Pecuarista.SetActive(false);
         }
-        if (gameObject.name == "Pecuarista")
-        { 
-            if (!StartDialog2._TurnedOn)
-            {
-                gameObject.SetActive(true);
-            }
-                    else
-            {
-                gameObject.SetActive(false);
-            }
+        else
+        {
+            _Chico.SetActive(false);
+            _Pecuarista.SetActive(true);
         }
 
     }
