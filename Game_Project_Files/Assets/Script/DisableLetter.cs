@@ -13,9 +13,6 @@ public class PanelCarta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Carta.letter == null)
-        {
-            gameObject.SetActive(false);
-        }
+
     } 
 }

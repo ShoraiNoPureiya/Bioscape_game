@@ -15,6 +15,8 @@ public class GameData
     public SerializableDictionary<string, bool> _allPhotos;
     public SerializableDictionary<string, bool> _allTasks;
     public SerializableDictionary<int, List<string>> completedTasksByMission;
+    public List<string> spawnedObjects = new List<string>();
+    public List<string> collectedLetters = new List<string>();
     public int _currentMissionIndex;
     public int _currentOrder;
     public int _missionCompleted;

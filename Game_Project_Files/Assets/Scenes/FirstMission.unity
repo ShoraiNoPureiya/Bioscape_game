@@ -1508,8 +1508,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6325647b48a8db148a44a0f250cb89ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Chico: {fileID: 0}
-  _Pecuarista: {fileID: 0}
+  _Chico: {fileID: 7159408467937887670}
+  _Pecuarista: {fileID: 894465772}
 --- !u!1001 &946205325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3472,6 +3472,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7810994430218031205, guid: 12df232b9c0c2854eb2d2ad9a1878571, type: 3}
+      propertyPath: _Chico
+      value: 
+      objectReference: {fileID: 7159408467937887670}
+    - target: {fileID: 7810994430218031205, guid: 12df232b9c0c2854eb2d2ad9a1878571, type: 3}
+      propertyPath: _Pecuarista
+      value: 
+      objectReference: {fileID: 894465772}
     - target: {fileID: 7841180760499050390, guid: 12df232b9c0c2854eb2d2ad9a1878571, type: 3}
       propertyPath: _characterVoice
       value: 
