@@ -1,46 +1,54 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class UniqueObject : MonoBehaviour
+public class UniqueObject : MonoBehaviour, IDataPersistence
 {
     private static HashSet<string> existingObjects = new HashSet<string>();
-
 
     public string uniqueID;
 
     void Start()
     {
-        // Gets the saved string from PlayerPrefs
-        string _SaveObjects = PlayerPrefs.GetString("_SavedObjects", "");
-
-        // Creates a copy to avoid modifying while iterating
-        HashSet<string> copyExistingObjects = new HashSet<string>(_SaveObjects.Split(';'));
-
-        // Adds new objects, ensuring no duplicates
-        copyExistingObjects.UnionWith(existingObjects);
-
-        // Converts to string and saves in PlayerPrefs
-        PlayerPrefs.SetString("_SavedObjects", string.Join(";", copyExistingObjects));
-        PlayerPrefs.Save();
-
-        // Updates existingObjects
-        existingObjects.Clear();
-        existingObjects.UnionWith(copyExistingObjects);
-
-        // If uniqueID is not set, use the GameObject name
         if (string.IsNullOrEmpty(uniqueID))
-        {
             uniqueID = gameObject.name;
-        }
 
-        // **Now we check if the object already exists, without modifying the HashSet while iterating**
+        string saved = PlayerPrefs.GetString("_SavedObjects", "");
+
+        HashSet<string> loadedSet = new HashSet<string>();
+
+        if (!string.IsNullOrEmpty(saved))
+            loadedSet = new HashSet<string>(saved.Split(';'));
+
+        // Junta os dois
+        loadedSet.UnionWith(existingObjects);
+
+        existingObjects = loadedSet;
+
         if (existingObjects.Contains(uniqueID))
         {
+            // Se esse objeto já existiu antes → destrói
             Destroy(gameObject);
+            return;
         }
         else
         {
+            // Se é novo, adiciona
             existingObjects.Add(uniqueID);
         }
+
+        PlayerPrefs.SetString("_SavedObjects", string.Join(";", existingObjects));
+        PlayerPrefs.Save();
+    }
+
+    public void LoadData(GameData data)
+    {
+        // Carrega os objetos existentes do save
+        existingObjects = new HashSet<string>(data.spawnedObjects);
+    }
+
+    public void SaveData(GameData data)
+    {
+        // Salva todos os IDs registrados
+        data.spawnedObjects = new List<string>(existingObjects);
     }
 }

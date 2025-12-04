@@ -1,119 +1,113 @@
-
 using System.Collections;
 using System.Collections.Generic;
-using System.Xml;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEngine.Rendering.DebugUI;
 
-public class Carta : MonoBehaviour
+public class Carta : MonoBehaviour, IDataPersistence
 {
+    [Header("UI Elements")]
     public Image CartaAberta;
     public GameObject Panel;
     public Image Papel;
+
+    [Header("Audio")]
     public AudioSource _openLetter;
 
-    public static Carta letter;
-    private static HashSet<string> existingLetter = new HashSet<string>();
-
-    // Unique identifier for each object (can be the name or something customized)
+    // Unique identifier for each letter object
     public string LetterID;
-  
+
+    // Letters already collected and loaded from save data
+    private static HashSet<string> collectedLetters = new HashSet<string>();
+
+    private void Start()
+    {
+        // Ensure the letter has a unique ID (fallback to object name)
+        if (string.IsNullOrEmpty(LetterID))
+            LetterID = gameObject.name;
+
+        // If this letter was already collected in a previous session → remove it from the scene
+        if (collectedLetters.Contains(LetterID))
+            Destroy(gameObject);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player")) // If the player collider with the letter on the floor the coroutine starts
+        if (!collision.CompareTag("Player")) return;
+
+        PlayerController player = collision.GetComponent<PlayerController>();
+        if (player != null)
         {
+            // Stop player movement before opening the letter
+            player.StopMovement();
 
-            PlayerController player = collision.GetComponent<PlayerController>(); //Acess the player script
-
-            if (player != null) 
-            {
-                
-                player.StopMovement(); // Puts the player speed to 0
-                StartCoroutine(AbrirCarta(player)); // Pass the player to the coroutine
-                _openLetter.Play();
-            }
-
+            StartCoroutine(AbrirCarta(player));
+            _openLetter.Play();
         }
     }
 
-    IEnumerator AbrirCarta(PlayerController player) // Coroutine that controls the letter elements
+    IEnumerator AbrirCarta(PlayerController player)
     {
-
+        // Show first panel (envelope opened)
         Panel.SetActive(true);
-        PlayerPrefs.SetInt("DestroyLetter", 1); 
         CartaAberta.gameObject.SetActive(true);
-        while (!Input.GetKeyDown(KeyCode.Space))
+
+        // Wait for SPACE or auto-close after 4 seconds
+        float timer = 0;
+        while (!Input.GetKeyDown(KeyCode.Space) && timer < 4f)
         {
+            timer += Time.deltaTime;
             yield return null;
-            yield return new WaitForSeconds(4); // acrescenta um delay de 4 segundos
-            break;
         }
 
-        yield return new
-        WaitForEndOfFrame();
-
+        // Show second panel (paper)
         CartaAberta.gameObject.SetActive(false);
         Papel.gameObject.SetActive(true);
 
+        // Wait until player presses SPACE
         while (!Input.GetKeyDown(KeyCode.Space))
-        {
-           
-           
             yield return null;
 
-        }
+        // Close UI panels
         Papel.gameObject.SetActive(false);
-        Panel.gameObject.SetActive(false);
+        Panel.SetActive(false);
 
-        player.ResumeMovement(); // Player speed goes back to 5
+        // Allow player to move again
+        player.ResumeMovement();
 
+        // Mark this letter as collected
+        collectedLetters.Add(LetterID);
+
+        // Save progress to disk
+        DataPersistenceManager.instance.SaveGame();
+
+        // Disable the letter in the scene
         gameObject.SetActive(false);
 
-
-
-
-
-        //mission 1 starts
-
-        PlayerPrefs.SetInt("int", 0);
+        // Start the mission (your custom logic)
         DataPersistenceManager.instance.MissionCompleted = 0;
-        PlayerPrefs.SetString("text", "Verifique se a chave est� na estante do laborat�rio");
+        DataPersistenceManager.instance.CurrentOrder = 1;
+        PlayerPrefs.SetString("text", "Check if the key is on the laboratory shelf");
         PlayerPrefs.SetInt("_CanRun", 1);
-            DataPersistenceManager.instance.CurrentOrder = 1;
-
-
-
-    gameObject.SetActive(false);
     }
-    private void OnApplicationQuit()
+
+    // =====================
+    //     SAVE SYSTEM
+    // =====================
+
+    public void LoadData(GameData data)
     {
-        PlayerPrefs.SetInt("_CanRun", 0);
-        PlayerPrefs.SetInt("DestroyLetter", 0);
+        // Load all letters that were previously collected
+        collectedLetters = new HashSet<string>(data.collectedLetters);
+
+        // If this specific letter was already collected → destroy it
+        if (collectedLetters.Contains(LetterID))
+            Destroy(gameObject);
     }
-    private void Start()
+
+    public void SaveData(GameData data)
     {
-        letter = this;
-        if (string.IsNullOrEmpty(LetterID))
-        {
-            LetterID = gameObject.name;
-        }
-        // Checks if the identifier is already in the list of existing objects
-        if (PlayerPrefs.GetInt("DestroyLetter") == 1)
-        {
-            if (existingLetter.Contains(LetterID))
-            {
-                Destroy(gameObject); // Destroys the object if it already exists
-            }
-        }
-        else
-        {
-            // Marks the object as existing and keeps it when switching scenes
-            existingLetter.Add(LetterID);
-        }
-
-
+        // Add this letter's ID to the save file if it isn't there yet
+        if (!data.collectedLetters.Contains(LetterID))
+            data.collectedLetters.Add(LetterID);
     }
-
 }
