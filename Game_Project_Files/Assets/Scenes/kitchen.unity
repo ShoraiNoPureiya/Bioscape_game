@@ -446,11 +446,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5931637898303873142, guid: 2afafd71f3c14a5409375fba2694083a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.939375
+      value: 5.599375
       objectReference: {fileID: 0}
     - target: {fileID: 5931637898303873142, guid: 2afafd71f3c14a5409375fba2694083a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.1426477
+      value: -9.472648
       objectReference: {fileID: 0}
     - target: {fileID: 5931637898303873142, guid: 2afafd71f3c14a5409375fba2694083a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1435,11 +1435,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4430310794305939877, guid: d933147ef6aaaed4095e14c7566f4b98, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.939375
+      value: 5.599375
       objectReference: {fileID: 0}
     - target: {fileID: 4430310794305939877, guid: d933147ef6aaaed4095e14c7566f4b98, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.1426477
+      value: -9.472648
       objectReference: {fileID: 0}
     - target: {fileID: 4430310794305939877, guid: d933147ef6aaaed4095e14c7566f4b98, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3789,11 +3789,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1661509128655220965, guid: 769f46155c54de9488e72a3e3be08987, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.36
+      value: 7.02
       objectReference: {fileID: 0}
     - target: {fileID: 1661509128655220965, guid: 769f46155c54de9488e72a3e3be08987, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.06
+      value: -15.39
       objectReference: {fileID: 0}
     - target: {fileID: 1661509128655220965, guid: 769f46155c54de9488e72a3e3be08987, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5060,7 +5060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec5b35600fb43f04f87a888526344cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelToLoad: FirstMission
+  _levelToLoad: Car
   _spawnPointCoords: {x: -4.25, y: -4.78, z: 0}
 --- !u!4 &8413210019046009504
 Transform:

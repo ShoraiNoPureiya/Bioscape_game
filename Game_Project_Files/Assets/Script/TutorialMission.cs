@@ -20,44 +20,48 @@ public class TutorialMission : MonoBehaviour
 
     private void Update()
     {
-        switch (DataPersistenceManager.instance.CurrentOrder)
+        if (DataPersistenceManager.instance != null)
         {
-            case 1:
-                localizedStringDef.GetLocalizedStringAsync().Completed += handle =>
-                {
-                    if (_Text != null)
-                        _Text.text = handle.Result;
-                };
-                break;
-            case 2:
-                localizedStringBath.GetLocalizedStringAsync().Completed += handle =>
-                {
-                    if (_Text != null)
-                        _Text.text = handle.Result;
-                };
-                break;
-            case 3:
-                localizedStringKitchen.GetLocalizedStringAsync().Completed += handle =>
-                {
-                    if (_Text != null)
-                        _Text.text = handle.Result;
-                };
-                break;
-            case 4:
-                localizedStringGarden.GetLocalizedStringAsync().Completed += handle =>
-                {
-                    if (_Text != null)
-                        _Text.text = handle.Result;
-                };
-                break;
-            default:
-                break;
+            switch (DataPersistenceManager.instance.CurrentOrder)
+            {
+                case 1:
+                    localizedStringDef.GetLocalizedStringAsync().Completed += handle =>
+                    {
+                        if (_Text != null)
+                            _Text.text = handle.Result;
+                    };
+                    break;
+                case 2:
+                    localizedStringBath.GetLocalizedStringAsync().Completed += handle =>
+                    {
+                        if (_Text != null)
+                            _Text.text = handle.Result;
+                    };
+                    break;
+                case 3:
+                    localizedStringKitchen.GetLocalizedStringAsync().Completed += handle =>
+                    {
+                        if (_Text != null)
+                            _Text.text = handle.Result;
+                    };
+                    break;
+                case 4:
+                    localizedStringGarden.GetLocalizedStringAsync().Completed += handle =>
+                    {
+                        if (_Text != null)
+                            _Text.text = handle.Result;
+                    };
+                    break;
+                default:
+                    break;
+            }
+            if (DataPersistenceManager.instance.MissionCompleted == 1)
+            {
+                _Child.gameObject.SetActive(false);
+            }
+            else { _Child.gameObject.SetActive(true); }
         }
-        if (DataPersistenceManager.instance.MissionCompleted == 1)
-        {
-            _Child.gameObject.SetActive(false);
-        }
-        else { _Child.gameObject.SetActive(true); }
+
     }
     private void Start()
     {

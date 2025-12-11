@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 //using static Contacts_DialogChoiceNode;
 
-public class Task2 : MonoBehaviour
+public class Task2 : MonoBehaviour, IDataPersistence
 {
     public static int _Choice1;
     public static int _Choice2;
@@ -14,7 +14,17 @@ public class Task2 : MonoBehaviour
     {
 
     }
+    public void LoadData(GameData data)
+    {
+        // Carrega os objetos existentes do save
+        Result = data._Task2Result;
+    }
 
+    public void SaveData(GameData data)
+    {
+        // Salva todos os IDs registrados
+        data._Task2Result = Result;
+    }
     // Update is called once per frame
     void Update()
     {

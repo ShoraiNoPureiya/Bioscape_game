@@ -1692,7 +1692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec5b35600fb43f04f87a888526344cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelToLoad: SampleScene
+  _levelToLoad: Car
   _spawnPointCoords: {x: 0, y: 0, z: 0}
 --- !u!1 &1013897685
 GameObject:

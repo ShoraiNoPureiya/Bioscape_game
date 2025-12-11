@@ -895,6 +895,7 @@ GameObject:
   - component: {fileID: 183445708}
   - component: {fileID: 183445707}
   - component: {fileID: 183445706}
+  - component: {fileID: 183445710}
   m_Layer: 5
   m_Name: Canvas (1)
   m_TagString: Untagged
@@ -988,6 +989,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &183445710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183445705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42d41229c63b9c244b771c875bf5becd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _DingDong: {fileID: 424759312}
 --- !u!1 &200424293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,11 +1426,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4880571065667057994, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: m_Name
-      value: TextBoxStart
+      value: TextBoxStarta
       objectReference: {fileID: 0}
     - target: {fileID: 4880571065667057994, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5337425759441772593, guid: 62807a2b4cac60f48935dee39232a0a1, type: 3}
       propertyPath: m_Pivot.x
@@ -9148,15 +9162,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 416987965fffd544eb4a2138b0de2503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _galleryUI: {fileID: 6760504293981919881}
-  _galleryPhotoEntries:
-  - {fileID: 11400000, guid: 292688456f0c13241bd5d5a16a813af2, type: 2}
-  - {fileID: 11400000, guid: b8f507008f36b134e96be893b7815feb, type: 2}
-  - {fileID: 11400000, guid: b381427fdf014f1458568c673b5c4d10, type: 2}
-  _nextButton: {fileID: 7658065995340944971}
-  _previousButton: {fileID: 8896368051040937438}
-  _audioSource: {fileID: 2825817068360247229}
-  _flipPageSound: {fileID: 8300000, guid: ebd1764598a16364b9b22b4549ee363d, type: 3}
 --- !u!114 &4146312492903480490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11867,18 +11872,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8262d610732355146b2206f7917f9d01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _allContacts:
-  - {fileID: 11400000, guid: ab55262e9faa5354b8aa45ee39a4a17a, type: 2}
-  - {fileID: 11400000, guid: 06c1ce482d6a83b4491c74a8abcfc5e7, type: 2}
-  _entryPrefab: {fileID: 1486257433381144461, guid: 794dd1dd9592f67408778617f4a9319f, type: 3}
-  _listContainer: {fileID: 3540055879591015369}
-  _noContactsPanel: {fileID: 4936985024714453851}
-  _callScreen: {fileID: 7391049951626879129}
-  _contactName: {fileID: 6515728589289284477}
-  _contactImage: {fileID: 8653845483146495052}
-  _closeContactButton: {fileID: 1571178933043942497}
-  _callContactButton: {fileID: 6527667458557514939}
-  _dialogUI: {fileID: 5915578288422713905}
 --- !u!222 &6756717676472398541
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11916,10 +11909,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2219ec82964f61d48ad57a3682fdcd39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pageTitle: {fileID: 6431380002510045319}
-  _pageDescription: {fileID: 55509532066744393}
-  _pageImage: {fileID: 7216493830512265782}
-  _placeholderSprite: {fileID: 0}
 --- !u!222 &6827068623220960078
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12295,15 +12284,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14ab41a7fe6de0543b86ce997400cb65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _allPages:
-  - {fileID: 11400000, guid: 5167a513b0050b143ae7068fec950a73, type: 2}
-  _missionListScreen: {fileID: 5470207084138870887}
-  _missionListContent: {fileID: 4218095142664612999}
-  _taskListScreen: {fileID: 5585247339757570227}
-  _taskListContent: {fileID: 1238561169548550680}
-  _backButton: {fileID: 6252859138395372170}
-  _missionButtonPrefab: {fileID: 1485983055412748990, guid: 34a78ed7bea618a408b29deeea0cc1a4, type: 3}
-  _taskEntryPrefab: {fileID: 963169728707613332, guid: aa54dcf516f3a5b4982cb56aa943ec9d, type: 3}
 --- !u!222 &7307922055917183789
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12435,13 +12415,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1313d18a315b2bc41b414af79280f2fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _buttonA: {fileID: 4441082934845541803}
-  _buttonB: {fileID: 2949958198884679798}
-  _npcDialogText: {fileID: 149834867339570952}
-  _textA: {fileID: 1577590979827476995}
-  _textB: {fileID: 4951181064270644783}
-  _characterVoice: {fileID: 1526364664}
-  _closeAppButton: {fileID: 1571178933043942497}
 --- !u!1 &7391049951626879129
 GameObject:
   m_ObjectHideFlags: 0
@@ -13504,13 +13477,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad1b62253ca0014495148bf40134118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cellContent: {fileID: 3617474020834907378}
-  _homeScreenPanel: {fileID: 6665577312198759781}
-  _rootPanel: {fileID: 6348103195879250341}
-  _photoImage: {fileID: 2161414308971824733}
-  _takeButton: {fileID: 6205019017621750827}
-  _placeholderImage: {fileID: 21300000, guid: a4110afd76f823b41a7fb0d9c5cbba1c, type: 3}
-  _flashImage: {fileID: 8289311943753555299}
 --- !u!114 &8289311943753555299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13604,17 +13570,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46079639d28b94428c182a87348b582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _allReports:
-  - {fileID: 11400000, guid: 3bad932d877383540854881ecbb45d04, type: 2}
-  - {fileID: 11400000, guid: 9f42a241f3c72f54cb1249ac92bf1e42, type: 2}
-  entryPrefab: {fileID: 1908532480307625447, guid: 305e61c749d7bda48b8d33b6243bb15f, type: 3}
-  _listContainer: {fileID: 2189549594435035547}
-  _noSignalPanel: {fileID: 6638601395954402317}
-  _reportPanel: {fileID: 8108700957275285443}
-  _reportTitle: {fileID: 4337360463249677265}
-  _reportContent: {fileID: 1708497861565755370}
-  _reportImage: {fileID: 651132282244284452}
-  _closeReportButton: {fileID: 5222504037148309496}
 --- !u!224 &8348896335965690090
 RectTransform:
   m_ObjectHideFlags: 0
