@@ -17,6 +17,10 @@ public class GameData
     public SerializableDictionary<int, List<string>> completedTasksByMission;
     public List<string> spawnedObjects = new List<string>();
     public List<string> collectedLetters = new List<string>();
+    public string _Task1Result;
+    public string _Task2Result;
+    public bool _TalkedToMilton;
+    public bool _Key;
     public int _currentMissionIndex;
     public int _currentOrder;
     public int _missionCompleted;

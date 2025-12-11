@@ -698,11 +698,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1661509128655220965, guid: 769f46155c54de9488e72a3e3be08987, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.13
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 1661509128655220965, guid: 769f46155c54de9488e72a3e3be08987, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.93
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1661509128655220965, guid: 769f46155c54de9488e72a3e3be08987, type: 3}
       propertyPath: m_LocalPosition.z
@@ -844,6 +844,10 @@ PrefabInstance:
     - target: {fileID: 5525804974877612495, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054318102222779191, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
+      propertyPath: _levelToLoad
+      value: Car
       objectReference: {fileID: 0}
     - target: {fileID: 8197615215865298833, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1528,11 +1532,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5931637898303873142, guid: 2afafd71f3c14a5409375fba2694083a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.13
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5931637898303873142, guid: 2afafd71f3c14a5409375fba2694083a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.93
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5931637898303873142, guid: 2afafd71f3c14a5409375fba2694083a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2290,11 +2294,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4430310794305939877, guid: d933147ef6aaaed4095e14c7566f4b98, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.13
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4430310794305939877, guid: d933147ef6aaaed4095e14c7566f4b98, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.93
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4430310794305939877, guid: d933147ef6aaaed4095e14c7566f4b98, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2652,6 +2656,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7054318102222779191, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
+      propertyPath: _levelToLoad
+      value: Car
+      objectReference: {fileID: 0}
     - target: {fileID: 8197615215865298833, guid: 1c0cfa34fb3c52f49ba81f7d2c10a3a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -39.9
@@ -2723,7 +2731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec5b35600fb43f04f87a888526344cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelToLoad: SecondMission
+  _levelToLoad: Car
   _spawnPointCoords: {x: -0.14, y: -4.6, z: 0}
 --- !u!1001 &2486730409840062872
 PrefabInstance:
@@ -2849,7 +2857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 858900741571380683, guid: 4ec60d59ebd300c4cbff29cdfecb6c19, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1017222295787032611, guid: 4ec60d59ebd300c4cbff29cdfecb6c19, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2866,6 +2874,10 @@ PrefabInstance:
     - target: {fileID: 1877602667199016410, guid: 4ec60d59ebd300c4cbff29cdfecb6c19, type: 3}
       propertyPath: m_Name
       value: ThoughtsPrefab2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1877602667199016410, guid: 4ec60d59ebd300c4cbff29cdfecb6c19, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2626999746331966509, guid: 4ec60d59ebd300c4cbff29cdfecb6c19, type: 3}
       propertyPath: m_IsActive

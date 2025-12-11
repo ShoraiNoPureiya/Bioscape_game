@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SecondMission.unity
     guid: 34662bcf4fd63c84fbd4bc2952fe93f9
+  - enabled: 1
+    path: Assets/Scenes/Car.unity
+    guid: 152e401be326c8544abe7943131d3d5a
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: c786ced7a9cf7194181633248c2d31c1, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: d7be047c2130ca64d82c8c5775fa5949, type: 2}

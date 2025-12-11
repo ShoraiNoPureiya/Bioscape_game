@@ -25,7 +25,11 @@ public class Doors_v2 : MonoBehaviour
         {
             _Garden = true;
         }
-        if (collision.CompareTag("Player"))
+        else
+        {
+            _Garden = false;
+        }
+            if (collision.CompareTag("Player"))
         {
             _playerController = FindObjectOfType<PlayerController>();
             _playerController.SetCanMove(false);
@@ -38,9 +42,11 @@ public class Doors_v2 : MonoBehaviour
                 else
                 {
                     _playerController.SetCanMove(true);
+                    return; 
                 }
             }
-            if (_levelToLoad == "FirstMission") { 
+            if (_levelToLoad == "Car")
+            {
                 if (GetKey._Key)
                 {
                     SceneSwapManager.SwapSceneFromDoorUse(_levelToLoad, _spawnPointCoords);
@@ -50,9 +56,17 @@ public class Doors_v2 : MonoBehaviour
                     _playerController.SetCanMove(true);
                 }
             }
-            else { 
-            SceneSwapManager.SwapSceneFromDoorUse(_levelToLoad, _spawnPointCoords);
+            else
+            {
+                SceneSwapManager.SwapSceneFromDoorUse(_levelToLoad, _spawnPointCoords);
             }
         }
+    }
+    public void SwitchScene()
+    {
+        SceneSwapManager.SwapSceneFromDoorUse(_levelToLoad, _spawnPointCoords);
+    }
+    private void Update()
+    {
     }
 }

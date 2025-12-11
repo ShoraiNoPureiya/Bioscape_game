@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Task1 : MonoBehaviour
+public class Task1 : MonoBehaviour, IDataPersistence
 {
     public int Choice1;
     public int Choice2;
@@ -26,9 +26,9 @@ public class Task1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-                Choices();
-        if (Result.Equals("Green"))    
+
+        Choices();
+        if (Result.Equals("Green"))
         {
             Debug.Log("Green");
         }
@@ -40,6 +40,17 @@ public class Task1 : MonoBehaviour
         {
             Debug.Log("Red");
         }
+    }
+    public void LoadData(GameData data)
+    {
+        // Carrega os objetos existentes do save
+        Result = data._Task1Result;
+    }
+
+    public void SaveData(GameData data)
+    {
+        // Salva todos os IDs registrados
+        Result = data._Task1Result;
     }
     public void Choices()
     {
