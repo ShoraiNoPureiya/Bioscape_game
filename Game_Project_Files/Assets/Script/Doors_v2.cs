@@ -40,7 +40,8 @@ public class Doors_v2 : MonoBehaviour
                     _playerController.SetCanMove(true);
                 }
             }
-            if (_levelToLoad == "FirstMission") { 
+            if (_levelToLoad == "FirstMission")
+            {
                 if (GetKey._Key)
                 {
                     SceneSwapManager.SwapSceneFromDoorUse(_levelToLoad, _spawnPointCoords);
@@ -50,9 +51,14 @@ public class Doors_v2 : MonoBehaviour
                     _playerController.SetCanMove(true);
                 }
             }
-            else { 
-            SceneSwapManager.SwapSceneFromDoorUse(_levelToLoad, _spawnPointCoords);
+            else
+            {
+                SceneSwapManager.SwapSceneFromDoorUse(_levelToLoad, _spawnPointCoords);
             }
         }
+    }
+    public void SwitchScene()
+    {
+        SceneSwapManager.SwapSceneFromDoorUse(_levelToLoad, _spawnPointCoords);
     }
 }
