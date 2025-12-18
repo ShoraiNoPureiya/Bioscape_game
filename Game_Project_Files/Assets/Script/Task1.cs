@@ -7,7 +7,7 @@ public class Task1 : MonoBehaviour, IDataPersistence
     public int Choice1;
     public int Choice2;
     public int Choice3;
-    public static string Result;
+    public static string Result = "Red";
     GameObject[] Yellow;
     GameObject[] Red;
     GameObject[] Green;
@@ -15,12 +15,6 @@ public class Task1 : MonoBehaviour, IDataPersistence
     // Start is called before the first frame update
     void Start()
     {
-
-        Result = "Red";
-
-
-
-
     }
 
     // Update is called once per frame

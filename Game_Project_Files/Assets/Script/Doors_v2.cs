@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class Doors_v2 : MonoBehaviour
+public class Doors_v2 : MonoBehaviour, IDataPersistence
 {
     [SerializeField] private string _levelToLoad;
     [SerializeField] private Vector3 _spawnPointCoords;
@@ -18,16 +18,22 @@ public class Doors_v2 : MonoBehaviour
     //     //     Debug.LogError("SceneSwapManager instance is not found.");
     //     // }
     // }
+    public void LoadData(GameData data)
+    {
+        // Carrega os objetos existentes do save
+        _Garden = data._Garden;
+    }
 
+    public void SaveData(GameData data)
+    {
+        // Salva todos os IDs registrados
+        data._Garden = _Garden;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (DataPersistenceManager.instance.CurrentOrder == 4)
         {
             _Garden = true;
-        }
-        else
-        {
-            _Garden = false;
         }
             if (collision.CompareTag("Player"))
         {
