@@ -16,8 +16,7 @@ public class CarSceneController : MonoBehaviour
         {
             _Farm.SetActive(true);
         }
-        Debug.Log(Task1.Result);
-        if (Task1.Result == "Green" || Task1.Result == "Yellow")
+        if (DataPersistenceManager.instance.Task1Result)
         {
             _Aquifer.SetActive(true);
         }

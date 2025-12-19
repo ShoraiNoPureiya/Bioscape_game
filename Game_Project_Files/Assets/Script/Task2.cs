@@ -9,6 +9,7 @@ public class Task2 : MonoBehaviour, IDataPersistence
     public static int _Choice2;
     public static int _Choice3;
     public static string Result;
+    public static bool _I;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,13 +18,13 @@ public class Task2 : MonoBehaviour, IDataPersistence
     public void LoadData(GameData data)
     {
         // Carrega os objetos existentes do save
-        Result = data._Task2Result;
+        _I = data._Task2Result;
     }
 
     public void SaveData(GameData data)
     {
         // Salva todos os IDs registrados
-        data._Task2Result = Result;
+        data._Task2Result = _I;
     }
     // Update is called once per frame
     void Update()

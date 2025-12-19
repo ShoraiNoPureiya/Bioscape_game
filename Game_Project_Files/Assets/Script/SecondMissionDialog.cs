@@ -25,7 +25,7 @@ public class SecondMissionDialog : MonoBehaviour
         if (_I == 3)
         {
             DataPersistenceManager.instance.CurrentOrder = 4;
-            Cellphone.Instance.ShowNotification();
+          //  Cellphone.Instance.ShowNotification();
         }
     }
 }
