@@ -226,7 +226,25 @@ public class DataPersistenceManager : MonoBehaviour
             SaveGame();
         }
     }
-    
+    public bool Task1Result
+    {
+        get => gameData._Task1Result;
+        set
+        {
+            gameData._Task1Result = value;
+            SaveGame();
+        }
+    }
+    public bool Task2Result
+    {
+        get => gameData._Task2Result;
+        set
+        {
+            gameData._Task2Result = value;
+            SaveGame();
+        }
+    }
+
     public int MissionCompleted
     {
         get => gameData._missionCompleted;

@@ -8,6 +8,7 @@ public class Task1 : MonoBehaviour, IDataPersistence
     public int Choice2;
     public int Choice3;
     public static string Result = "Red";
+    public static bool _I;
     GameObject[] Yellow;
     GameObject[] Red;
     GameObject[] Green;
@@ -20,15 +21,18 @@ public class Task1 : MonoBehaviour, IDataPersistence
     // Update is called once per frame
     void Update()
     {
-
         Choices();
         if (Result.Equals("Green"))
         {
             Debug.Log("Green");
+            _I = true;
+            DataPersistenceManager.instance.Task1Result = _I;
         }
         if (Result.Equals("Yellow"))
         {
             Debug.Log("Yellow");
+            _I = true;
+            DataPersistenceManager.instance.Task1Result = _I;
         }
         if (Result.Equals("Red"))
         {
@@ -38,13 +42,13 @@ public class Task1 : MonoBehaviour, IDataPersistence
     public void LoadData(GameData data)
     {
         // Carrega os objetos existentes do save
-        Result = data._Task1Result;
+        _I = data._Task1Result;
     }
 
     public void SaveData(GameData data)
     {
         // Salva todos os IDs registrados
-        Result = data._Task1Result;
+        data._Task1Result = _I;
     }
     public void Choices()
     {

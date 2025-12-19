@@ -20,8 +20,8 @@ public class GameData
     public bool _Garden;
     public bool _DialogSequence;
     public bool _InteractSecondMission;
-    public string _Task1Result;
-    public string _Task2Result;
+    public bool _Task1Result;
+    public bool _Task2Result;
     public bool _TalkedToMilton;
     public bool _Key;
     public int _currentMissionIndex;
