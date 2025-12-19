@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogSequence : MonoBehaviour, IDataPersistence
+public class SecondMissionInteracts : MonoBehaviour, IDataPersistence
 {
-    public GameObject _Object;
-    public static bool _I;
+    public GameObject _GameObject;
+    public bool _I;
     // Start is called before the first frame update
     void Start()
     {
-        _I = true;
-        
+
     }
 
     // Update is called once per frame
@@ -18,18 +17,16 @@ public class DialogSequence : MonoBehaviour, IDataPersistence
     {
         if (_I)
         {
-            _Object.SetActive(true);
+            _GameObject.SetActive(true);
         }
     }
     public void LoadData(GameData data)
     {
-        // Carrega os objetos existentes do save
-        _I = data._DialogSequence;
+        _I = data._InteractSecondMission;
     }
 
     public void SaveData(GameData data)
     {
-        // Salva todos os IDs registrados
-        data._DialogSequence = _I;
+
     }
 }
