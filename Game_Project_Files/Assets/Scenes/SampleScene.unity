@@ -3468,6 +3468,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1005681285}
+    - target: {fileID: 4236161480655574917, guid: d933147ef6aaaed4095e14c7566f4b98, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4430310794305939877, guid: d933147ef6aaaed4095e14c7566f4b98, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.8035295
@@ -8173,6 +8177,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 716291998}
     m_Modifications:
+    - target: {fileID: 1468049088074904520, guid: 2afafd71f3c14a5409375fba2694083a, type: 3}
+      propertyPath: orthographic size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2553533487552370980, guid: 2afafd71f3c14a5409375fba2694083a, type: 3}
       propertyPath: m_Name
       value: Main Camera

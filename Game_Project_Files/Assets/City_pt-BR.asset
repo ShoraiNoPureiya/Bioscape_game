@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: City_pt-BR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: 7ffaf4a684b2d464ab5c4ac3dddfe949, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 36832292864
+    m_Localized: "Mo\xE7o, voc\xEA poderia me ajudar um segundinho? Eu queria plantar
+      uma \xE1rvore para ver se ajuda um pouco com a umidade da cidade, mas n\xE3o
+      saberia como prosseguir. Voc\xEA me parece inteligente, poderia me dar uma
+      m\xE3o?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200141713408
+    m_Localized: "Claro! Tem profissionais na secret\xE1ria do meio-ambiente que
+      podem ajudar na escolha da esp\xE9cie a ser plantada, eu vou te levar para
+      l\xE1.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 537523138560
+    m_Localized: "Com licen\xE7a, voc\xEA poderia nos ajudar com uma quest\xE3o?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 722315784192
+    m_Localized: "Com certeza! Mas antes poderiam ajudar com o mutir\xE3o que estamos
+      fazendo para a renova\xE7\xE3o da umidade da cidade? Seriam de grande ajuda
+      em nossa miss\xE3o!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 809246928896
+    m_Localized: 'Podemos sim!
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 989400674304
+    m_Localized: "Mo\xE7o, enquanto voc\xEA estava terminando de ajudar o mutir\xE3o
+      eu conversei com os agentes do meio-ambiente, e descobri que plantar X ESP\xC9CIE
+      pode ajudar com a umidade do ar na minha casa. Voc\xEA poderia me ajudar uma
+      \xFAltima vez? Eu at\xE9 j\xE1 ganhei uma muda do pessoal da prefeitura.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1086331039744
+    m_Localized: "\xC9 um prazer, por que n\xE3o vamos para a sua casa ent\xE3o plantar
+      essa X ESP\xC9CIE?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1187346657280
+    m_Localized: "Muito obrigado por tudo mo\xE7o! Fique com isso por ter me ajudado.
+      Items: 1000 caurias, 1 muda de X ESP\xC9CIE."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

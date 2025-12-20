@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: City_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 7ffaf4a684b2d464ab5c4ac3dddfe949, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 36832292864
+    m_Localized: "Sir, could you help me for a moment? I\u2019d like to plant a tree
+      to see if it helps a bit with the city\u2019s humidity, but I don\u2019t know
+      how to proceed. You seem smart\u2014could you give me a hand?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200141713408
+    m_Localized: "Of course! There are professionals at the Department of the Environment
+      who can help with choosing the species to be planted. I\u2019ll take you there."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 537523138560
+    m_Localized: Excuse me, could you help us with a question?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 722315784192
+    m_Localized: "Certainly! But first, could you help with the community effort
+      we\u2019re organizing to renew the city\u2019s humidity? You would be a great
+      help in our mission!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 809246928896
+    m_Localized: Yes!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 989400674304
+    m_Localized: Sir, while you were finishing helping with the community effort,
+      I talked to the environmental agents and found out that planting X SPECIES
+      can help with the air humidity in my home. Could you help me one last time?
+      I even received a seedling from the city staff.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1086331039744
+    m_Localized: "It\u2019s a pleasure\u2014why don\u2019t we go to your house and
+      plant this X SPECIES then?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1187346657280
+    m_Localized: 'Thank you very much for everything, sir! Please take this as a
+      token of appreciation for helping me.
+
+      Items: 1,000 cowries, 1 seedling
+      of X SPECIES.'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

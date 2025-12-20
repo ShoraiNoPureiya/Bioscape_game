@@ -35,6 +35,8 @@ public class Task2 : MonoBehaviour, IDataPersistence
             if (Result == "Y")
             {
                 DataPersistenceManager.instance.CurrentOrder = 20;
+                DataPersistenceManager.instance.Task2Result = true;
+                _I = true; 
             }
             else
             {

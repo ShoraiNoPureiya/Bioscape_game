@@ -8,6 +8,7 @@ public class CarSceneController : MonoBehaviour
     public GameObject _Farm;
     public GameObject _Aquifer;
     public GameObject _Committe;
+    public GameObject _City;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,10 @@ public class CarSceneController : MonoBehaviour
         if (TalkedToMilton._I)
         {
             _Committe.SetActive(true);
+        }
+        if (DataPersistenceManager.instance.Task2Result)
+        {
+            _City.SetActive(true);
         }
     }
 
