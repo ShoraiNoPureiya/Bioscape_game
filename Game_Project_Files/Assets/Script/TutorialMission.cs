@@ -28,7 +28,7 @@ public class TutorialMission : MonoBehaviour
                     localizedStringDef.GetLocalizedStringAsync().Completed += handle =>
                     {
                         if (_Text != null)
-                            _Text.text = handle.Result;
+                            _Text.text = handle.Result; 
                     };
                     break;
                 case 2:
@@ -71,7 +71,6 @@ public class TutorialMission : MonoBehaviour
     }
     private void OnApplicationQuit()
     {
-        DataPersistenceManager.instance.MissionCompleted = 1;
     }
 
 }

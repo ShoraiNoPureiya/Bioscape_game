@@ -9,6 +9,7 @@ public class GameData
         GENERAL
     ----------------------------------------------------------------------------------*/
     public string _currentScene;
+    public string _TutorialMission;
     public Vector3 _playerPosition;
     public SerializableDictionary<string, bool> _allDialogs;
     public SerializableDictionary<string, bool> _allReports;
@@ -17,6 +18,7 @@ public class GameData
     public SerializableDictionary<int, List<string>> completedTasksByMission;
     public List<string> spawnedObjects = new List<string>();
     public List<string> collectedLetters = new List<string>();
+
     public bool _Garden;
     public bool _DialogSequence;
     public bool _InteractSecondMission;

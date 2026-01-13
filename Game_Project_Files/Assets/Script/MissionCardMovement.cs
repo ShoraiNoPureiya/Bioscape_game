@@ -17,9 +17,12 @@ public class MissionCardToggle : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M))
+        if (PlayerPrefs.GetInt("_CanRun") == 1) 
         {
-            ToggleMissionCard();
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+                ToggleMissionCard();
+            }
         }
     }
 
