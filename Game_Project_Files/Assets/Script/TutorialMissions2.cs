@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization;
 
-public class TutorialMissions2 : MonoBehaviour
+public class TutorialMissions2 : MonoBehaviour, IDataPersistence
 {
     public string _Text; // texto que vai ser usado
     private string _ChangedText; // texto que esta agora
@@ -15,6 +15,18 @@ public class TutorialMissions2 : MonoBehaviour
     {
 
 
+    }
+
+    public void LoadData(GameData data)
+    {
+        // Carrega os objetos existentes do save
+        PlayerPrefs.SetString("textIf",data._TutorialMission) ;
+    }
+
+    public void SaveData(GameData data)
+    {
+        // Salva todos os IDs registrados
+        data._TutorialMission = PlayerPrefs.GetString("textIf");
     }
 
     // Update is called once per frame

@@ -9,6 +9,7 @@ public class GetKey : MonoBehaviour, IDataPersistence
     void Start()
     {
         _Key = true;
+        DataPersistenceManager.instance.MissionCompleted = 1;
     }
 
     // Update is called once per frame

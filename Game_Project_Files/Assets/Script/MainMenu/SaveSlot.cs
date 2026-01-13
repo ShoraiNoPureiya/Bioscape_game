@@ -134,7 +134,7 @@ public class SaveSlot : MonoBehaviour
     }
     private void UpdateLocation()
     {
-        lastLocationTMPUGUI.text = location_WordValue + currentSceneString;
+       // lastLocationTMPUGUI.text = location_WordValue + currentSceneString;
     }
 
 
