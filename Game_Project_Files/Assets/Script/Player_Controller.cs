@@ -134,7 +134,7 @@ public class PlayerController : MonoBehaviour//, IDataPersistence
         {
             if (_playerSpeed != 0 && _playerDirection != Vector2.zero) // check is moving player
             {
-                SongPlayer.songplayer._AudioSource.PlayOneShot(SongPlayer.songplayer._Walk); // 
+                //SongPlayer.songplayer._AudioSource.PlayOneShot(SongPlayer.songplayer._Walk); 
             }
             yield return new WaitForSeconds(0.5f); // Adjust delay between sounds
         }
